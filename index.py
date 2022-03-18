@@ -2,7 +2,7 @@ from dash import html, dcc
 import dash_bootstrap_components as dbc
 
 from app import app 
-from video_player import *
+from video_player import controls
 
 app.layout = dbc.Container(
     children=[
