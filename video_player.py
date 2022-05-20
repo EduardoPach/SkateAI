@@ -2,16 +2,15 @@ import dash_player
 from dash import html, dcc 
 from dash.dependencies import Input, Output, State
 import dash_bootstrap_components as dbc
-from numpy import place
 
 from app import app 
 from globals import *
 
 
 video_drop_down = dcc.Dropdown(
-    id="dd-my_videos",
-    options=[{"label": f"Video_{idx}", "value": j} for idx, j in enumerate(VIDEO_PATH)],
-    value=VIDEO_PATH[0],
+    id="dd-my-videos",
+    options=[{"label": title, "value": url} for title, url in VIDEO_PATH.items()],
+    value=None,
     style={"margin-top": "10px"},
     placeholder="Select Video"
 )
@@ -185,12 +184,17 @@ controls = dbc.Col(
             ],
             style={"margin-top": "25px"}
         ),
-        dash_player.DashPlayer(
-            id="video-player",
-            width="100%",
-            height="600px",
-            intervalSecondsLoaded=200,
-            style={"margint-top": "20px"}
+        dbc.Row(
+            [
+                dash_player.DashPlayer(
+                    id="video-player",
+                    width="100%",
+                    height="600px",
+                    intervalSecondsLoaded=200,
+                    style={"margint-top": "20px"}
+                )
+            ],
+            style={"margin-top": "25px"}
         )
     ]
 )
@@ -202,5 +206,13 @@ controls = dbc.Col(
     [Input("btn-collapse", "n_clicks"), State("collapse", "is_open")]
 )
 def toggle_collapse(n_clicks, is_open):
-    if n_clicks:
+    if n_clicks is not None:
         return not is_open
+
+
+@app.callback(
+    Output("video-player", "url"),
+    [Input("dd-my-videos", "value")]
+)
+def select_video(value):
+    return value
