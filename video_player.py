@@ -1,5 +1,3 @@
-from cProfile import label
-from click import style
 import dash_player
 from dash import html, dcc 
 from dash.dependencies import Input, Output, State
@@ -184,7 +182,8 @@ controls = dbc.Col(
                 dbc.Col(cut_panel_btn, md=2),
                 dbc.Col(delete_cut_btn, md=2),
                 dbc.Col(cut_dropdown, md=8)
-            ]
+            ],
+            style={"margin-top": "25px"}
         ),
         dash_player.DashPlayer(
             id="video-player",
@@ -195,3 +194,13 @@ controls = dbc.Col(
         )
     ]
 )
+
+
+
+@app.callback(
+    Output("collapse", "is_open"),
+    [Input("btn-collapse", "n_clicks"), State("collapse", "is_open")]
+)
+def toggle_collapse(n_clicks, is_open):
+    if n_clicks:
+        return not is_open
