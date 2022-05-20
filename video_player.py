@@ -49,7 +49,7 @@ body_rot_type = dcc.Dropdown(
 
 body_num_rot = dcc.Dropdown(
     id="cut-body-rotation-number",
-    options=[{"label": "None", "value": 0}, {"label": "Once", "value": 1}, {"label": "Twice", "value": 2}],
+    options=[{"label":quantity.title(), "value":idx} for idx, quantity in enumerate(NUMBER_ROTATION)],
     value=0,
     placeholder="# Body Rot",
     style={"width": "130px"}
@@ -65,7 +65,7 @@ shov_it_type = dcc.Dropdown(
 
 shov_it_num = dcc.Dropdown(
     id="cut-shov-it-number",
-    options=[{"label": "None", "value": 0}, {"label": "Once", "value": 1}, {"label": "Twice", "value": 2}],
+    options=[{"label":quantity.title(), "value":idx} for idx, quantity in enumerate(NUMBER_ROTATION)],
     value=0,
     placeholder="# Shov-it",
     style={"width": "130px"}
