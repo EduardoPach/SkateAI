@@ -1,5 +1,4 @@
 import pytube as yt
-from functools import lru_cache
 
 def get_videos_url(urls: list) -> dict[str, str]:
     """Get's all URLs for each video in the playlists as well
