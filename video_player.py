@@ -1,5 +1,8 @@
+import json
+
 import dash_player
 from dash import html, dcc 
+import dash
 from dash.dependencies import Input, Output, State
 import dash_bootstrap_components as dbc
 
@@ -13,12 +16,6 @@ video_drop_down = dcc.Dropdown(
     value=None,
     style={"margin-top": "10px"},
     placeholder="Select Video"
-)
-
-cut_name = dbc.Input(
-    id="input-cut-name",
-    placeholder="Cut name",
-    type="text"
 )
 
 landed_status_radio = dcc.RadioItems(
@@ -81,6 +78,12 @@ flip_num = dcc.Dropdown(
     value=0,
     placeholder="# Flip",
     style={"width": "130px"}
+)
+
+cut_name = dbc.Input(
+    id="cut-name",
+    placeholder="Cut Name",
+    type="text"
 )
 
 start_btn = dbc.Button(
@@ -189,7 +192,7 @@ controls = dbc.Col(
                 dash_player.DashPlayer(
                     id="video-player",
                     width="100%",
-                    height="600px",
+                    height="500px",
                     intervalSecondsLoaded=200,
                     style={"margint-top": "20px"}
                 )
@@ -205,7 +208,7 @@ controls = dbc.Col(
     Output("collapse", "is_open"),
     [Input("btn-collapse", "n_clicks"), State("collapse", "is_open")]
 )
-def toggle_collapse(n_clicks, is_open):
+def toggle_collapse(n_clicks: int, is_open: bool) -> bool:
     if n_clicks is not None:
         return not is_open
 
@@ -214,5 +217,87 @@ def toggle_collapse(n_clicks, is_open):
     Output("video-player", "url"),
     [Input("dd-my-videos", "value")]
 )
-def select_video(value):
+def select_video(value: str) -> str:
     return value
+
+@app.callback(
+    Output("btn-set-start", "children"),
+    [Input("btn-set-start", "n_clicks"), State("video-player", "currentTime")]
+)
+def update_start(n_clicks: int, start_time: float) -> str:
+    value = 0 if start_time is None else start_time
+    return f"Start: {value:.1f} "
+
+@app.callback(
+    Output("btn-set-end", "children"),
+    [Input("btn-set-end", "n_clicks"), State("video-player", "currentTime")]
+)
+def update_end(n_clicks: int, end_time: float) -> str:
+    value = 10 if end_time is None else end_time
+    return f"End: {value:.1f} "
+
+@app.callback(
+    Output("dd-cut", "options"),
+    [
+        Input("btn-create-cut", "n_clicks"),
+        Input("delete-cut", "n_clicks"),
+        Input("video-player", "url")
+    ],
+    [
+        State("btn-set-start", "children"), 
+        State("btn-set-end", "children"),
+        State("cut-name", "value"), 
+        State("cut-landed", "value"),
+        State("cut-stance", "value"),
+        State("cut-body-rotation-type", "value"),
+        State("cut-body-rotation-number", "value"),
+        State("cut-shov-it-type", "value"),
+        State("cut-shov-it-number", "value"),
+        State("cut-flip-type", "value"),
+        State("cut-flip-number", "value"),
+        State("dd-cut", "value")
+    ]
+)
+def make_cut(
+    create_cut: int,
+    delete_cut: int,
+    video_url: str,
+    start_time: str,
+    end_time: str,
+    cut_file_name: str,
+    landed: bool,
+    stance: str,
+    body_rotation_type: str,
+    body_rotation_number: int,
+    shov_it_type: str,
+    shov_it_number: int,
+    flip_type: str,
+    flip_number: int,
+    current_cut: str,
+) -> list[dict]:
+    trigg = dash.callback_context.triggered[0]["prop_id"]
+
+    trick_info = {
+        "landed": landed,
+        "stance": stance,
+        "body_rotation_type": body_rotation_type,
+        "body_rotation_number": body_rotation_number,
+        "shov_it_type": shov_it_type,
+        "shov_it_number": shov_it_number,
+        "flip_type": flip_type,
+        "flip_number": flip_number
+    }
+    data = utils.get_cuts_data()
+
+    if trigg=="btn-create-cut.n_clicks":
+        start = float(start_time.split(":")[-1]) 
+        end = float(end_time.split(":")[-1])
+        data = utils.update_cuts(data, video_url, cut_file_name, start, end, trick_info)
+    elif trigg=="delete-cut.n_clicks":
+        if current_cut is not None:
+            data = utils.delete_cuts(data, video_url, current_cut)
+
+    with open("batb11/tricks_cut.json", 'w') as f:
+        json.dump(data, f)
+
+    return [{"label": key, "value":key } for key in data[video_url].keys()]
