@@ -13,7 +13,7 @@ from globals import *
 video_drop_down = dcc.Dropdown(
     id="dd-my-videos",
     options=[{"label": title, "value": url} for title, url in VIDEO_PATH.items()],
-    value=None,
+    value=list(VIDEO_PATH.values())[0],
     style={"margin-top": "10px"},
     placeholder="Select Video"
 )
@@ -277,6 +277,8 @@ def make_cut(
 ) -> list[dict]:
     trigg = dash.callback_context.triggered[0]["prop_id"]
 
+    data = utils.get_cuts_data()
+    
     trick_info = {
         "landed": landed,
         "stance": stance,
@@ -287,17 +289,30 @@ def make_cut(
         "flip_type": flip_type,
         "flip_number": flip_number
     }
-    data = utils.get_cuts_data()
-
     if trigg=="btn-create-cut.n_clicks":
         start = float(start_time.split(":")[-1]) 
         end = float(end_time.split(":")[-1])
-        data = utils.update_cuts(data, video_url, cut_file_name, start, end, trick_info)
+        data = utils.update_cuts(data.copy(), video_url, cut_file_name, start, end, trick_info)
     elif trigg=="delete-cut.n_clicks":
         if current_cut is not None:
-            data = utils.delete_cuts(data, video_url, current_cut)
+            data = utils.delete_cuts(data.copy(), video_url, current_cut)
 
     with open("batb11/tricks_cut.json", 'w') as f:
         json.dump(data, f)
 
-    return [{"label": key, "value":key } for key in data[video_url].keys()] if video_url in data else ["No results"]
+    return [{"label": key, "value":key } for key in data[video_url].keys()] if video_url in data else []
+
+
+@app.callback(
+    Output("video-player", "seekTo"),
+    [Input("dd-cut", "value"), Input("video-player", "currentTime")],
+    [State("video-player", "url")]
+)
+def play_cut(cut_name: str, current_time: float, video_url: str) -> float:
+    if cut_name is None or cut_name=="No results":
+        return
+    data = utils.get_cuts_data()
+    if current_time < data[video_url][cut_name]["interval"][0]:
+        return data[video_url][cut_name]["interval"][0]
+    if current_time > data[video_url][cut_name]["interval"][-1]:
+        return data[video_url][cut_name]["interval"][0]
