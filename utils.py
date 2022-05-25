@@ -1,7 +1,9 @@
+import string
 import os
 import json
 
 import pytube as yt
+import pandas as pd
 
 def get_videos_url(urls: list) -> dict[str, str]:
     """Get's all URLs for each video in the playlists as well
@@ -53,3 +55,33 @@ def get_cuts_data() -> dict:
         with open(JSON_PATH, 'r') as f:
             data = json.load(f)
     return data
+
+def parse_video_title(title: str) -> str:
+    paresed_title = ""
+    for s in title:
+        if s not in string.punctuation:
+            paresed_title+=s
+    return paresed_title.replace(" ", "_")
+
+def initialize_data_dir() -> None:
+    if not os.path.exists("data"):
+        os.mkdir("data")
+    if not os.path.exists("data/videos"):
+        os.mkdir("data/videos")
+    if not os.path.exists("data/metadata"):
+        os.mkdir("data/info")
+    if not os.path.exists("data/metadata/metadata.csv"):
+        df = pd.DataFrame(columns=["video_path", "video_title", "videl_url", "trick_interval", "trick_info"])
+        df.to_csv("data/metadata/metadata.csv", index=False)
+
+def update_metadata(video_path: str, video_title: str, video_url: str, trick_interval: list, trick_info: dict) -> None:
+    df = pd.read_csv("data/metadata/metadata.csv")
+    entry = {
+        "video_path": [video_path],
+        "video_title": [video_title],
+        "video_url": [video_url],
+        "trick_interval": [trick_interval],
+        "trick_info": [trick_info]
+    }
+    df = df.append(entry, ignore_index=True).reset_index(drop=True)
+    df.to_csv("data/metadata/metadata.csv", index=False)
