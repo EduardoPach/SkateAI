@@ -1,7 +1,7 @@
 import json
 
 import dash_player
-from dash import html, dcc 
+from dash import html, dcc
 import dash
 from dash.dependencies import Input, Output, State
 import dash_bootstrap_components as dbc
@@ -300,4 +300,4 @@ def make_cut(
     with open("batb11/tricks_cut.json", 'w') as f:
         json.dump(data, f)
 
-    return [{"label": key, "value":key } for key in data[video_url].keys()]
+    return [{"label": key, "value":key } for key in data[video_url].keys()] if video_url in data else ["No results"]
