@@ -194,6 +194,7 @@ controls = dbc.Col(
                     width="100%",
                     height="500px",
                     intervalSecondsLoaded=200,
+                    controls=True,
                     style={"margint-top": "20px"}
                 )
             ],
