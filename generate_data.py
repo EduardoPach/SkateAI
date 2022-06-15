@@ -22,6 +22,10 @@ def main() -> None:
             path = f"data/videos/{video_title}"
             if not os.path.exists(path):
                 os.mkdir(path)
+            if len(os.listdir(path))==len(cuts.keys()):
+                pbar.update(1)
+                print(f"{video_title.upper()} WAS ALREADY DONE!")
+                continue
 
             for cut_name, cut_info in cuts.items():
                 if not os.path.exists(f"path/fullvideo.mp4"):
