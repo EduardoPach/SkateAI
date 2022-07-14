@@ -85,3 +85,8 @@ def update_metadata(video_path: str, video_title: str, video_url: str, trick_int
     }
     df = df.append(entry, ignore_index=True).reset_index(drop=True)
     df.to_csv("data/metadata/metadata.csv", index=False)
+
+def load_json(path: str) -> dict:
+    with open(path, "r") as f:
+        val = json.load(f)
+    return val
