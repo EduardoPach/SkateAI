@@ -8,3 +8,4 @@ ROTATION_TYPE = ["none", "backside", "frontside"]
 FLIP_TYPE = ["none", "kickflip", "heelflip"]
 NUMBER_ROTATION = ["none", "once", "twice", "thrice"]
 TRICK_DATA = utils.get_cuts_data()
+TRICK_NAMES = utils.load_json("data/TRICK_NAMES.json")
