@@ -28,6 +28,28 @@ def get_videos_url(urls: list) -> dict[str, str]:
     return data
 
 def update_cuts(data: dict, video_url: str, cut_name: str, start_time: int, end_time: int, trick_info: dict) -> dict:
+    """Update general JSON file that contains the trick cuts for each video.
+
+    Parameters
+    ----------
+    data : dict
+        The actual state of the general JSON file
+    video_url : str
+        The URL of the current video being labeled
+    cut_name : str
+        The name of the cut that is being created
+    start_time : int
+        The start time of the cut in the video in seconds
+    end_time : int
+        The end time of the cut in the video in seconds
+    trick_info : dict
+        A dictionary with all the relavant information about the trick in the cut
+
+    Returns
+    -------
+    dict
+        An updated version of the general JSON file
+    """
     if video_url not in data:
         data[video_url] = {
             cut_name: {
@@ -40,10 +62,33 @@ def update_cuts(data: dict, video_url: str, cut_name: str, start_time: int, end_
     return data
 
 def delete_cuts(data: dict, video_url: str, current_cut: str) -> dict:
+    """Removes an existing cut from the general JSON file
+
+    Parameters
+    ----------
+    data : dict
+        The current state of the JSON file
+    video_url : str
+        The URL of the video being labeled
+    current_cut : str
+        The name of the cut that will be removed
+
+    Returns
+    -------
+    dict
+        An updated version of the JSON file without the cut removed
+    """
     del data[video_url][current_cut]
     return data
 
 def get_cuts_data() -> dict:
+    """Loads the current state of the general JSON file
+
+    Returns
+    -------
+    dict
+        Current state of JSON file
+    """ 
     DIR = "batb11"
     JSON_PATH = f"{DIR}/tricks_cut.json"
     if not os.path.exists(DIR):
@@ -57,6 +102,19 @@ def get_cuts_data() -> dict:
     return data
 
 def parse_video_title(title: str) -> str:
+    """Parses the video title so every video has a standard 
+    title structure.
+
+    Parameters
+    ----------
+    title : str
+        The video title
+
+    Returns
+    -------
+    str
+        Parsed video title
+    """
     paresed_title = ""
     for s in title:
         if s not in string.punctuation:
@@ -64,6 +122,8 @@ def parse_video_title(title: str) -> str:
     return paresed_title.replace(" ", "_")
 
 def initialize_data_dir() -> None:
+    """Initializes all the directories needed if they don't exist
+    """
     if not os.path.exists("data"):
         os.mkdir("data")
     if not os.path.exists("data/videos"):
@@ -75,6 +135,21 @@ def initialize_data_dir() -> None:
         df.to_csv("data/metadata/metadata.csv", index=False)
 
 def update_metadata(video_path: str, video_title: str, video_url: str, trick_interval: list, trick_info: dict) -> None:
+    """Updates/Create metadata about the cuts that were generated.
+
+    Parameters
+    ----------
+    video_path : str
+        The path to the video cut
+    video_title : str
+        The title of the video from where the cut was generated
+    video_url : str
+        The URL of the video
+    trick_interval : list
+        The time interval of the cut in the format: [start, end]
+    trick_info : dict
+        All the relavant information about the trick in the cut
+    """
     df = pd.read_csv("data/metadata/metadata.csv")
     entry = {
         "video_path": video_path,
