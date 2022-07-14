@@ -33,51 +33,11 @@ stance_dropdown = dcc.Dropdown(
     placeholder="Select the stance"
 )
 
-body_rot_type = dcc.Dropdown(
-    id="cut-body-rotation-type",
-    options=[{"label": stance.title(), "value":stance} for stance in ROTATION_TYPE],
-    value=ROTATION_TYPE[0],
-    style={"width": "130px"},
-    placeholder="Body Rotation Type",
-)
-
-body_num_rot = dcc.Dropdown(
-    id="cut-body-rotation-number",
-    options=[{"label":quantity.title(), "value":idx} for idx, quantity in enumerate(NUMBER_ROTATION)],
-    value=0,
-    placeholder="# Body Rot",
-    style={"width": "130px"}
-)
-
-shov_it_type = dcc.Dropdown(
-    id="cut-shov-it-type",
-    options=[{"label": stance.title(), "value":stance} for stance in ROTATION_TYPE],
-    value=ROTATION_TYPE[0],
-    style={"width": "130px"},
-    placeholder="Shov-it Type",
-) 
-
-shov_it_num = dcc.Dropdown(
-    id="cut-shov-it-number",
-    options=[{"label":quantity.title(), "value":idx} for idx, quantity in enumerate(NUMBER_ROTATION)],
-    value=0,
-    placeholder="# Shov-it",
-    style={"width": "130px"}
-)
-flip_type = dcc.Dropdown(
-    id="cut-flip-type",
-    options=[{"label": stance.title(), "value":stance} for stance in FLIP_TYPE],
-    value=FLIP_TYPE[0],
-    style={"width": "130px"},
-    placeholder="Flip Type",
-) 
-
-flip_num = dcc.Dropdown(
-    id="cut-flip-number",
-    options=[{"label": "None", "value": 0}, {"label": "Once", "value": 1}, {"label": "Twice", "value": 2}],
-    value=0,
-    placeholder="# Flip",
-    style={"width": "130px"}
+trick_dropdown = dcc.Dropdown(
+    id="cut-trick",
+    options=[{"label": name.title(), "value": name} for name in TRICK_NAMES.keys()],
+    value=list(TRICK_NAMES.keys())[0],
+    placeholder="Select the Trick"
 )
 
 cut_name = dbc.Input(
@@ -146,19 +106,7 @@ controls = dbc.Col(
                                 [
                                     dbc.Col([dbc.Label("Status"), landed_status_radio]),
                                     dbc.Col([dbc.Label("Stance"), stance_dropdown]),
-                                    dbc.Col([dbc.Label("BRT"), body_rot_type]),
-                                    dbc.Col([dbc.Label("# BRT"), body_num_rot]),
-            
-                                ],
-                                style={"padding": "15px"}
-                            ),
-                            dbc.Row(
-                                [
-                                    dbc.Col([dbc.Label("SIT"), shov_it_type]),
-                                    dbc.Col([dbc.Label("# SI"), shov_it_num]),
-                                    dbc.Col([dbc.Label("Flip Type"), flip_type]),
-                                    dbc.Col([dbc.Label("# Flip"), flip_num]),
-
+                                    dbc.Col([dbc.Label("Trick"), trick_dropdown])
                                 ],
                                 style={"padding": "15px"}
                             ),
@@ -250,12 +198,7 @@ def update_end(n_clicks: int, end_time: float) -> str:
         State("cut-name", "value"), 
         State("cut-landed", "value"),
         State("cut-stance", "value"),
-        State("cut-body-rotation-type", "value"),
-        State("cut-body-rotation-number", "value"),
-        State("cut-shov-it-type", "value"),
-        State("cut-shov-it-number", "value"),
-        State("cut-flip-type", "value"),
-        State("cut-flip-number", "value"),
+        State("cut-trick", "value"),
         State("dd-cut", "value")
     ]
 )
@@ -268,28 +211,17 @@ def make_cut(
     cut_file_name: str,
     landed: bool,
     stance: str,
-    body_rotation_type: str,
-    body_rotation_number: int,
-    shov_it_type: str,
-    shov_it_number: int,
-    flip_type: str,
-    flip_number: int,
+    trick_name: str,
     current_cut: str,
 ) -> list[dict]:
     trigg = dash.callback_context.triggered[0]["prop_id"]
 
     data = utils.get_cuts_data()
+    trick_info = TRICK_NAMES[trick_name].copy()
+    trick_info["landed"] = landed
+    trick_info["stance"] = stance
+    trick_info["trick_name"] = trick_name
     
-    trick_info = {
-        "landed": landed,
-        "stance": stance,
-        "body_rotation_type": body_rotation_type,
-        "body_rotation_number": body_rotation_number,
-        "shov_it_type": shov_it_type,
-        "shov_it_number": shov_it_number,
-        "flip_type": flip_type,
-        "flip_number": flip_number
-    }
     if trigg=="btn-create-cut.n_clicks":
         start = float(start_time.split(":")[-1]) 
         end = float(end_time.split(":")[-1])
