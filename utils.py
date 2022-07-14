@@ -165,3 +165,34 @@ def load_json(path: str) -> dict:
     with open(path, "r") as f:
         val = json.load(f)
     return val
+
+def get_name(data: dict, video_url: str, trick_name: str, landed: str, stance: str) -> str:
+    """Generates a standard name for the cut based on its atributes
+
+    Parameters
+    ----------
+    data : dict
+        The current state of the general JSON file
+    video_url : str
+        The URL of the video being labeled
+    trick_name : str
+        The name of the trick
+    landed : str
+        Wheter or not the trick was landed
+    stance : str
+        The stance of the trick
+
+    Returns
+    -------
+    str
+        The name that will be used for the cut
+    """
+    new_cut_base_name = f"{stance} {trick_name} {'landed' if landed else 'not landed'}"
+    cuts_in_video = data[video_url].copy()
+    counter = 0
+    for cut in cuts_in_video:
+        if new_cut_base_name in cut:
+            counter+=1
+    
+    return f"{new_cut_base_name} {counter+1}"
+    
