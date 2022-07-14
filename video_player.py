@@ -29,7 +29,6 @@ stance_dropdown = dcc.Dropdown(
     id="cut-stance",
     options=[{"label": stance.title(), "value":stance} for stance in STANCES],
     value=STANCES[0],
-    style={"width": "130px"},
     placeholder="Select the stance"
 )
 
@@ -38,12 +37,6 @@ trick_dropdown = dcc.Dropdown(
     options=[{"label": name.title(), "value": name} for name in TRICK_NAMES.keys()],
     value=list(TRICK_NAMES.keys())[0],
     placeholder="Select the Trick"
-)
-
-cut_name = dbc.Input(
-    id="cut-name",
-    placeholder="Cut Name",
-    type="text"
 )
 
 start_btn = dbc.Button(
@@ -101,7 +94,6 @@ controls = dbc.Col(
                 [
                     dbc.CardBody(
                         [
-                            cut_name,
                             dbc.Row(
                                 [
                                     dbc.Col([dbc.Label("Status"), landed_status_radio]),
@@ -195,7 +187,6 @@ def update_end(n_clicks: int, end_time: float) -> str:
     [
         State("btn-set-start", "children"), 
         State("btn-set-end", "children"),
-        State("cut-name", "value"), 
         State("cut-landed", "value"),
         State("cut-stance", "value"),
         State("cut-trick", "value"),
@@ -208,7 +199,6 @@ def make_cut(
     video_url: str,
     start_time: str,
     end_time: str,
-    cut_file_name: str,
     landed: bool,
     stance: str,
     trick_name: str,
@@ -225,7 +215,7 @@ def make_cut(
     if trigg=="btn-create-cut.n_clicks":
         start = float(start_time.split(":")[-1]) 
         end = float(end_time.split(":")[-1])
-        data = utils.update_cuts(data.copy(), video_url, cut_file_name, start, end, trick_info)
+        data = utils.update_cuts(data.copy(), video_url, start, end, trick_info)
     elif trigg=="delete-cut.n_clicks":
         if current_cut is not None:
             data = utils.delete_cuts(data.copy(), video_url, current_cut)
