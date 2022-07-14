@@ -5,6 +5,7 @@ import json
 import pytube as yt
 import pandas as pd
 
+
 def get_videos_url(urls: list) -> dict[str, str]:
     """Get's all URLs for each video in the playlists as well
     with the video's title.
@@ -27,7 +28,7 @@ def get_videos_url(urls: list) -> dict[str, str]:
             data[title] = video_url
     return data
 
-def update_cuts(data: dict, video_url: str, cut_name: str, start_time: int, end_time: int, trick_info: dict) -> dict:
+def update_cuts(data: dict, video_url: str, start_time: int, end_time: int, trick_info: dict) -> dict:
     """Update general JSON file that contains the trick cuts for each video.
 
     Parameters
@@ -36,8 +37,6 @@ def update_cuts(data: dict, video_url: str, cut_name: str, start_time: int, end_
         The actual state of the general JSON file
     video_url : str
         The URL of the current video being labeled
-    cut_name : str
-        The name of the cut that is being created
     start_time : int
         The start time of the cut in the video in seconds
     end_time : int
@@ -50,6 +49,13 @@ def update_cuts(data: dict, video_url: str, cut_name: str, start_time: int, end_
     dict
         An updated version of the general JSON file
     """
+    cut_name = get_cut_name(
+        data=data, 
+        video_url=video_url, 
+        trick_name=trick_info["trick_name"],
+        landed=trick_info["landed"],
+        stance=trick_info["stance"]
+    )
     if video_url not in data:
         data[video_url] = {
             cut_name: {
@@ -166,7 +172,7 @@ def load_json(path: str) -> dict:
         val = json.load(f)
     return val
 
-def get_name(data: dict, video_url: str, trick_name: str, landed: str, stance: str) -> str:
+def get_cut_name(data: dict, video_url: str, trick_name: str, landed: str, stance: str) -> str:
     """Generates a standard name for the cut based on its atributes
 
     Parameters
