@@ -137,7 +137,7 @@ def initialize_data_dir() -> None:
     if not os.path.exists("data/metadata"):
         os.mkdir("data/metadata")
     if not os.path.exists("data/metadata/metadata.csv"):
-        df = pd.DataFrame(columns=["video_path", "video_title", "video_url", "trick_interval", "trick_info"])
+        df = pd.DataFrame(columns=["video_path", "video_title", "video_url", "trick_interval", "trick_name", "trick_info"])
         df.to_csv("data/metadata/metadata.csv", index=False)
 
 def update_metadata(video_path: str, video_title: str, video_url: str, trick_interval: list, trick_info: dict) -> None:
@@ -162,6 +162,7 @@ def update_metadata(video_path: str, video_title: str, video_url: str, trick_int
         "video_title": video_title,
         "video_url": video_url,
         "trick_interval": trick_interval,
+        "trick_name": trick_info["trick_name"],
         "trick_info": trick_info
     }
     df = df.append(entry, ignore_index=True).reset_index(drop=True)
