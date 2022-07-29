@@ -95,7 +95,7 @@ def get_cuts_data() -> dict:
     dict
         Current state of JSON file
     """ 
-    DIR = "batb11"
+    DIR = "data"
     JSON_PATH = f"{DIR}/tricks_cut.json"
     if not os.path.exists(DIR):
         os.mkdir(DIR)
@@ -195,7 +195,7 @@ def get_cut_name(data: dict, video_url: str, trick_name: str, landed: str, stanc
         The name that will be used for the cut
     """
     new_cut_base_name = f"{stance} {trick_name} {'landed' if landed else 'not landed'}"
-    cuts_in_video = data[video_url].copy()
+    cuts_in_video = data.get(video_url, []).copy()
     counter = 0
     for cut in cuts_in_video:
         if new_cut_base_name in cut:
