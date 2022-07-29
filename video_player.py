@@ -220,7 +220,7 @@ def make_cut(
         if current_cut is not None:
             data = utils.delete_cuts(data.copy(), video_url, current_cut)
 
-    with open("batb11/tricks_cut.json", 'w') as f:
+    with open(TRICKS_JSON_PATH, 'w') as f:
         json.dump(data, f)
 
     return [{"label": key, "value":key } for key in data[video_url].keys()] if video_url in data else []
