@@ -3,7 +3,7 @@ import torch
 import torch.nn as nn
 from torchvision import models
 
-from src.modeling.utils import Identity, Classifier
+from models.utils import Identity, Classifier
 
 
 class ResNet18_RNN(nn.Module):
