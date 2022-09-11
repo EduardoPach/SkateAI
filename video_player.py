@@ -203,7 +203,7 @@ def make_cut(
     stance: str,
     trick_name: str,
     current_cut: str,
-) -> list[dict]:
+) -> list:
     trigg = dash.callback_context.triggered[0]["prop_id"]
 
     data = utils.get_cuts_data()

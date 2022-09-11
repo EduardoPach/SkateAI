@@ -6,7 +6,7 @@ import pytube as yt
 import pandas as pd
 
 
-def get_videos_url(urls: list) -> dict[str, str]:
+def get_videos_url(urls: list) -> dict:
     """Get's all URLs for each video in the playlists as well
     with the video's title.
 
