@@ -2,11 +2,16 @@ import os
 
 import utils
 
-VIDEO_PATH = utils.get_videos_url(["https://www.youtube.com/playlist?list=PLmxvVi4Ors7aqc726ngHq1SwTrBGPjCSN"]) 
 STANCES = ["regular", "switch", "fakie", "nollie"]
 ROTATION_TYPE = ["none", "backside", "frontside"]
 FLIP_TYPE = ["none", "kickflip", "heelflip"]
 NUMBER_ROTATION = ["none", "once", "twice", "thrice"]
-TRICK_DATA = utils.get_cuts_data()
-TRICK_NAMES = utils.load_json("data/TRICK_NAMES.json")
+DEFAULT_SOURCE = "BATB 11"
+VIDEO_SOURCES_PATH = "labeling_tool/videos_sources.json"
+DATA_DIR_PATH = "data"
+TRICK_NAMES_PATH = "data/TRICK_NAMES.json"
 TRICKS_JSON_PATH = "data/tricks_cut.json"
+
+TRICK_DATA = utils.get_cuts_data()
+TRICK_NAMES = utils.load_json(TRICK_NAMES_PATH)
+VIDEO_SOURCES = utils.load_json(VIDEO_SOURCES_PATH) 

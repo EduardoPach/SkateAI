@@ -5,14 +5,16 @@ import json
 import pytube as yt
 import pandas as pd
 
+import const
 
-def get_videos_url(urls: list) -> dict:
-    """Get's all URLs for each video in the playlists as well
+
+def get_videos_url(url: str) -> dict:
+    """Get's all URLs for each video in the playlist as well
     with the video's title.
 
     Parameters
     ----------
-    urls : list
+    urls : str
         A list containing URLs of playlists
 
     Returns
@@ -22,10 +24,9 @@ def get_videos_url(urls: list) -> dict:
         and their URLs as values.
     """
     data = {}
-    for url in urls:
-        playlist = yt.Playlist(url)
-        for title, video_url in zip([video.title for video in playlist.videos],playlist.video_urls):
-            data[title] = video_url
+    playlist = yt.Playlist(url)
+    for title, video_url in zip([video.title for video in playlist.videos],playlist.video_urls):
+        data[title] = video_url
     return data
 
 def update_cuts(data: dict, video_url: str, start_time: int, end_time: int, trick_info: dict) -> dict:
@@ -95,16 +96,13 @@ def get_cuts_data() -> dict:
     dict
         Current state of JSON file
     """ 
-    DIR = "data"
-    JSON_PATH = f"{DIR}/tricks_cut.json"
-    if not os.path.exists(DIR):
-        os.mkdir(DIR)
+    if not os.path.exists(const.TRICKS_JSON_PATH):
+        os.mkdir(const.DATA_DIR_PATH)
 
-    if not os.path.exists(JSON_PATH):
+    if not os.path.exists(const.TRICKS_JSON_PATH):
         data = {}
     else:
-        with open(JSON_PATH, 'r') as f:
-            data = json.load(f)
+        data = load_json(const.TRICKS_JSON_PATH)
     return data
 
 def parse_video_title(title: str) -> str:

@@ -1,4 +1,5 @@
 import json
+from optparse import Values
 
 import dash_player
 from dash import html, dcc
@@ -11,10 +12,16 @@ import const
 import utils
 
 
+videos_play_list = dcc.Dropdown(
+    id="playlist_url",
+    options=[{"label": title, "value": url} for title, url in const.VIDEO_SOURCES.items()],
+    value=const.VIDEO_SOURCES[const.DEFAULT_SOURCE],
+    placeholder="Select the Source",
+    style={"margin-top": "10px"},
+)
+
 video_drop_down = dcc.Dropdown(
     id="dd-my-videos",
-    options=[{"label": title, "value": url} for title, url in const.VIDEO_PATH.items()],
-    value=list(const.VIDEO_PATH.values())[0],
     style={"margin-top": "10px"},
     placeholder="Select Video"
 )
@@ -89,7 +96,15 @@ cut_dropdown = dcc.Dropdown(
 
 controls = dbc.Col(
     [
-        video_drop_down,
+        dbc.Col(
+            dbc.Row(
+                [
+                    dbc.Col(videos_play_list), 
+                    dbc.Col(video_drop_down)
+                ],
+                style={"padding": "15px"}
+            )
+        ),
         dbc.Collapse(
             dbc.Card(
                 [
@@ -145,6 +160,16 @@ controls = dbc.Col(
 )
 
 
+@app.callback(
+    Output("dd-my-videos", "options"),
+    [Input("playlist_url", "value")]
+)
+def select_source_videos(playlist_url: str) -> dict:
+    if not playlist_url:
+        return {}
+    video_options = utils.get_videos_url(playlist_url)
+    return [{"label": title, "value": url} for title, url in video_options.items()]
+    
 
 @app.callback(
     Output("collapse", "is_open"),
