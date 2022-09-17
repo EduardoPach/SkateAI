@@ -6,7 +6,9 @@ import dash
 from dash.dependencies import Input, Output, State
 import dash_bootstrap_components as dbc
 
-from labeling_tool import const, app, utils
+from app import app 
+import const
+import utils
 
 
 video_drop_down = dcc.Dropdown(
