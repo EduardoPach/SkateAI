@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pandas = "*"
+numpy = "*"
+torch = "*"
+opencv-python = "*"
+torchvision = "*"
+
+[dev-packages]
+jupyter = "*"
+dash-bootstrap-components = "*"
+dash = "*"
+dash-player = "*"
+pytube = "*"
+moviepy = "*"
+wandb = "*"
+
+[requires]
+python_version = "3.8"
