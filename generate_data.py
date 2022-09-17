@@ -28,7 +28,7 @@ def main() -> None:
                 continue
 
             for cut_name, cut_info in cuts.items():
-                if not os.path.exists(f"path/fullvideo.mp4"):
+                if not os.path.exists(f"{path}/fullvideo.mp4"):
                     print("DOWNLOADING FULL VIDEO: ", end=" ")
                     video.streams.filter(res="720p", file_extension='mp4', type="video", only_video=True)[0].download(output_path=path, filename="fullvideo.mp4")
                     print("Success!")

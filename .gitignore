@@ -2,3 +2,4 @@
 skate
 *.pyc
 data/videos
+.*mp4
