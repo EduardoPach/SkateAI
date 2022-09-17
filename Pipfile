@@ -9,6 +9,7 @@ numpy = "*"
 torch = "*"
 opencv-python = "*"
 torchvision = "*"
+matplotlib = "*"
 
 [dev-packages]
 jupyter = "*"
