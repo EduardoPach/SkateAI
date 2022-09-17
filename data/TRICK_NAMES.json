@@ -1,1 +1,466 @@
-{"kickflip": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "none", "board_rotation_number": 0, "flip_type": "kickflip", "flip_number": 1}, "double kickflip": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "none", "board_rotation_number": 0, "flip_type": "kickflip", "flip_number": 2}, "triple kickflip": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "none", "board_rotation_number": 0, "flip_type": "kickflip", "flip_number": 3}, "fs 180 kickflip": {"body_rotation_type": "frontside", "body_rotation_number": 1, "board_rotation_type": "frontside", "board_rotation_number": 1, "flip_type": "kickflip", "flip_number": 1}, "bs 180 kickflip": {"body_rotation_type": "backside", "body_rotation_number": 1, "board_rotation_type": "backside", "board_rotation_number": 1, "flip_type": "kickflip", "flip_number": 1}, "fs 360 kickflip": {"body_rotation_type": "frontside", "body_rotation_number": 2, "board_rotation_type": "frontside", "board_rotation_number": 2, "flip_type": "kickflip", "flip_number": 1}, "bs 360 kickflip": {"body_rotation_type": "backside", "body_rotation_number": 2, "board_rotation_type": "backside", "board_rotation_number": 2, "flip_type": "kickflip", "flip_number": 1}, "fs 180 double kickflip": {"body_rotation_type": "frontside", "body_rotation_number": 1, "board_rotation_type": "frontside", "board_rotation_number": 1, "flip_type": "kickflip", "flip_number": 2}, "bs 180 double kickflip": {"body_rotation_type": "backside", "body_rotation_number": 1, "board_rotation_type": "backside", "board_rotation_number": 1, "flip_type": "kickflip", "flip_number": 2}, "fs 360 double kickflip": {"body_rotation_type": "frontside", "body_rotation_number": 2, "board_rotation_type": "frontside", "board_rotation_number": 2, "flip_type": "kickflip", "flip_number": 2}, "bs 360 double kickflip": {"body_rotation_type": "backside", "body_rotation_number": 2, "board_rotation_type": "backside", "board_rotation_number": 2, "flip_type": "kickflip", "flip_number": 2}, "heelflip": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "none", "board_rotation_number": 0, "flip_type": "heelflip", "flip_number": 1}, "double heelflip": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "none", "board_rotation_number": 0, "flip_type": "heelflip", "flip_number": 2}, "triple heelflip": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "none", "board_rotation_number": 0, "flip_type": "heelflip", "flip_number": 3}, "fs 180 heelflip": {"body_rotation_type": "frontside", "body_rotation_number": 1, "board_rotation_type": "frontside", "board_rotation_number": 1, "flip_type": "heelflip", "flip_number": 1}, "bs 180 heelflip": {"body_rotation_type": "backside", "body_rotation_number": 1, "board_rotation_type": "backside", "board_rotation_number": 1, "flip_type": "heelflip", "flip_number": 1}, "fs 360 heelflip": {"body_rotation_type": "frontside", "body_rotation_number": 2, "board_rotation_type": "frontside", "board_rotation_number": 2, "flip_type": "heelflip", "flip_number": 1}, "bs 360 heelflip": {"body_rotation_type": "backside", "body_rotation_number": 2, "board_rotation_type": "backside", "board_rotation_number": 2, "flip_type": "heelflip", "flip_number": 1}, "fs 180 double heelflip": {"body_rotation_type": "frontside", "body_rotation_number": 1, "board_rotation_type": "frontside", "board_rotation_number": 1, "flip_type": "heelflip", "flip_number": 2}, "bs 180 double heelflip": {"body_rotation_type": "backside", "body_rotation_number": 1, "board_rotation_type": "backside", "board_rotation_number": 1, "flip_type": "heelflip", "flip_number": 2}, "fs 360 double heelflip": {"body_rotation_type": "frontside", "body_rotation_number": 2, "board_rotation_type": "frontside", "board_rotation_number": 2, "flip_type": "heelflip", "flip_number": 2}, "bs 360 double heelflip": {"body_rotation_type": "backside", "body_rotation_number": 2, "board_rotation_type": "backside", "board_rotation_number": 2, "flip_type": "heelflip", "flip_number": 2}, "treflip": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "backside", "board_rotation_number": 2, "flip_type": "kickflip", "flip_number": 1}, "tre double flip": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "backside", "board_rotation_number": 2, "flip_type": "kickflip", "flip_number": 2}, "hardflip": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "frontside", "board_rotation_number": 1, "flip_type": "kickflip", "flip_number": 1}, "360 hardflip": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "frontside", "board_rotation_number": 2, "flip_type": "kickflip", "flip_number": 1}, "varial flip": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "backside", "board_rotation_number": 1, "flip_type": "kickflip", "flip_number": 1}, "varial double flip": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "backside", "board_rotation_number": 1, "flip_type": "kickflip", "flip_number": 2}, "hard double flip": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "frontside", "board_rotation_number": 1, "flip_type": "kickflip", "flip_number": 2}, "bigflip": {"body_rotation_type": "backside", "body_rotation_number": 1, "board_rotation_type": "backside", "board_rotation_number": 2, "flip_type": "kickflip", "flip_number": 1}, "bigspin double flip": {"body_rotation_type": "backside", "body_rotation_number": 1, "board_rotation_type": "backside", "board_rotation_number": 2, "flip_type": "kickflip", "flip_number": 2}, "biggerflip": {"body_rotation_type": "backside", "body_rotation_number": 1, "board_rotation_type": "backside", "board_rotation_number": 3, "flip_type": "kickflip", "flip_number": 1}, "gazzele flip": {"body_rotation_type": "backside", "body_rotation_number": 2, "board_rotation_type": "backside", "board_rotation_number": 3, "flip_type": "kickflip", "flip_number": 1}, "bigspin hardflip": {"body_rotation_type": "frontside", "body_rotation_number": 1, "board_rotation_type": "frontside", "board_rotation_number": 2, "flip_type": "kickflip", "flip_number": 1}, "laserflip": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "frontside", "board_rotation_number": 2, "flip_type": "heelflip", "flip_number": 1}, "inward heel": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "backside", "board_rotation_number": 1, "flip_type": "heelflip", "flip_number": 1}, "varial heel": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "frontside", "board_rotation_number": 1, "flip_type": "heelflip", "flip_number": 1}, "varial double heel": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "frontside", "board_rotation_number": 1, "flip_type": "heelflip", "flip_number": 2}, "360 inward heel": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "backside", "board_rotation_number": 2, "flip_type": "heelflip", "flip_number": 1}, "bigspin inward heel": {"body_rotation_type": "backside", "body_rotation_number": 1, "board_rotation_type": "backside", "board_rotation_number": 2, "flip_type": "heelflip", "flip_number": 1}, "bigheel": {"body_rotation_type": "frontside", "body_rotation_number": 1, "board_rotation_type": "frontside", "board_rotation_number": 2, "flip_type": "heelflip", "flip_number": 1}, "fs shovit": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "frontside", "board_rotation_number": 1, "flip_type": "none", "flip_number": 0}, "fs 360 shovit": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "frontside", "board_rotation_number": 2, "flip_type": "none", "flip_number": 0}, "fs 540 shovit": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "frontside", "board_rotation_number": 3, "flip_type": "none", "flip_number": 0}, "shovit": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "backside", "board_rotation_number": 1, "flip_type": "none", "flip_number": 0}, "360 shovit": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "backside", "board_rotation_number": 2, "flip_type": "none", "flip_number": 0}, "540 shovit": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "backside", "board_rotation_number": 3, "flip_type": "none", "flip_number": 0}, "fs bigspin": {"body_rotation_type": "frontside", "body_rotation_number": 1, "board_rotation_type": "frontside", "board_rotation_number": 2, "flip_type": "none", "flip_number": 0}, "fs biggerspin": {"body_rotation_type": "frontside", "body_rotation_number": 1, "board_rotation_type": "frontside", "board_rotation_number": 3, "flip_type": "none", "flip_number": 0}, "bs bigspin": {"body_rotation_type": "backside", "body_rotation_number": 1, "board_rotation_type": "backside", "board_rotation_number": 2, "flip_type": "none", "flip_number": 0}, "bs biggerspin": {"body_rotation_type": "backside", "body_rotation_number": 1, "board_rotation_type": "backside", "board_rotation_number": 3, "flip_type": "none", "flip_number": 0}, "bs gazzele": {"body_rotation_type": "backside", "body_rotation_number": 2, "board_rotation_type": "backside", "board_rotation_number": 3, "flip_type": "none", "flip_number": 0}, "bs 180": {"body_rotation_type": "backside", "body_rotation_number": 1, "board_rotation_type": "backside", "board_rotation_number": 1, "flip_type": "none", "flip_number": 0}, "bs 360": {"body_rotation_type": "backside", "body_rotation_number": 2, "board_rotation_type": "backside", "board_rotation_number": 2, "flip_type": "none", "flip_number": 0}, "bs 540": {"body_rotation_type": "backside", "body_rotation_number": 3, "board_rotation_type": "backside", "board_rotation_number": 3, "flip_type": "none", "flip_number": 0}, "fs 180": {"body_rotation_type": "frontside", "body_rotation_number": 1, "board_rotation_type": "frontside", "board_rotation_number": 1, "flip_type": "none", "flip_number": 0}, "fs 360": {"body_rotation_type": "frontside", "body_rotation_number": 2, "board_rotation_type": "frontside", "board_rotation_number": 2, "flip_type": "none", "flip_number": 0}, "fs 540": {"body_rotation_type": "frontside", "body_rotation_number": 3, "board_rotation_type": "frontside", "board_rotation_number": 3, "flip_type": "none", "flip_number": 0}}
+{
+    "kickflip": {
+        "body_rotation_type": "none",
+        "body_rotation_number": 0,
+        "board_rotation_type": "none",
+        "board_rotation_number": 0,
+        "flip_type": "kickflip",
+        "flip_number": 1
+    },
+    "double kickflip": {
+        "body_rotation_type": "none",
+        "body_rotation_number": 0,
+        "board_rotation_type": "none",
+        "board_rotation_number": 0,
+        "flip_type": "kickflip",
+        "flip_number": 2
+    },
+    "triple kickflip": {
+        "body_rotation_type": "none",
+        "body_rotation_number": 0,
+        "board_rotation_type": "none",
+        "board_rotation_number": 0,
+        "flip_type": "kickflip",
+        "flip_number": 3
+    },
+    "fs 180 kickflip": {
+        "body_rotation_type": "frontside",
+        "body_rotation_number": 1,
+        "board_rotation_type": "frontside",
+        "board_rotation_number": 1,
+        "flip_type": "kickflip",
+        "flip_number": 1
+    },
+    "bs 180 kickflip": {
+        "body_rotation_type": "backside",
+        "body_rotation_number": 1,
+        "board_rotation_type": "backside",
+        "board_rotation_number": 1,
+        "flip_type": "kickflip",
+        "flip_number": 1
+    },
+    "fs 360 kickflip": {
+        "body_rotation_type": "frontside",
+        "body_rotation_number": 2,
+        "board_rotation_type": "frontside",
+        "board_rotation_number": 2,
+        "flip_type": "kickflip",
+        "flip_number": 1
+    },
+    "bs 360 kickflip": {
+        "body_rotation_type": "backside",
+        "body_rotation_number": 2,
+        "board_rotation_type": "backside",
+        "board_rotation_number": 2,
+        "flip_type": "kickflip",
+        "flip_number": 1
+    },
+    "fs 180 double kickflip": {
+        "body_rotation_type": "frontside",
+        "body_rotation_number": 1,
+        "board_rotation_type": "frontside",
+        "board_rotation_number": 1,
+        "flip_type": "kickflip",
+        "flip_number": 2
+    },
+    "bs 180 double kickflip": {
+        "body_rotation_type": "backside",
+        "body_rotation_number": 1,
+        "board_rotation_type": "backside",
+        "board_rotation_number": 1,
+        "flip_type": "kickflip",
+        "flip_number": 2
+    },
+    "fs 360 double kickflip": {
+        "body_rotation_type": "frontside",
+        "body_rotation_number": 2,
+        "board_rotation_type": "frontside",
+        "board_rotation_number": 2,
+        "flip_type": "kickflip",
+        "flip_number": 2
+    },
+    "bs 360 double kickflip": {
+        "body_rotation_type": "backside",
+        "body_rotation_number": 2,
+        "board_rotation_type": "backside",
+        "board_rotation_number": 2,
+        "flip_type": "kickflip",
+        "flip_number": 2
+    },
+    "heelflip": {
+        "body_rotation_type": "none",
+        "body_rotation_number": 0,
+        "board_rotation_type": "none",
+        "board_rotation_number": 0,
+        "flip_type": "heelflip",
+        "flip_number": 1
+    },
+    "double heelflip": {
+        "body_rotation_type": "none",
+        "body_rotation_number": 0,
+        "board_rotation_type": "none",
+        "board_rotation_number": 0,
+        "flip_type": "heelflip",
+        "flip_number": 2
+    },
+    "triple heelflip": {
+        "body_rotation_type": "none",
+        "body_rotation_number": 0,
+        "board_rotation_type": "none",
+        "board_rotation_number": 0,
+        "flip_type": "heelflip",
+        "flip_number": 3
+    },
+    "fs 180 heelflip": {
+        "body_rotation_type": "frontside",
+        "body_rotation_number": 1,
+        "board_rotation_type": "frontside",
+        "board_rotation_number": 1,
+        "flip_type": "heelflip",
+        "flip_number": 1
+    },
+    "bs 180 heelflip": {
+        "body_rotation_type": "backside",
+        "body_rotation_number": 1,
+        "board_rotation_type": "backside",
+        "board_rotation_number": 1,
+        "flip_type": "heelflip",
+        "flip_number": 1
+    },
+    "fs 360 heelflip": {
+        "body_rotation_type": "frontside",
+        "body_rotation_number": 2,
+        "board_rotation_type": "frontside",
+        "board_rotation_number": 2,
+        "flip_type": "heelflip",
+        "flip_number": 1
+    },
+    "bs 360 heelflip": {
+        "body_rotation_type": "backside",
+        "body_rotation_number": 2,
+        "board_rotation_type": "backside",
+        "board_rotation_number": 2,
+        "flip_type": "heelflip",
+        "flip_number": 1
+    },
+    "fs 180 double heelflip": {
+        "body_rotation_type": "frontside",
+        "body_rotation_number": 1,
+        "board_rotation_type": "frontside",
+        "board_rotation_number": 1,
+        "flip_type": "heelflip",
+        "flip_number": 2
+    },
+    "bs 180 double heelflip": {
+        "body_rotation_type": "backside",
+        "body_rotation_number": 1,
+        "board_rotation_type": "backside",
+        "board_rotation_number": 1,
+        "flip_type": "heelflip",
+        "flip_number": 2
+    },
+    "fs 360 double heelflip": {
+        "body_rotation_type": "frontside",
+        "body_rotation_number": 2,
+        "board_rotation_type": "frontside",
+        "board_rotation_number": 2,
+        "flip_type": "heelflip",
+        "flip_number": 2
+    },
+    "bs 360 double heelflip": {
+        "body_rotation_type": "backside",
+        "body_rotation_number": 2,
+        "board_rotation_type": "backside",
+        "board_rotation_number": 2,
+        "flip_type": "heelflip",
+        "flip_number": 2
+    },
+    "treflip": {
+        "body_rotation_type": "none",
+        "body_rotation_number": 0,
+        "board_rotation_type": "backside",
+        "board_rotation_number": 2,
+        "flip_type": "kickflip",
+        "flip_number": 1
+    },
+    "tre double flip": {
+        "body_rotation_type": "none",
+        "body_rotation_number": 0,
+        "board_rotation_type": "backside",
+        "board_rotation_number": 2,
+        "flip_type": "kickflip",
+        "flip_number": 2
+    },
+    "hardflip": {
+        "body_rotation_type": "none",
+        "body_rotation_number": 0,
+        "board_rotation_type": "frontside",
+        "board_rotation_number": 1,
+        "flip_type": "kickflip",
+        "flip_number": 1
+    },
+    "360 hardflip": {
+        "body_rotation_type": "none",
+        "body_rotation_number": 0,
+        "board_rotation_type": "frontside",
+        "board_rotation_number": 2,
+        "flip_type": "kickflip",
+        "flip_number": 1
+    },
+    "varial flip": {
+        "body_rotation_type": "none",
+        "body_rotation_number": 0,
+        "board_rotation_type": "backside",
+        "board_rotation_number": 1,
+        "flip_type": "kickflip",
+        "flip_number": 1
+    },
+    "varial double flip": {
+        "body_rotation_type": "none",
+        "body_rotation_number": 0,
+        "board_rotation_type": "backside",
+        "board_rotation_number": 1,
+        "flip_type": "kickflip",
+        "flip_number": 2
+    },
+    "hard double flip": {
+        "body_rotation_type": "none",
+        "body_rotation_number": 0,
+        "board_rotation_type": "frontside",
+        "board_rotation_number": 1,
+        "flip_type": "kickflip",
+        "flip_number": 2
+    },
+    "bigflip": {
+        "body_rotation_type": "backside",
+        "body_rotation_number": 1,
+        "board_rotation_type": "backside",
+        "board_rotation_number": 2,
+        "flip_type": "kickflip",
+        "flip_number": 1
+    },
+    "bigspin double flip": {
+        "body_rotation_type": "backside",
+        "body_rotation_number": 1,
+        "board_rotation_type": "backside",
+        "board_rotation_number": 2,
+        "flip_type": "kickflip",
+        "flip_number": 2
+    },
+    "biggerflip": {
+        "body_rotation_type": "backside",
+        "body_rotation_number": 1,
+        "board_rotation_type": "backside",
+        "board_rotation_number": 3,
+        "flip_type": "kickflip",
+        "flip_number": 1
+    },
+    "gazzele flip": {
+        "body_rotation_type": "backside",
+        "body_rotation_number": 2,
+        "board_rotation_type": "backside",
+        "board_rotation_number": 3,
+        "flip_type": "kickflip",
+        "flip_number": 1
+    },
+    "bigspin hardflip": {
+        "body_rotation_type": "frontside",
+        "body_rotation_number": 1,
+        "board_rotation_type": "frontside",
+        "board_rotation_number": 2,
+        "flip_type": "kickflip",
+        "flip_number": 1
+    },
+    "laserflip": {
+        "body_rotation_type": "none",
+        "body_rotation_number": 0,
+        "board_rotation_type": "frontside",
+        "board_rotation_number": 2,
+        "flip_type": "heelflip",
+        "flip_number": 1
+    },
+    "inward heel": {
+        "body_rotation_type": "none",
+        "body_rotation_number": 0,
+        "board_rotation_type": "backside",
+        "board_rotation_number": 1,
+        "flip_type": "heelflip",
+        "flip_number": 1
+    },
+    "varial heel": {
+        "body_rotation_type": "none",
+        "body_rotation_number": 0,
+        "board_rotation_type": "frontside",
+        "board_rotation_number": 1,
+        "flip_type": "heelflip",
+        "flip_number": 1
+    },
+    "varial double heel": {
+        "body_rotation_type": "none",
+        "body_rotation_number": 0,
+        "board_rotation_type": "frontside",
+        "board_rotation_number": 1,
+        "flip_type": "heelflip",
+        "flip_number": 2
+    },
+    "360 inward heel": {
+        "body_rotation_type": "none",
+        "body_rotation_number": 0,
+        "board_rotation_type": "backside",
+        "board_rotation_number": 2,
+        "flip_type": "heelflip",
+        "flip_number": 1
+    },
+    "bigspin inward heel": {
+        "body_rotation_type": "backside",
+        "body_rotation_number": 1,
+        "board_rotation_type": "backside",
+        "board_rotation_number": 2,
+        "flip_type": "heelflip",
+        "flip_number": 1
+    },
+    "bigheel": {
+        "body_rotation_type": "frontside",
+        "body_rotation_number": 1,
+        "board_rotation_type": "frontside",
+        "board_rotation_number": 2,
+        "flip_type": "heelflip",
+        "flip_number": 1
+    },
+    "fs shovit": {
+        "body_rotation_type": "none",
+        "body_rotation_number": 0,
+        "board_rotation_type": "frontside",
+        "board_rotation_number": 1,
+        "flip_type": "none",
+        "flip_number": 0
+    },
+    "fs 360 shovit": {
+        "body_rotation_type": "none",
+        "body_rotation_number": 0,
+        "board_rotation_type": "frontside",
+        "board_rotation_number": 2,
+        "flip_type": "none",
+        "flip_number": 0
+    },
+    "fs 540 shovit": {
+        "body_rotation_type": "none",
+        "body_rotation_number": 0,
+        "board_rotation_type": "frontside",
+        "board_rotation_number": 3,
+        "flip_type": "none",
+        "flip_number": 0
+    },
+    "shovit": {
+        "body_rotation_type": "none",
+        "body_rotation_number": 0,
+        "board_rotation_type": "backside",
+        "board_rotation_number": 1,
+        "flip_type": "none",
+        "flip_number": 0
+    },
+    "360 shovit": {
+        "body_rotation_type": "none",
+        "body_rotation_number": 0,
+        "board_rotation_type": "backside",
+        "board_rotation_number": 2,
+        "flip_type": "none",
+        "flip_number": 0
+    },
+    "540 shovit": {
+        "body_rotation_type": "none",
+        "body_rotation_number": 0,
+        "board_rotation_type": "backside",
+        "board_rotation_number": 3,
+        "flip_type": "none",
+        "flip_number": 0
+    },
+    "fs bigspin": {
+        "body_rotation_type": "frontside",
+        "body_rotation_number": 1,
+        "board_rotation_type": "frontside",
+        "board_rotation_number": 2,
+        "flip_type": "none",
+        "flip_number": 0
+    },
+    "fs biggerspin": {
+        "body_rotation_type": "frontside",
+        "body_rotation_number": 1,
+        "board_rotation_type": "frontside",
+        "board_rotation_number": 3,
+        "flip_type": "none",
+        "flip_number": 0
+    },
+    "bs bigspin": {
+        "body_rotation_type": "backside",
+        "body_rotation_number": 1,
+        "board_rotation_type": "backside",
+        "board_rotation_number": 2,
+        "flip_type": "none",
+        "flip_number": 0
+    },
+    "bs biggerspin": {
+        "body_rotation_type": "backside",
+        "body_rotation_number": 1,
+        "board_rotation_type": "backside",
+        "board_rotation_number": 3,
+        "flip_type": "none",
+        "flip_number": 0
+    },
+    "bs gazzele": {
+        "body_rotation_type": "backside",
+        "body_rotation_number": 2,
+        "board_rotation_type": "backside",
+        "board_rotation_number": 3,
+        "flip_type": "none",
+        "flip_number": 0
+    },
+    "bs 180": {
+        "body_rotation_type": "backside",
+        "body_rotation_number": 1,
+        "board_rotation_type": "backside",
+        "board_rotation_number": 1,
+        "flip_type": "none",
+        "flip_number": 0
+    },
+    "bs 360": {
+        "body_rotation_type": "backside",
+        "body_rotation_number": 2,
+        "board_rotation_type": "backside",
+        "board_rotation_number": 2,
+        "flip_type": "none",
+        "flip_number": 0
+    },
+    "bs 540": {
+        "body_rotation_type": "backside",
+        "body_rotation_number": 3,
+        "board_rotation_type": "backside",
+        "board_rotation_number": 3,
+        "flip_type": "none",
+        "flip_number": 0
+    },
+    "fs 180": {
+        "body_rotation_type": "frontside",
+        "body_rotation_number": 1,
+        "board_rotation_type": "frontside",
+        "board_rotation_number": 1,
+        "flip_type": "none",
+        "flip_number": 0
+    },
+    "fs 360": {
+        "body_rotation_type": "frontside",
+        "body_rotation_number": 2,
+        "board_rotation_type": "frontside",
+        "board_rotation_number": 2,
+        "flip_type": "none",
+        "flip_number": 0
+    },
+    "fs 540": {
+        "body_rotation_type": "frontside",
+        "body_rotation_number": 3,
+        "board_rotation_type": "frontside",
+        "board_rotation_number": 3,
+        "flip_type": "none",
+        "flip_number": 0
+    }
+}
