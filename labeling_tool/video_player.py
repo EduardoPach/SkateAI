@@ -6,14 +6,13 @@ import dash
 from dash.dependencies import Input, Output, State
 import dash_bootstrap_components as dbc
 
-from app import app 
-from globals import *
+from labeling_tool import const, app, utils
 
 
 video_drop_down = dcc.Dropdown(
     id="dd-my-videos",
-    options=[{"label": title, "value": url} for title, url in VIDEO_PATH.items()],
-    value=list(VIDEO_PATH.values())[0],
+    options=[{"label": title, "value": url} for title, url in const.VIDEO_PATH.items()],
+    value=list(const.VIDEO_PATH.values())[0],
     style={"margin-top": "10px"},
     placeholder="Select Video"
 )
@@ -27,15 +26,15 @@ landed_status_radio = dcc.RadioItems(
 
 stance_dropdown = dcc.Dropdown(
     id="cut-stance",
-    options=[{"label": stance.title(), "value":stance} for stance in STANCES],
-    value=STANCES[0],
+    options=[{"label": stance.title(), "value":stance} for stance in const.STANCES],
+    value=const.STANCES[0],
     placeholder="Select the stance"
 )
 
 trick_dropdown = dcc.Dropdown(
     id="cut-trick",
-    options=[{"label": name.title(), "value": name} for name in TRICK_NAMES.keys()],
-    value=list(TRICK_NAMES.keys())[0],
+    options=[{"label": name.title(), "value": name} for name in const.TRICK_NAMES.keys()],
+    value=list(const.TRICK_NAMES.keys())[0],
     placeholder="Select the Trick"
 )
 
@@ -207,7 +206,7 @@ def make_cut(
     trigg = dash.callback_context.triggered[0]["prop_id"]
 
     data = utils.get_cuts_data()
-    trick_info = TRICK_NAMES[trick_name].copy()
+    trick_info = const.TRICK_NAMES[trick_name].copy()
     trick_info["landed"] = landed
     trick_info["stance"] = stance
     trick_info["trick_name"] = trick_name
@@ -220,7 +219,7 @@ def make_cut(
         if current_cut is not None:
             data = utils.delete_cuts(data.copy(), video_url, current_cut)
 
-    with open(TRICKS_JSON_PATH, 'w') as f:
+    with open(const.TRICKS_JSON_PATH, 'w') as f:
         json.dump(data, f)
 
     return [{"label": key, "value":key } for key in data[video_url].keys()] if video_url in data else []
