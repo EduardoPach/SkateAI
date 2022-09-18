@@ -3,8 +3,6 @@ import argparse
 
 import pytube as yt
 import moviepy.editor as mo
-from tqdm import tqdm
-import pandas as pd
 
 import const
 import utils

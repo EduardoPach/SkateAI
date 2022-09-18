@@ -3,12 +3,17 @@ from pathlib import Path
 
 import utils
 
+DEFAULT_SOURCE = "BATB 11"
 STANCES = ["regular", "switch", "fakie", "nollie"]
 ROTATION_TYPE = ["none", "backside", "frontside"]
 FLIP_TYPE = ["none", "kickflip", "heelflip"]
-NUMBER_ROTATION = ["none", "once", "twice", "thrice"]
+CATEGORICAL_ENCODER = {
+    "body_rotation_type": {"none": 0, "backside": 1, "frontside": 2},
+    "board_rotation_type": {"none": 0, "backside": 1, "frontside": 2},
+    "flip_type": {"none": 0, "kickflip": 1, "heelflip": 2},
+    "stance": {"regular": 0, "fakie": 1, "switch": 2, "nollie": 3}
+}
 
-DEFAULT_SOURCE = "BATB 11"
 METADATA_COLS = [
     "video_path", 
     "video_title", 

@@ -104,7 +104,7 @@ def get_cuts_data() -> dict:
     dict
         Current state of JSON file
     """ 
-    if not os.path.exists(const.TRICKS_JSON_PATH):
+    if not os.path.exists(const.DATA_DIR_PATH):
         os.mkdir(const.DATA_DIR_PATH)
 
     if not os.path.exists(const.TRICKS_JSON_PATH):
@@ -174,9 +174,29 @@ def update_metadata(video_path: str, video_title: str, video_url: str, cut_info:
         "trick_interval": cut_info["interval"],
     }
     for key, value in cut_info["trick_info"].items():
+        if key in const.CATEGORICAL_ENCODER:
+            entry[key] = categorical_encoder(key, value)
+            continue
         entry[key] = value
     df = df.append(entry, ignore_index=True).reset_index(drop=True)
-    df.to_csv("data/metadata/metadata.csv", index=False)
+    df.to_csv(const.METADATA_FILE, index=False)
+
+def categorical_encoder(label: str, value: str) -> int:
+    """Encodes the categorical target values.
+
+    Parameters
+    ----------
+    label : str
+        Name of the target variable to be encoded
+    value : str
+        The categorical value for that specific variable
+
+    Returns
+    -------
+    int
+        Encoded representation of the categorical value
+    """
+    return const.CATEGORICAL_ENCODER[label][value]
 
 def load_json(path: str) -> dict:
     with open(path, "r") as f:

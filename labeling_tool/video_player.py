@@ -1,5 +1,4 @@
 import json
-from optparse import Values
 
 import dash_player
 from dash import html, dcc
