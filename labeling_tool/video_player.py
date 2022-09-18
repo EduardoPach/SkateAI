@@ -239,12 +239,12 @@ def make_cut(
     trick_info["landed"] = landed
     trick_info["stance"] = stance
     trick_info["trick_name"] = trick_name
-    trick_info["video_source"] = utils.key_from_value(const.VIDEO_SOURCES, video_source)
+    source = utils.key_from_value(const.VIDEO_SOURCES, video_source)
     
     if trigg=="btn-create-cut.n_clicks":
         start = float(start_time.split(":")[-1]) 
         end = float(end_time.split(":")[-1])
-        data = utils.update_cuts(data.copy(), video_url, start, end, trick_info)
+        data = utils.update_cuts(data.copy(), video_url, start, end, trick_info, source)
     elif trigg=="delete-cut.n_clicks":
         if current_cut is not None:
             data = utils.delete_cuts(data.copy(), video_url, current_cut)

@@ -30,7 +30,7 @@ def get_videos_url(url: str) -> dict:
         data[title] = video_url
     return data
 
-def update_cuts(data: dict, video_url: str, start_time: int, end_time: int, trick_info: dict) -> dict:
+def update_cuts(data: dict, video_url: str, start_time: int, end_time: int, trick_info: dict, source: str) -> dict:
     """Update general JSON file that contains the trick cuts for each video.
 
     Parameters
@@ -45,6 +45,8 @@ def update_cuts(data: dict, video_url: str, start_time: int, end_time: int, tric
         The end time of the cut in the video in seconds
     trick_info : dict
         A dictionary with all the relavant information about the trick in the cut
+    source : str
+        The source of the video
 
     Returns
     -------
@@ -62,11 +64,16 @@ def update_cuts(data: dict, video_url: str, start_time: int, end_time: int, tric
         data[video_url] = {
             cut_name: {
                 "interval": [start_time, end_time],
-                "trick_info": trick_info
+                "video_source": source,
+                "trick_info": trick_info,
             }
         }
     else:
-        data[video_url][cut_name] = {"interval": [start_time, end_time], "trick_info": trick_info}
+        data[video_url][cut_name] = {
+            "interval": [start_time, end_time], 
+            "video_source": source, 
+            "trick_info": trick_info
+        }
     return data
 
 def delete_cuts(data: dict, video_url: str, current_cut: str) -> dict:
@@ -131,15 +138,15 @@ def initialize_data_dir() -> None:
     """
     if not os.path.exists(const.DATA_DIR_PATH):
         os.mkdir(const.DATA_DIR_PATH)
-    if not os.path.exists(const.VIDEOS_LOCAL_PATH):
-        os.mkdir(const.VIDEOS_LOCAL_PATH)
+    if not os.path.exists(const.VIDEOS_DIR):
+        os.mkdir(const.VIDEOS_DIR)
     if not os.path.exists(const.METADATA_DIR):
         os.mkdir(const.METADATA_DIR)
     if not os.path.exists(const.METADATA_FILE):
         df = pd.DataFrame(columns=const.METADATA_COLS)
         df.to_csv(const.METADATA_FILE, index=False)
 
-def update_metadata(video_path: str, video_title: str, video_url: str, trick_interval: list, trick_info: dict) -> None:
+def update_metadata(video_path: str, video_title: str, video_url: str, cut_info: dict) -> None:
     """Updates/Create metadata about the cuts that were generated.
 
     Parameters
@@ -150,20 +157,24 @@ def update_metadata(video_path: str, video_title: str, video_url: str, trick_int
         The title of the video from where the cut was generated
     video_url : str
         The URL of the video
-    trick_interval : list
-        The time interval of the cut in the format: [start, end]
-    trick_info : dict
-        All the relavant information about the trick in the cut
+    cut_info : dict
+        The info about the specific cut with format
+            {
+                "interval": [float, float],
+                "video_source": str,
+                "trick_info": dict[str, Any]
+            }
     """
     df = pd.read_csv("data/metadata/metadata.csv")
     entry = {
         "video_path": video_path,
         "video_title": video_title,
         "video_url": video_url,
-        "trick_interval": trick_interval,
-        "trick_name": trick_info["trick_name"],
-        "trick_info": trick_info
+        "video_source": cut_info["video_source"],
+        "trick_interval": cut_info["interval"],
     }
+    for key, value in cut_info["trick_info"].items():
+        entry[key] = value
     df = df.append(entry, ignore_index=True).reset_index(drop=True)
     df.to_csv("data/metadata/metadata.csv", index=False)
 
