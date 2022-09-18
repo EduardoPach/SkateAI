@@ -216,6 +216,7 @@ def update_end(n_clicks: int, end_time: float) -> str:
         State("cut-landed", "value"),
         State("cut-stance", "value"),
         State("cut-trick", "value"),
+        State("playlist_url", "value"),
         State("dd-cut", "value")
     ]
 )
@@ -228,6 +229,7 @@ def make_cut(
     landed: bool,
     stance: str,
     trick_name: str,
+    video_source: str,
     current_cut: str,
 ) -> list:
     trigg = dash.callback_context.triggered[0]["prop_id"]
@@ -237,6 +239,7 @@ def make_cut(
     trick_info["landed"] = landed
     trick_info["stance"] = stance
     trick_info["trick_name"] = trick_name
+    trick_info["video_source"] = utils.key_from_value(const.VIDEO_SOURCES, video_source)
     
     if trigg=="btn-create-cut.n_clicks":
         start = float(start_time.split(":")[-1]) 
