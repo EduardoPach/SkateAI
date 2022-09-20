@@ -23,4 +23,7 @@ class TricksDataset(Dataset):
         labels = self.metadata.loc[self.metadata["video_path"]==video_path, const.LABELS].to_numpy()
         frames = utils.get_video(video_path)
 
+        if self.transform:
+            frames = self.transform(frames)
+
         return frames, labels
