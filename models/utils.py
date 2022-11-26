@@ -2,9 +2,9 @@ import torch
 import torch.nn as nn
 
 
-class Classifier(nn.Module):
+class Heads(nn.Module):
     def __init__(self, params: dict) -> None:
-        super(Classifier, self).__init__()
+        super(Heads, self).__init__()
 
 class Identity(nn.Module):
     def __init__(self):

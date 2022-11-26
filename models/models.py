@@ -2,11 +2,11 @@ import torch
 import torch.nn as nn
 from torchvision import models
 
-from models.utils import Identity, Classifier
+from models.utils import Identity, Heads
 
 
 class ResNet18_RNN(nn.Module):
-    def __init__(self, rnn_type:str, rnn_layers:int, rnn_hidden_size:int, classifier_params:dict, trainable_backbone:bool) -> None:
+    def __init__(self, rnn_type:str, rnn_layers:int, rnn_hidden_size:int, heads_params:dict, trainable_backbone:bool) -> None:
         super(ResNet18_RNN, self).__init__()
         basemodel = models.resnet18(weights=models.resnet.ResNet18_Weights.DEFAULT)
         if not trainable_backbone:
@@ -18,9 +18,9 @@ class ResNet18_RNN(nn.Module):
         self.basemodel = basemodel
         if rnn_type=="lstm":
             self.rnn = nn.LSTM(num_features, rnn_hidden_size, rnn_layers)
-        else:
+        elif rnn_type=="gru":
             self.rnn = nn.GRU(num_features, rnn_hidden_size, rnn_layers)
-        self.classifier = Classifier(classifier_params)
+        self.heads = Heads(heads_params)
 
     def forward(self, x):
         # Batch x Frames x Channels x Height x Width 
@@ -32,4 +32,4 @@ class ResNet18_RNN(nn.Module):
         for i in range(1, F):
             features = self.basemodel(x[:,i]) # extracted features for basemodel
             output, (h, c) = self.rnn(features.unsqueeze(1), (h, c)) # output, hidden and cell states
-        output = self.classifier()
+        output = self.heads()
