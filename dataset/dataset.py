@@ -1,7 +1,6 @@
 import os
 from pathlib import Path
 
-import cv2
 import pandas as pd
 from torch.utils.data import Dataset
 
@@ -20,7 +19,7 @@ class TricksDataset(Dataset):
     
     def __getitem__(self, index):
         video_path = os.path.join(self.video_dir, self.videos[index])
-        labels = self.metadata.loc[self.metadata["video_path"]==video_path, const.LABELS].to_numpy()
+        labels = self.metadata.loc[self.metadata["video_path"]==video_path, const.LABELS].to_numpy().astype(int)
         frames = utils.get_video(video_path)
 
         if self.transform:
