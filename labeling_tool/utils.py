@@ -133,8 +133,14 @@ def parse_video_title(title: str) -> str:
             paresed_title+=s
     return paresed_title.replace(" ", "_")
 
-def initialize_data_dir() -> None:
+def initialize_data_dir(download_all: bool) -> None:
     """Initializes all the directories needed if they don't exist
+
+    Parameters
+    ----------
+    download_all : bool
+        Whether or not to download all videos. Forces a new metadata
+        csv file to be create.
     """
     if not os.path.exists(const.DATA_DIR_PATH):
         os.mkdir(const.DATA_DIR_PATH)
@@ -142,7 +148,7 @@ def initialize_data_dir() -> None:
         os.mkdir(const.VIDEOS_DIR)
     if not os.path.exists(const.METADATA_DIR):
         os.mkdir(const.METADATA_DIR)
-    if not os.path.exists(const.METADATA_FILE):
+    if download_all or not os.path.exists(const.METADATA_FILE):
         df = pd.DataFrame(columns=const.METADATA_COLS)
         df.to_csv(const.METADATA_FILE, index=False)
 

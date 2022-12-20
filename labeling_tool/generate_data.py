@@ -17,7 +17,7 @@ parser.add_argument(
 )
 
 def main(download_all: bool) -> None:
-    utils.initialize_data_dir()
+    utils.initialize_data_dir(download_all)
     TRICK_CUTS = utils.get_cuts_data() # {"url": "cut_name": {"interval": [start, end], "trick_info": {...}}}
     N_CUTS = sum(len(video_cuts) for video_cuts in TRICK_CUTS.values())
     N_DOWNLOADED_VIDEOS = len(os.listdir(const.VIDEOS_DIR))
