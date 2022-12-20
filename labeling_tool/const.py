@@ -15,7 +15,7 @@ CATEGORICAL_ENCODER = {
 }
 
 METADATA_COLS = [
-    "video_path", 
+    "video_file", 
     "video_title", 
     "video_url",
     "video_source", 
