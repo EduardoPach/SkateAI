@@ -56,7 +56,7 @@ def main(download_all: bool) -> None:
                 clip = f.subclip(*cut_info["interval"])
                 clip.write_videofile(str(video_path))
             
-            utils.update_metadata(video_path, video_title, url, cut_info)
+            utils.update_metadata(video_file, video_title, url, cut_info)
             print("Success!")
         
             counter = counter + 1

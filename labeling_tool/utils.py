@@ -146,13 +146,13 @@ def initialize_data_dir() -> None:
         df = pd.DataFrame(columns=const.METADATA_COLS)
         df.to_csv(const.METADATA_FILE, index=False)
 
-def update_metadata(video_path: str, video_title: str, video_url: str, cut_info: dict) -> None:
+def update_metadata(video_file: str, video_title: str, video_url: str, cut_info: dict) -> None:
     """Updates/Create metadata about the cuts that were generated.
 
     Parameters
     ----------
-    video_path : str
-        The path to the video cut
+    video_file : str
+        The name of the mp4 file to the video cut
     video_title : str
         The title of the video from where the cut was generated
     video_url : str
@@ -167,7 +167,7 @@ def update_metadata(video_path: str, video_title: str, video_url: str, cut_info:
     """
     df = pd.read_csv("data/metadata/metadata.csv")
     entry = {
-        "video_path": video_path,
+        "video_file": video_file,
         "video_title": video_title,
         "video_url": video_url,
         "video_source": cut_info["video_source"],
