@@ -8,18 +8,17 @@ import const
 import utils
 
 class TricksDataset(Dataset):
-    def __init__(self, video_dir: Path, transform: list=None) -> None:
-        self.video_dir = video_dir
-        self.videos = os.listdir(video_dir)
+    def __init__(self, csv_file: Path, root_dir: Path, transform: list=None) -> None:
+        self.video_dir = root_dir
         self.transform = transform
-        self.metadata = pd.read_csv("data/metadata/metadata.csv")
+        self.metadata = pd.read_csv(csv_file)
     
     def __len__(self) -> int:
-        return len(self.videos)
+        return len(self.metadata)
     
     def __getitem__(self, index):
-        video_path = os.path.join(self.video_dir, self.videos[index])
-        labels = self.metadata.loc[self.metadata["video_path"]==video_path, const.LABELS].to_numpy().astype(int)
+        video_path = os.path.join(self.video_dir, self.metadata.iloc[index, 0])
+        labels = self.metadata.loc[self.metadata["video_file"]==video_path, const.LABELS].to_numpy().astype(int)
         frames = utils.get_video(video_path)
 
         if self.transform:
