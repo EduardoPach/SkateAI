@@ -37,7 +37,7 @@ def main(download_all: bool) -> None:
             if not os.path.exists(fullvideo_path):
                 print("DOWNLOADING FULL VIDEO:", end=" ")
                 video.streams.filter(
-                    res="720p",
+                    res="480p",
                     file_extension='mp4',
                     type="video",
                     only_video=True
