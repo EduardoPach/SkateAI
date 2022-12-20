@@ -19,6 +19,7 @@ dash-player = "*"
 pytube = "*"
 moviepy = "*"
 wandb = "*"
+colorama = "*"
 
 [requires]
 python_version = "3.8"

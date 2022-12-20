@@ -1,7 +1,30 @@
 import os 
+import json
 from pathlib import Path
 
-import utils
+
+def get_cuts_data() -> dict:
+    """Loads the current state of the general JSON file
+
+    Returns
+    -------
+    dict
+        Current state of JSON file
+    """ 
+    if not os.path.exists(DATA_DIR_PATH):
+        os.mkdir(DATA_DIR_PATH)
+
+    if not os.path.exists(TRICKS_JSON_PATH):
+        data = {}
+    else:
+        data = load_json(TRICKS_JSON_PATH)
+    return data
+
+def load_json(path: str) -> dict:
+    with open(path, "r") as f:
+        val = json.load(f)
+    return val
+
 
 DEFAULT_SOURCE = "BATB 11"
 STANCES = ["regular", "switch", "fakie", "nollie"]
@@ -39,6 +62,6 @@ TRICK_NAMES_PATH = Path("data/TRICK_NAMES.json")
 METADATA_FILE = Path("data/metadata/metadata.csv")
 VIDEO_SOURCES_PATH = Path("labeling_tool/videos_sources.json")
 
-TRICK_DATA = utils.get_cuts_data()
-TRICK_NAMES = utils.load_json(TRICK_NAMES_PATH)
-VIDEO_SOURCES = utils.load_json(VIDEO_SOURCES_PATH) 
+TRICK_DATA = get_cuts_data()
+TRICK_NAMES = load_json(TRICK_NAMES_PATH)
+VIDEO_SOURCES = load_json(VIDEO_SOURCES_PATH) 
