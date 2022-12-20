@@ -1,17 +1,17 @@
-video_path,video_title,video_url,video_source,trick_interval,trick_name,body_rotation_type,body_rotation_number,board_rotation_type,board_rotation_number,flip_type,flip_number,landed,stance
-data/videos/00001.mp4,BATB 11 | Championship Battle: Luan Oliveira vs. Chris Joslin,https://www.youtube.com/watch?v=sDLIf7JVNnM,BATB 11,"[149.6, 151.9]",treflip,0,0,1,2,1,1,True,0
-data/videos/00002.mp4,BATB 11 | Championship Battle: Luan Oliveira vs. Chris Joslin,https://www.youtube.com/watch?v=sDLIf7JVNnM,BATB 11,"[154.2, 155.1]",treflip,0,0,1,2,1,1,True,0
-data/videos/00003.mp4,BATB 11 | Championship Battle: Luan Oliveira vs. Chris Joslin,https://www.youtube.com/watch?v=sDLIf7JVNnM,BATB 11,"[159.4, 161.2]",kickflip,0,0,0,0,1,1,True,3
-data/videos/00004.mp4,BATB 11 | Championship Battle: Luan Oliveira vs. Chris Joslin,https://www.youtube.com/watch?v=sDLIf7JVNnM,BATB 11,"[163.8, 166.0]",kickflip,0,0,0,0,1,1,True,3
-data/videos/00005.mp4,BATB 11 | 3rd Place Battle: Tom Asta vs. Sewa Kroetkov,https://www.youtube.com/watch?v=A8z4OJByT-w,BATB 11,"[89.9, 91.5]",360 shovit,0,0,1,2,0,0,True,0
-data/videos/00006.mp4,BATB 11 | 3rd Place Battle: Tom Asta vs. Sewa Kroetkov,https://www.youtube.com/watch?v=A8z4OJByT-w,BATB 11,"[94.7, 96.4]",360 shovit,0,0,1,2,0,0,True,0
-data/videos/00007.mp4,BATB 11 | 3rd Place Battle: Tom Asta vs. Sewa Kroetkov,https://www.youtube.com/watch?v=A8z4OJByT-w,BATB 11,"[99.2, 101.2]",fs shovit,0,0,2,1,0,0,True,0
-data/videos/00008.mp4,BATB 11 | 3rd Place Battle: Tom Asta vs. Sewa Kroetkov,https://www.youtube.com/watch?v=A8z4OJByT-w,BATB 11,"[103.3, 105.2]",fs shovit,0,0,2,1,0,0,True,0
-data\videos\00001.mp4,BATB 11 | Championship Battle: Luan Oliveira vs. Chris Joslin,https://www.youtube.com/watch?v=sDLIf7JVNnM,BATB 11,"[149.6, 151.9]",treflip,0,0,1,2,1,1,True,0
-data\videos\00002.mp4,BATB 11 | Championship Battle: Luan Oliveira vs. Chris Joslin,https://www.youtube.com/watch?v=sDLIf7JVNnM,BATB 11,"[154.2, 155.1]",treflip,0,0,1,2,1,1,True,0
-data\videos\00003.mp4,BATB 11 | Championship Battle: Luan Oliveira vs. Chris Joslin,https://www.youtube.com/watch?v=sDLIf7JVNnM,BATB 11,"[159.4, 161.2]",kickflip,0,0,0,0,1,1,True,3
-data\videos\00004.mp4,BATB 11 | Championship Battle: Luan Oliveira vs. Chris Joslin,https://www.youtube.com/watch?v=sDLIf7JVNnM,BATB 11,"[163.8, 166.0]",kickflip,0,0,0,0,1,1,True,3
-data\videos\00005.mp4,BATB 11 | 3rd Place Battle: Tom Asta vs. Sewa Kroetkov,https://www.youtube.com/watch?v=A8z4OJByT-w,BATB 11,"[89.9, 91.5]",360 shovit,0,0,1,2,0,0,True,0
-data\videos\00006.mp4,BATB 11 | 3rd Place Battle: Tom Asta vs. Sewa Kroetkov,https://www.youtube.com/watch?v=A8z4OJByT-w,BATB 11,"[94.7, 96.4]",360 shovit,0,0,1,2,0,0,True,0
-data\videos\00007.mp4,BATB 11 | 3rd Place Battle: Tom Asta vs. Sewa Kroetkov,https://www.youtube.com/watch?v=A8z4OJByT-w,BATB 11,"[99.2, 101.2]",fs shovit,0,0,2,1,0,0,True,0
-data\videos\00008.mp4,BATB 11 | 3rd Place Battle: Tom Asta vs. Sewa Kroetkov,https://www.youtube.com/watch?v=A8z4OJByT-w,BATB 11,"[103.3, 105.2]",fs shovit,0,0,2,1,0,0,True,0
+video_path,video_title,video_url,video_source,trick_interval,trick_name,body_rotation_type,body_rotation_number,board_rotation_type,board_rotation_number,flip_type,flip_number,landed,stance,video_file
+,BATB 11 | Championship Battle: Luan Oliveira vs. Chris Joslin,https://www.youtube.com/watch?v=sDLIf7JVNnM,BATB 11,"[149.6, 151.9]",treflip,0,0,1,2,1,1,True,0,00001.mp4
+,BATB 11 | Championship Battle: Luan Oliveira vs. Chris Joslin,https://www.youtube.com/watch?v=sDLIf7JVNnM,BATB 11,"[154.2, 155.1]",treflip,0,0,1,2,1,1,True,0,00002.mp4
+,BATB 11 | Championship Battle: Luan Oliveira vs. Chris Joslin,https://www.youtube.com/watch?v=sDLIf7JVNnM,BATB 11,"[159.4, 161.2]",kickflip,0,0,0,0,1,1,True,3,00003.mp4
+,BATB 11 | Championship Battle: Luan Oliveira vs. Chris Joslin,https://www.youtube.com/watch?v=sDLIf7JVNnM,BATB 11,"[163.8, 166.0]",kickflip,0,0,0,0,1,1,True,3,00004.mp4
+,BATB 11 | 3rd Place Battle: Tom Asta vs. Sewa Kroetkov,https://www.youtube.com/watch?v=A8z4OJByT-w,BATB 11,"[89.9, 91.5]",360 shovit,0,0,1,2,0,0,True,0,00005.mp4
+,BATB 11 | 3rd Place Battle: Tom Asta vs. Sewa Kroetkov,https://www.youtube.com/watch?v=A8z4OJByT-w,BATB 11,"[94.7, 96.4]",360 shovit,0,0,1,2,0,0,True,0,00006.mp4
+,BATB 11 | 3rd Place Battle: Tom Asta vs. Sewa Kroetkov,https://www.youtube.com/watch?v=A8z4OJByT-w,BATB 11,"[99.2, 101.2]",fs shovit,0,0,2,1,0,0,True,0,00007.mp4
+,BATB 11 | 3rd Place Battle: Tom Asta vs. Sewa Kroetkov,https://www.youtube.com/watch?v=A8z4OJByT-w,BATB 11,"[103.3, 105.2]",fs shovit,0,0,2,1,0,0,True,0,00008.mp4
+,BATB 11 | Championship Battle: Luan Oliveira vs. Chris Joslin,https://www.youtube.com/watch?v=sDLIf7JVNnM,BATB 11,"[149.6, 151.9]",treflip,0,0,1,2,1,1,True,0,00001.mp4
+,BATB 11 | Championship Battle: Luan Oliveira vs. Chris Joslin,https://www.youtube.com/watch?v=sDLIf7JVNnM,BATB 11,"[154.2, 155.1]",treflip,0,0,1,2,1,1,True,0,00002.mp4
+,BATB 11 | Championship Battle: Luan Oliveira vs. Chris Joslin,https://www.youtube.com/watch?v=sDLIf7JVNnM,BATB 11,"[159.4, 161.2]",kickflip,0,0,0,0,1,1,True,3,00003.mp4
+,BATB 11 | Championship Battle: Luan Oliveira vs. Chris Joslin,https://www.youtube.com/watch?v=sDLIf7JVNnM,BATB 11,"[163.8, 166.0]",kickflip,0,0,0,0,1,1,True,3,00004.mp4
+,BATB 11 | 3rd Place Battle: Tom Asta vs. Sewa Kroetkov,https://www.youtube.com/watch?v=A8z4OJByT-w,BATB 11,"[89.9, 91.5]",360 shovit,0,0,1,2,0,0,True,0,00005.mp4
+,BATB 11 | 3rd Place Battle: Tom Asta vs. Sewa Kroetkov,https://www.youtube.com/watch?v=A8z4OJByT-w,BATB 11,"[94.7, 96.4]",360 shovit,0,0,1,2,0,0,True,0,00006.mp4
+,BATB 11 | 3rd Place Battle: Tom Asta vs. Sewa Kroetkov,https://www.youtube.com/watch?v=A8z4OJByT-w,BATB 11,"[99.2, 101.2]",fs shovit,0,0,2,1,0,0,True,0,00007.mp4
+,BATB 11 | 3rd Place Battle: Tom Asta vs. Sewa Kroetkov,https://www.youtube.com/watch?v=A8z4OJByT-w,BATB 11,"[103.3, 105.2]",fs shovit,0,0,2,1,0,0,True,0,00008.mp4
