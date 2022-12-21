@@ -183,7 +183,7 @@ def update_metadata(video_file: str, video_title: str, video_url: str, cut_info:
         if key in const.CATEGORICAL_ENCODER:
             entry[key] = categorical_encoder(key, value)
             continue
-        entry[key] = int(value)
+        entry[key] = value if not isinstance(value, bool) else int(value)
     df = df.append(entry, ignore_index=True).reset_index(drop=True)
     df.to_csv(const.METADATA_FILE, index=False)
 
