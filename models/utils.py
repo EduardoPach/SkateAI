@@ -3,24 +3,30 @@ import torch.nn as nn
 
 
 class Heads(nn.Module):
-    """_summary_
+    """Heads for tricks classification and regression
 
     Parameters
     ----------
     in_features : int
-        _description_
+        Number of features generated from prior layers
     brt : list
-        _description_
+        A list of size hidden layers with number of neurons per layer
+        to predict body rotation type
     brn : list
-        _description_
+        A list of size hidden layers with number of neurons per layer
+        to predict body rotation number
     ft : list
-        _description_
+        A list of size hidden layers with number of neurons per layer
+        to predict flip type
     fn : list
-        _description_
+        A list of size hidden layers with number of neurons per layer
+        to predict number of flips
     landed : list
-        _description_
+        A list of size hidden layers with number of neurons per layer
+        to predict whether or not trick was landed
     stance : list
-        _description_
+        A list of size hidden layers with number of neurons per layer
+        to predict stance
     """
     def __init__(
         self,
@@ -43,15 +49,14 @@ class Heads(nn.Module):
 
     def build_head(self, neurons_list: list, features: int) -> nn.Sequential:
         net = nn.Sequential()
+        net.append(nn.Linear(self.in_features, neurons))
+        net.append(nn.ReLU())
         for idx, neurons in enumerate(neurons_list):
-            if idx==0:
-                net.append(nn.Linear(self.in_features, neurons))
-                net.append(nn.ReLU())
-            elif idx==len(neurons_list):
+            if idx==len(neurons_list):
                 net.append(nn.Linear(neurons, features))
-            else:
-                net.append(nn.Linear(neurons_list[idx-1], neurons))
-                net.append(nn.ReLU())
+                continue
+            net.append(nn.Linear(neurons, neurons_list[idx+1]))
+            net.append(nn.ReLU())
         
         return net
 
