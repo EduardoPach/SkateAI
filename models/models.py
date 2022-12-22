@@ -17,19 +17,17 @@ class ResNet18_RNN(nn.Module):
         basemodel.fc = Identity()
         self.basemodel = basemodel
         if rnn_type=="lstm":
-            self.rnn = nn.LSTM(num_features, rnn_hidden_size, rnn_layers)
+            self.rnn = nn.LSTM(num_features, rnn_hidden_size, rnn_layers, batch_first=True)
         elif rnn_type=="gru":
-            self.rnn = nn.GRU(num_features, rnn_hidden_size, rnn_layers)
-        self.heads = Heads(heads_params)
+            self.rnn = nn.GRU(num_features, rnn_hidden_size, rnn_layers, batch_first=True)
+        self.heads = Heads(**heads_params)
 
-    def forward(self, x):
-        # Batch x Frames x Channels x Height x Width 
-        B, F, C, H, W = x.shape
-        # First pass
-        features = self.basemodel(x[:,0]) # extracted features for basemodel
-        output, (h, c) = self.rnn(features.unsqueeze(1)) # output, hidden and cell states
-        # Looping the other frames
-        for i in range(1, F):
-            features = self.basemodel(x[:,i]) # extracted features for basemodel
-            output, (h, c) = self.rnn(features.unsqueeze(1), (h, c)) # output, hidden and cell states
-        output = self.heads()
+    def forward(self, x) -> list[torch.Tensor]:
+        B, F, C, H, W = x.shape # Batch x Frames x Channels x Height x Width 
+        x = x.view(-1, C, H, W) # Reshaping to B*F x C x H x W
+        x = self.basemodel(x) # Extracting Features
+        x = x.view(B, F, -1) # Reshaping to B x F x Features (ResNet18 outputs B*F x 512)
+        x, _ = self.rnn(x) # output, hidden and cell states
+        x = x.view(B, -1) # Reshaping to B x F * Hidden Size
+        
+        return self.heads(x)
