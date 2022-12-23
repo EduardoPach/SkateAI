@@ -1,1 +1,3106 @@
-{"https://www.youtube.com/watch?v=sDLIf7JVNnM": {"regular treflip landed 1": {"interval": [149.6, 151.9], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "backside", "board_rotation_number": 2, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "regular", "trick_name": "treflip"}}, "regular treflip landed 2": {"interval": [154.2, 155.1], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "backside", "board_rotation_number": 2, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "regular", "trick_name": "treflip"}}, "nollie kickflip landed 1": {"interval": [159.4, 161.2], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "none", "board_rotation_number": 0, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "nollie", "trick_name": "kickflip"}}, "nollie kickflip landed 2": {"interval": [163.8, 166.0], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "none", "board_rotation_number": 0, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "nollie", "trick_name": "kickflip"}}, "regular kickflip landed 1": {"interval": [169.5, 171.1], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "none", "board_rotation_number": 0, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "regular", "trick_name": "kickflip"}}, "regular kickflip landed 2": {"interval": [174.2, 175.4], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "none", "board_rotation_number": 0, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "regular", "trick_name": "kickflip"}}, "fakie kickflip landed 1": {"interval": [179.1, 180.7], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "none", "board_rotation_number": 0, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "fakie", "trick_name": "kickflip"}}, "fakie kickflip landed 2": {"interval": [184.2, 185.7], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "none", "board_rotation_number": 0, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "fakie", "trick_name": "kickflip"}}, "switch heelflip landed 1": {"interval": [190.6, 192.1], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "none", "board_rotation_number": 0, "flip_type": "heelflip", "flip_number": 1, "landed": true, "stance": "switch", "trick_name": "heelflip"}}, "switch heelflip landed 2": {"interval": [196.2, 197.7], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "none", "board_rotation_number": 0, "flip_type": "heelflip", "flip_number": 1, "landed": true, "stance": "switch", "trick_name": "heelflip"}}, "fakie heelflip landed 1": {"interval": [201.9, 203.2], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "none", "board_rotation_number": 0, "flip_type": "heelflip", "flip_number": 1, "landed": true, "stance": "fakie", "trick_name": "heelflip"}}, "fakie heelflip landed 2": {"interval": [208.5, 210.2], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "none", "board_rotation_number": 0, "flip_type": "heelflip", "flip_number": 1, "landed": true, "stance": "fakie", "trick_name": "heelflip"}}, "regular heelflip landed 1": {"interval": [215.6, 216.7], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "none", "board_rotation_number": 0, "flip_type": "heelflip", "flip_number": 1, "landed": true, "stance": "regular", "trick_name": "heelflip"}}, "regular heelflip landed 2": {"interval": [220.6, 221.9], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "none", "board_rotation_number": 0, "flip_type": "heelflip", "flip_number": 1, "landed": true, "stance": "regular", "trick_name": "heelflip"}}, "nollie heelflip landed 1": {"interval": [227.1, 228.3], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "none", "board_rotation_number": 0, "flip_type": "heelflip", "flip_number": 1, "landed": true, "stance": "nollie", "trick_name": "heelflip"}}, "nollie heelflip landed 2": {"interval": [231.7, 233.2], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "none", "board_rotation_number": 0, "flip_type": "heelflip", "flip_number": 1, "landed": true, "stance": "nollie", "trick_name": "heelflip"}}, "regular bs bigspin landed 1": {"interval": [237.5, 238.7], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "backside", "body_rotation_number": 1, "board_rotation_type": "backside", "board_rotation_number": 2, "flip_type": "none", "flip_number": 0, "landed": true, "stance": "regular", "trick_name": "bs bigspin"}}, "regular bs bigspin landed 2": {"interval": [242.4, 244.0], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "backside", "body_rotation_number": 1, "board_rotation_type": "backside", "board_rotation_number": 2, "flip_type": "none", "flip_number": 0, "landed": true, "stance": "regular", "trick_name": "bs bigspin"}}, "regular varial heel landed 1": {"interval": [251.2, 252.6], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "frontside", "board_rotation_number": 1, "flip_type": "heelflip", "flip_number": 1, "landed": true, "stance": "regular", "trick_name": "varial heel"}}, "regular varial heel not landed 1": {"interval": [257.0, 258.6], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "frontside", "board_rotation_number": 1, "flip_type": "heelflip", "flip_number": 1, "landed": false, "stance": "regular", "trick_name": "varial heel"}}, "fakie treflip landed 1": {"interval": [266.2, 267.7], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "backside", "board_rotation_number": 2, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "fakie", "trick_name": "treflip"}}, "fakie treflip landed 2": {"interval": [271.8, 273.3], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "backside", "board_rotation_number": 2, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "fakie", "trick_name": "treflip"}}, "regular bigflip landed 1": {"interval": [278.0, 279.7], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "backside", "body_rotation_number": 1, "board_rotation_type": "backside", "board_rotation_number": 2, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "regular", "trick_name": "bigflip"}}, "regular bigflip landed 2": {"interval": [283.6, 285.1], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "backside", "body_rotation_number": 1, "board_rotation_type": "backside", "board_rotation_number": 2, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "regular", "trick_name": "bigflip"}}, "regular bs 180 heelflip landed 1": {"interval": [291.0, 292.6], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "backside", "body_rotation_number": 1, "board_rotation_type": "backside", "board_rotation_number": 1, "flip_type": "heelflip", "flip_number": 1, "landed": true, "stance": "regular", "trick_name": "bs 180 heelflip"}}, "regular bs 180 heelflip landed 2": {"interval": [296.7, 297.8], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "backside", "body_rotation_number": 1, "board_rotation_type": "backside", "board_rotation_number": 1, "flip_type": "heelflip", "flip_number": 1, "landed": true, "stance": "regular", "trick_name": "bs 180 heelflip"}}, "nollie bs 180 heelflip landed 1": {"interval": [303.8, 305.4], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "backside", "body_rotation_number": 1, "board_rotation_type": "backside", "board_rotation_number": 1, "flip_type": "heelflip", "flip_number": 1, "landed": true, "stance": "nollie", "trick_name": "bs 180 heelflip"}}, "nollie bs 180 heelflip landed 2": {"interval": [309.5, 310.9], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "backside", "body_rotation_number": 1, "board_rotation_type": "backside", "board_rotation_number": 1, "flip_type": "heelflip", "flip_number": 1, "landed": true, "stance": "nollie", "trick_name": "bs 180 heelflip"}}, "fakie bs 180 kickflip landed 1": {"interval": [329.1, 330.5], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "backside", "body_rotation_number": 1, "board_rotation_type": "backside", "board_rotation_number": 1, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "fakie", "trick_name": "bs 180 kickflip"}}, "fakie bs 180 kickflip landed 2": {"interval": [334.9, 336.3], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "backside", "body_rotation_number": 1, "board_rotation_type": "backside", "board_rotation_number": 1, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "fakie", "trick_name": "bs 180 kickflip"}}, "regular fs 180 heelflip landed 1": {"interval": [342.7, 344.3], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "frontside", "body_rotation_number": 1, "board_rotation_type": "frontside", "board_rotation_number": 1, "flip_type": "heelflip", "flip_number": 1, "landed": true, "stance": "regular", "trick_name": "fs 180 heelflip"}}, "regular fs 180 heelflip landed 2": {"interval": [348.9, 350.6], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "frontside", "body_rotation_number": 1, "board_rotation_type": "frontside", "board_rotation_number": 1, "flip_type": "heelflip", "flip_number": 1, "landed": true, "stance": "regular", "trick_name": "fs 180 heelflip"}}, "regular fs bigspin landed 1": {"interval": [355.3, 356.8], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "frontside", "body_rotation_number": 1, "board_rotation_type": "frontside", "board_rotation_number": 2, "flip_type": "none", "flip_number": 0, "landed": true, "stance": "regular", "trick_name": "fs bigspin"}}, "regular fs bigspin landed 2": {"interval": [360.9, 362.4], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "frontside", "body_rotation_number": 1, "board_rotation_type": "frontside", "board_rotation_number": 2, "flip_type": "none", "flip_number": 0, "landed": true, "stance": "regular", "trick_name": "fs bigspin"}}, "fakie fs 180 heelflip landed 1": {"interval": [367.4, 368.6], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "frontside", "body_rotation_number": 1, "board_rotation_type": "frontside", "board_rotation_number": 1, "flip_type": "heelflip", "flip_number": 1, "landed": true, "stance": "fakie", "trick_name": "fs 180 heelflip"}}, "fakie fs 180 heelflip landed 2": {"interval": [373.5, 375.2], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "frontside", "body_rotation_number": 1, "board_rotation_type": "frontside", "board_rotation_number": 1, "flip_type": "heelflip", "flip_number": 1, "landed": true, "stance": "fakie", "trick_name": "fs 180 heelflip"}}, "switch treflip landed 1": {"interval": [382.8, 384.6], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "backside", "board_rotation_number": 2, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "switch", "trick_name": "treflip"}}, "switch treflip landed 2": {"interval": [389.3, 390.9], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "backside", "board_rotation_number": 2, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "switch", "trick_name": "treflip"}}, "switch bs bigspin not landed 1": {"interval": [396.5, 398.0], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "backside", "body_rotation_number": 1, "board_rotation_type": "backside", "board_rotation_number": 2, "flip_type": "none", "flip_number": 0, "landed": false, "stance": "switch", "trick_name": "bs bigspin"}}, "fakie hardflip not landed 1": {"interval": [405.1, 406.7], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "frontside", "board_rotation_number": 1, "flip_type": "kickflip", "flip_number": 1, "landed": false, "stance": "fakie", "trick_name": "hardflip"}}, "switch bs bigspin landed 1": {"interval": [424.9, 426.6], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "backside", "body_rotation_number": 1, "board_rotation_type": "backside", "board_rotation_number": 2, "flip_type": "none", "flip_number": 0, "landed": true, "stance": "switch", "trick_name": "bs bigspin"}}, "switch bs bigspin landed 2": {"interval": [430.7, 432.0], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "backside", "body_rotation_number": 1, "board_rotation_type": "backside", "board_rotation_number": 2, "flip_type": "none", "flip_number": 0, "landed": true, "stance": "switch", "trick_name": "bs bigspin"}}, "fakie bigflip landed 1": {"interval": [440.2, 441.9], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "backside", "body_rotation_number": 1, "board_rotation_type": "backside", "board_rotation_number": 2, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "fakie", "trick_name": "bigflip"}}, "fakie bigflip landed 2": {"interval": [446.3, 448.2], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "backside", "body_rotation_number": 1, "board_rotation_type": "backside", "board_rotation_number": 2, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "fakie", "trick_name": "bigflip"}}, "nollie bs 180 kickflip landed 1": {"interval": [453.4, 455.2], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "backside", "body_rotation_number": 1, "board_rotation_type": "backside", "board_rotation_number": 1, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "nollie", "trick_name": "bs 180 kickflip"}}, "nollie bs 180 kickflip landed 2": {"interval": [459.5, 461.2], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "backside", "body_rotation_number": 1, "board_rotation_type": "backside", "board_rotation_number": 1, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "nollie", "trick_name": "bs 180 kickflip"}}, "nollie inward heel landed 1": {"interval": [469.5, 471.4], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "backside", "board_rotation_number": 1, "flip_type": "heelflip", "flip_number": 1, "landed": true, "stance": "nollie", "trick_name": "inward heel"}}, "nollie inward heel landed 2": {"interval": [476.0, 478.0], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "backside", "board_rotation_number": 1, "flip_type": "heelflip", "flip_number": 1, "landed": true, "stance": "nollie", "trick_name": "inward heel"}}, "regular inward heel not landed 1": {"interval": [483.9, 485.6], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "backside", "board_rotation_number": 1, "flip_type": "heelflip", "flip_number": 1, "landed": false, "stance": "regular", "trick_name": "inward heel"}}, "fakie hardflip landed 1": {"interval": [495.3, 496.7], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "frontside", "board_rotation_number": 1, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "fakie", "trick_name": "hardflip"}}, "fakie hardflip landed 2": {"interval": [503.9, 505.5], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "frontside", "board_rotation_number": 1, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "fakie", "trick_name": "hardflip"}}, "switch fs 360 landed 1": {"interval": [509.2, 510.7], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "frontside", "body_rotation_number": 2, "board_rotation_type": "frontside", "board_rotation_number": 2, "flip_type": "none", "flip_number": 0, "landed": true, "stance": "switch", "trick_name": "fs 360"}}, "switch fs 360 landed 2": {"interval": [515.5, 516.8], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "frontside", "body_rotation_number": 2, "board_rotation_type": "frontside", "board_rotation_number": 2, "flip_type": "none", "flip_number": 0, "landed": true, "stance": "switch", "trick_name": "fs 360"}}, "switch fs 180 kickflip landed 1": {"interval": [521.8, 523.1], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "frontside", "body_rotation_number": 1, "board_rotation_type": "frontside", "board_rotation_number": 1, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "switch", "trick_name": "fs 180 kickflip"}}, "switch fs 180 kickflip landed 2": {"interval": [529.9, 531.4], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "frontside", "body_rotation_number": 1, "board_rotation_type": "frontside", "board_rotation_number": 1, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "switch", "trick_name": "fs 180 kickflip"}}, "fakie fs 180 kickflip landed 1": {"interval": [535.7, 537.2], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "frontside", "body_rotation_number": 1, "board_rotation_type": "frontside", "board_rotation_number": 1, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "fakie", "trick_name": "fs 180 kickflip"}}, "fakie fs 180 kickflip not landed 1": {"interval": [541.9, 543.8], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "frontside", "body_rotation_number": 1, "board_rotation_type": "frontside", "board_rotation_number": 1, "flip_type": "kickflip", "flip_number": 1, "landed": false, "stance": "fakie", "trick_name": "fs 180 kickflip"}}, "switch 360 shovit landed 1": {"interval": [568.2, 569.7], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "backside", "board_rotation_number": 2, "flip_type": "none", "flip_number": 0, "landed": true, "stance": "switch", "trick_name": "360 shovit"}}, "switch 360 shovit not landed 1": {"interval": [575.1, 576.8], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "backside", "board_rotation_number": 2, "flip_type": "none", "flip_number": 0, "landed": false, "stance": "switch", "trick_name": "360 shovit"}}, "fakie double kickflip not landed 1": {"interval": [600.8, 602.3], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "none", "board_rotation_number": 0, "flip_type": "kickflip", "flip_number": 2, "landed": false, "stance": "fakie", "trick_name": "double kickflip"}}, "regular biggerflip landed 1": {"interval": [623.2, 624.9], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "backside", "body_rotation_number": 1, "board_rotation_type": "backside", "board_rotation_number": 3, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "regular", "trick_name": "biggerflip"}}, "regular biggerflip landed 2": {"interval": [629.7, 631.0], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "backside", "body_rotation_number": 1, "board_rotation_type": "backside", "board_rotation_number": 3, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "regular", "trick_name": "biggerflip"}}, "regular laserflip landed 1": {"interval": [655.8, 657.4], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "frontside", "board_rotation_number": 2, "flip_type": "heelflip", "flip_number": 1, "landed": true, "stance": "regular", "trick_name": "laserflip"}}, "regular laserflip not landed 1": {"interval": [663.2, 664.9], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "frontside", "board_rotation_number": 2, "flip_type": "heelflip", "flip_number": 1, "landed": false, "stance": "regular", "trick_name": "laserflip"}}, "regular fs 360 not landed 1": {"interval": [693.8, 695.3], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "frontside", "body_rotation_number": 2, "board_rotation_type": "frontside", "board_rotation_number": 2, "flip_type": "none", "flip_number": 0, "landed": false, "stance": "regular", "trick_name": "fs 360"}}, "switch fs 360 heelflip landed 1": {"interval": [718.2, 719.8], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "frontside", "body_rotation_number": 2, "board_rotation_type": "frontside", "board_rotation_number": 2, "flip_type": "heelflip", "flip_number": 1, "landed": true, "stance": "switch", "trick_name": "fs 360 heelflip"}}, "switch fs 360 heelflip landed 2": {"interval": [725.2, 727.1], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "frontside", "body_rotation_number": 2, "board_rotation_type": "frontside", "board_rotation_number": 2, "flip_type": "heelflip", "flip_number": 1, "landed": true, "stance": "switch", "trick_name": "fs 360 heelflip"}}, "fakie double kickflip not landed 2": {"interval": [738.9, 740.9], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "none", "board_rotation_number": 0, "flip_type": "kickflip", "flip_number": 2, "landed": false, "stance": "fakie", "trick_name": "double kickflip"}}, "fakie double kickflip landed 1": {"interval": [762.3, 763.7], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "none", "board_rotation_number": 0, "flip_type": "kickflip", "flip_number": 2, "landed": true, "stance": "fakie", "trick_name": "double kickflip"}}, "fakie double kickflip not landed 3": {"interval": [768.4, 770.0], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "none", "board_rotation_number": 0, "flip_type": "kickflip", "flip_number": 2, "landed": false, "stance": "fakie", "trick_name": "double kickflip"}}}, "https://www.youtube.com/watch?v=A8z4OJByT-w": {"regular 360 shovit landed 1": {"interval": [89.9, 91.5], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "backside", "board_rotation_number": 2, "flip_type": "none", "flip_number": 0, "landed": true, "stance": "regular", "trick_name": "360 shovit"}}, "regular 360 shovit landed 2": {"interval": [94.7, 96.4], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "backside", "board_rotation_number": 2, "flip_type": "none", "flip_number": 0, "landed": true, "stance": "regular", "trick_name": "360 shovit"}}, "regular fs shovit landed 1": {"interval": [99.2, 101.2], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "frontside", "board_rotation_number": 1, "flip_type": "none", "flip_number": 0, "landed": true, "stance": "regular", "trick_name": "fs shovit"}}, "regular fs shovit landed 2": {"interval": [103.5, 104.6], "video_source": "BATB 11", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "frontside", "board_rotation_number": 1, "flip_type": "none", "flip_number": 0, "landed": true, "stance": "regular", "trick_name": "fs shovit"}}}, "https://www.youtube.com/watch?v=eGTsIL-xJB8": {"regular kickflip landed 1": {"interval": [63.2, 64.7], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "none", "board_rotation_number": 0, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "regular", "trick_name": "kickflip"}}, "regular kickflip landed 2": {"interval": [64.9, 65.8], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "none", "board_rotation_number": 0, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "regular", "trick_name": "kickflip"}}, "nollie kickflip landed 1": {"interval": [66.3, 67.6], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "none", "board_rotation_number": 0, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "nollie", "trick_name": "kickflip"}}, "nollie kickflip landed 2": {"interval": [67.8, 69.0], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "none", "board_rotation_number": 0, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "nollie", "trick_name": "kickflip"}}, "nollie heelflip landed 1": {"interval": [69.3, 70.5], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "none", "board_rotation_number": 0, "flip_type": "heelflip", "flip_number": 1, "landed": true, "stance": "nollie", "trick_name": "heelflip"}}, "nollie heelflip landed 2": {"interval": [71.0, 72.1], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "none", "board_rotation_number": 0, "flip_type": "heelflip", "flip_number": 1, "landed": true, "stance": "nollie", "trick_name": "heelflip"}}, "regular treflip landed 1": {"interval": [72.4, 73.5], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "backside", "board_rotation_number": 2, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "regular", "trick_name": "treflip"}}, "regular treflip landed 2": {"interval": [73.8, 74.8], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "backside", "board_rotation_number": 2, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "regular", "trick_name": "treflip"}}, "regular fs 180 kickflip landed 1": {"interval": [75.3, 76.4], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "frontside", "body_rotation_number": 1, "board_rotation_type": "frontside", "board_rotation_number": 1, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "regular", "trick_name": "fs 180 kickflip"}}, "regular fs 180 kickflip not landed 1": {"interval": [76.9, 78.3], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "frontside", "body_rotation_number": 1, "board_rotation_type": "frontside", "board_rotation_number": 1, "flip_type": "kickflip", "flip_number": 1, "landed": false, "stance": "regular", "trick_name": "fs 180 kickflip"}}, "switch kickflip landed 1": {"interval": [79.3, 80.4], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "none", "board_rotation_number": 0, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "switch", "trick_name": "kickflip"}}, "switch kickflip landed 2": {"interval": [80.8, 81.9], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "none", "board_rotation_number": 0, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "switch", "trick_name": "kickflip"}}, "switch heelflip not landed 1": {"interval": [82.3, 84.0], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "none", "board_rotation_number": 0, "flip_type": "heelflip", "flip_number": 1, "landed": false, "stance": "switch", "trick_name": "heelflip"}}, "fakie kickflip landed 1": {"interval": [84.6, 85.9], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "none", "board_rotation_number": 0, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "fakie", "trick_name": "kickflip"}}, "fakie kickflip landed 2": {"interval": [86.2, 87.3], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "none", "board_rotation_number": 0, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "fakie", "trick_name": "kickflip"}}, "regular bs 180 heelflip not landed 1": {"interval": [87.7, 88.7], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "backside", "body_rotation_number": 1, "board_rotation_type": "backside", "board_rotation_number": 1, "flip_type": "heelflip", "flip_number": 1, "landed": false, "stance": "regular", "trick_name": "bs 180 heelflip"}}, "regular bs bigspin landed 1": {"interval": [89.4, 90.7], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "backside", "body_rotation_number": 1, "board_rotation_type": "backside", "board_rotation_number": 2, "flip_type": "none", "flip_number": 0, "landed": true, "stance": "regular", "trick_name": "bs bigspin"}}, "regular bs bigspin not landed 1": {"interval": [92.0, 93.1], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "backside", "body_rotation_number": 1, "board_rotation_type": "backside", "board_rotation_number": 2, "flip_type": "none", "flip_number": 0, "landed": false, "stance": "regular", "trick_name": "bs bigspin"}}, "regular bigflip landed 1": {"interval": [94.3, 95.5], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "backside", "body_rotation_number": 1, "board_rotation_type": "backside", "board_rotation_number": 2, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "regular", "trick_name": "bigflip"}}, "regular bigflip not landed 1": {"interval": [95.9, 97.0], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "backside", "body_rotation_number": 1, "board_rotation_type": "backside", "board_rotation_number": 2, "flip_type": "kickflip", "flip_number": 1, "landed": false, "stance": "regular", "trick_name": "bigflip"}}, "switch treflip landed 1": {"interval": [98.4, 99.6], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "backside", "board_rotation_number": 2, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "switch", "trick_name": "treflip"}}, "switch treflip not landed 1": {"interval": [100.0, 101.0], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "backside", "board_rotation_number": 2, "flip_type": "kickflip", "flip_number": 1, "landed": false, "stance": "switch", "trick_name": "treflip"}}, "fakie treflip landed 1": {"interval": [102.3, 103.6], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "backside", "board_rotation_number": 2, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "fakie", "trick_name": "treflip"}}, "fakie treflip landed 2": {"interval": [104.0, 105.1], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "backside", "board_rotation_number": 2, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "fakie", "trick_name": "treflip"}}, "nollie fs 180 heelflip landed 1": {"interval": [106.5, 107.6], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "frontside", "body_rotation_number": 1, "board_rotation_type": "frontside", "board_rotation_number": 1, "flip_type": "heelflip", "flip_number": 1, "landed": true, "stance": "nollie", "trick_name": "fs 180 heelflip"}}, "nollie fs 180 heelflip not landed 1": {"interval": [108.1, 109.2], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "frontside", "body_rotation_number": 1, "board_rotation_type": "frontside", "board_rotation_number": 1, "flip_type": "heelflip", "flip_number": 1, "landed": false, "stance": "nollie", "trick_name": "fs 180 heelflip"}}, "nollie fs 180 heelflip landed 2": {"interval": [109.9, 111.3], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "frontside", "body_rotation_number": 1, "board_rotation_type": "frontside", "board_rotation_number": 1, "flip_type": "heelflip", "flip_number": 1, "landed": true, "stance": "nollie", "trick_name": "fs 180 heelflip"}}, "nollie bs 180 heelflip landed 1": {"interval": [113.0, 114.2], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "backside", "body_rotation_number": 1, "board_rotation_type": "backside", "board_rotation_number": 1, "flip_type": "heelflip", "flip_number": 1, "landed": true, "stance": "nollie", "trick_name": "bs 180 heelflip"}}, "nollie bs 180 heelflip landed 2": {"interval": [114.5, 115.9], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "backside", "body_rotation_number": 1, "board_rotation_type": "backside", "board_rotation_number": 1, "flip_type": "heelflip", "flip_number": 1, "landed": true, "stance": "nollie", "trick_name": "bs 180 heelflip"}}, "fakie bigheel not landed 1": {"interval": [116.4, 117.4], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "frontside", "body_rotation_number": 1, "board_rotation_type": "frontside", "board_rotation_number": 2, "flip_type": "heelflip", "flip_number": 1, "landed": false, "stance": "fakie", "trick_name": "bigheel"}}, "fakie fs 180 kickflip landed 1": {"interval": [118.0, 119.3], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "frontside", "body_rotation_number": 1, "board_rotation_type": "frontside", "board_rotation_number": 1, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "fakie", "trick_name": "fs 180 kickflip"}}, "fakie fs 180 kickflip landed 2": {"interval": [119.9, 121.0], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "frontside", "body_rotation_number": 1, "board_rotation_type": "frontside", "board_rotation_number": 1, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "fakie", "trick_name": "fs 180 kickflip"}}, "regular bs 180 heelflip landed 1": {"interval": [121.8, 122.9], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "backside", "body_rotation_number": 1, "board_rotation_type": "backside", "board_rotation_number": 1, "flip_type": "heelflip", "flip_number": 1, "landed": true, "stance": "regular", "trick_name": "bs 180 heelflip"}}, "regular bs 180 heelflip landed 2": {"interval": [123.5, 124.7], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "backside", "body_rotation_number": 1, "board_rotation_type": "backside", "board_rotation_number": 1, "flip_type": "heelflip", "flip_number": 1, "landed": true, "stance": "regular", "trick_name": "bs 180 heelflip"}}, "switch fs bigspin landed 1": {"interval": [125.3, 126.5], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "frontside", "body_rotation_number": 1, "board_rotation_type": "frontside", "board_rotation_number": 2, "flip_type": "none", "flip_number": 0, "landed": true, "stance": "switch", "trick_name": "fs bigspin"}}, "switch fs bigspin not landed 1": {"interval": [126.8, 128.0], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "frontside", "body_rotation_number": 1, "board_rotation_type": "frontside", "board_rotation_number": 2, "flip_type": "none", "flip_number": 0, "landed": false, "stance": "switch", "trick_name": "fs bigspin"}}, "nollie fs 180 kickflip landed 1": {"interval": [129.0, 130.1], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "frontside", "body_rotation_number": 1, "board_rotation_type": "frontside", "board_rotation_number": 1, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "nollie", "trick_name": "fs 180 kickflip"}}, "nollie fs 180 kickflip landed 2": {"interval": [130.6, 131.9], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "frontside", "body_rotation_number": 1, "board_rotation_type": "frontside", "board_rotation_number": 1, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "nollie", "trick_name": "fs 180 kickflip"}}, "fakie bs 180 kickflip landed 1": {"interval": [132.6, 133.7], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "backside", "body_rotation_number": 1, "board_rotation_type": "backside", "board_rotation_number": 1, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "fakie", "trick_name": "bs 180 kickflip"}}, "fakie bs 180 kickflip landed 2": {"interval": [134.1, 135.4], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "backside", "body_rotation_number": 1, "board_rotation_type": "backside", "board_rotation_number": 1, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "fakie", "trick_name": "bs 180 kickflip"}}, "nollie bs 180 kickflip landed 1": {"interval": [136.2, 137.3], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "backside", "body_rotation_number": 1, "board_rotation_type": "backside", "board_rotation_number": 1, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "nollie", "trick_name": "bs 180 kickflip"}}, "nollie bs 180 kickflip landed 2": {"interval": [137.9, 139.5], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "backside", "body_rotation_number": 1, "board_rotation_type": "backside", "board_rotation_number": 1, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "nollie", "trick_name": "bs 180 kickflip"}}, "switch fs 180 kickflip landed 1": {"interval": [140.6, 141.9], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "frontside", "body_rotation_number": 1, "board_rotation_type": "frontside", "board_rotation_number": 1, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "switch", "trick_name": "fs 180 kickflip"}}, "switch fs 180 kickflip landed 2": {"interval": [142.2, 143.3], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "frontside", "body_rotation_number": 1, "board_rotation_type": "frontside", "board_rotation_number": 1, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "switch", "trick_name": "fs 180 kickflip"}}, "switch bs 180 kickflip landed 1": {"interval": [143.9, 145.0], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "backside", "body_rotation_number": 1, "board_rotation_type": "backside", "board_rotation_number": 1, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "switch", "trick_name": "bs 180 kickflip"}}, "switch bs 180 kickflip landed 2": {"interval": [146.0, 147.3], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "backside", "body_rotation_number": 1, "board_rotation_type": "backside", "board_rotation_number": 1, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "switch", "trick_name": "bs 180 kickflip"}}, "switch fs 180 heelflip landed 1": {"interval": [147.8, 149.0], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "frontside", "body_rotation_number": 1, "board_rotation_type": "frontside", "board_rotation_number": 1, "flip_type": "heelflip", "flip_number": 1, "landed": true, "stance": "switch", "trick_name": "fs 180 heelflip"}}, "switch fs 180 heelflip landed 2": {"interval": [149.3, 150.5], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "frontside", "body_rotation_number": 1, "board_rotation_type": "frontside", "board_rotation_number": 1, "flip_type": "heelflip", "flip_number": 1, "landed": true, "stance": "switch", "trick_name": "fs 180 heelflip"}}, "switch bs 180 heelflip landed 1": {"interval": [152.2, 153.3], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "backside", "body_rotation_number": 1, "board_rotation_type": "backside", "board_rotation_number": 1, "flip_type": "heelflip", "flip_number": 1, "landed": true, "stance": "switch", "trick_name": "bs 180 heelflip"}}, "switch bs 180 heelflip landed 2": {"interval": [153.9, 155.1], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "backside", "body_rotation_number": 1, "board_rotation_type": "backside", "board_rotation_number": 1, "flip_type": "heelflip", "flip_number": 1, "landed": true, "stance": "switch", "trick_name": "bs 180 heelflip"}}, "fakie fs 180 heelflip not landed 1": {"interval": [155.6, 156.9], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "frontside", "body_rotation_number": 1, "board_rotation_type": "frontside", "board_rotation_number": 1, "flip_type": "heelflip", "flip_number": 1, "landed": false, "stance": "fakie", "trick_name": "fs 180 heelflip"}}, "fakie bigheel landed 1": {"interval": [157.6, 158.9], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "frontside", "body_rotation_number": 1, "board_rotation_type": "frontside", "board_rotation_number": 2, "flip_type": "heelflip", "flip_number": 1, "landed": true, "stance": "fakie", "trick_name": "bigheel"}}, "fakie bigheel not landed 2": {"interval": [159.8, 161.1], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "frontside", "body_rotation_number": 1, "board_rotation_type": "frontside", "board_rotation_number": 2, "flip_type": "heelflip", "flip_number": 1, "landed": false, "stance": "fakie", "trick_name": "bigheel"}}, "fakie bigheel not landed 3": {"interval": [161.9, 163.1], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "frontside", "body_rotation_number": 1, "board_rotation_type": "frontside", "board_rotation_number": 2, "flip_type": "heelflip", "flip_number": 1, "landed": false, "stance": "fakie", "trick_name": "bigheel"}}}, "https://www.youtube.com/watch?v=duSN0KHFK44": {"regular treflip landed 1": {"interval": [51.9, 53.2], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "backside", "board_rotation_number": 2, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "regular", "trick_name": "treflip"}}, "regular treflip landed 2": {"interval": [53.5, 54.7], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "backside", "board_rotation_number": 2, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "regular", "trick_name": "treflip"}}, "regular fs 180 kickflip landed 1": {"interval": [55.1, 56.3], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "frontside", "body_rotation_number": 1, "board_rotation_type": "frontside", "board_rotation_number": 1, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "regular", "trick_name": "fs 180 kickflip"}}, "regular fs 180 kickflip not landed 1": {"interval": [57.0, 58.1], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "frontside", "body_rotation_number": 1, "board_rotation_type": "frontside", "board_rotation_number": 1, "flip_type": "kickflip", "flip_number": 1, "landed": false, "stance": "regular", "trick_name": "fs 180 kickflip"}}, "switch heelflip landed 1": {"interval": [59.0, 60.3], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "none", "board_rotation_number": 0, "flip_type": "heelflip", "flip_number": 1, "landed": true, "stance": "switch", "trick_name": "heelflip"}}, "switch heelflip landed 2": {"interval": [60.7, 62.0], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "none", "board_rotation_number": 0, "flip_type": "heelflip", "flip_number": 1, "landed": true, "stance": "switch", "trick_name": "heelflip"}}, "regular bs 180 kickflip landed 1": {"interval": [62.6, 63.9], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "backside", "body_rotation_number": 1, "board_rotation_type": "backside", "board_rotation_number": 1, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "regular", "trick_name": "bs 180 kickflip"}}, "regular bs 180 kickflip not landed 1": {"interval": [64.3, 65.1], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "backside", "body_rotation_number": 1, "board_rotation_type": "backside", "board_rotation_number": 1, "flip_type": "kickflip", "flip_number": 1, "landed": false, "stance": "regular", "trick_name": "bs 180 kickflip"}}, "switch treflip not landed 1": {"interval": [65.8, 67.3], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "backside", "board_rotation_number": 2, "flip_type": "kickflip", "flip_number": 1, "landed": false, "stance": "switch", "trick_name": "treflip"}}, "nollie heelflip landed 1": {"interval": [68.2, 69.2], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "none", "board_rotation_number": 0, "flip_type": "heelflip", "flip_number": 1, "landed": true, "stance": "nollie", "trick_name": "heelflip"}}, "nollie heelflip landed 2": {"interval": [69.7, 71.2], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "none", "board_rotation_number": 0, "flip_type": "heelflip", "flip_number": 1, "landed": true, "stance": "nollie", "trick_name": "heelflip"}}, "fakie kickflip landed 1": {"interval": [73.0, 74.3], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "none", "board_rotation_number": 0, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "fakie", "trick_name": "kickflip"}}, "fakie kickflip landed 2": {"interval": [74.6, 76.4], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "none", "board_rotation_number": 0, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "fakie", "trick_name": "kickflip"}}, "nollie bs 180 heelflip landed 1": {"interval": [76.7, 78.1], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "backside", "body_rotation_number": 1, "board_rotation_type": "backside", "board_rotation_number": 1, "flip_type": "heelflip", "flip_number": 1, "landed": true, "stance": "nollie", "trick_name": "bs 180 heelflip"}}, "nollie bs 180 heelflip landed 2": {"interval": [78.6, 80.2], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "backside", "body_rotation_number": 1, "board_rotation_type": "backside", "board_rotation_number": 1, "flip_type": "heelflip", "flip_number": 1, "landed": true, "stance": "nollie", "trick_name": "bs 180 heelflip"}}, "fakie heelflip not landed 1": {"interval": [80.8, 82.0], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "none", "board_rotation_number": 0, "flip_type": "heelflip", "flip_number": 1, "landed": false, "stance": "fakie", "trick_name": "heelflip"}}, "regular heelflip landed 1": {"interval": [82.6, 83.7], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "none", "board_rotation_number": 0, "flip_type": "heelflip", "flip_number": 1, "landed": true, "stance": "regular", "trick_name": "heelflip"}}, "regular heelflip landed 2": {"interval": [84.4, 85.7], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "none", "board_rotation_number": 0, "flip_type": "heelflip", "flip_number": 1, "landed": true, "stance": "regular", "trick_name": "heelflip"}}, "fakie bs 180 kickflip landed 1": {"interval": [87.0, 88.8], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "backside", "body_rotation_number": 1, "board_rotation_type": "backside", "board_rotation_number": 1, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "fakie", "trick_name": "bs 180 kickflip"}}, "fakie bs 180 kickflip landed 2": {"interval": [89.2, 90.7], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "backside", "body_rotation_number": 1, "board_rotation_type": "backside", "board_rotation_number": 1, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "fakie", "trick_name": "bs 180 kickflip"}}, "fakie treflip not landed 1": {"interval": [91.2, 92.5], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "backside", "board_rotation_number": 2, "flip_type": "kickflip", "flip_number": 1, "landed": false, "stance": "fakie", "trick_name": "treflip"}}, "regular fs bigspin landed 1": {"interval": [93.2, 94.4], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "frontside", "body_rotation_number": 1, "board_rotation_type": "frontside", "board_rotation_number": 2, "flip_type": "none", "flip_number": 0, "landed": true, "stance": "regular", "trick_name": "fs bigspin"}}, "regular fs bigspin not landed 1": {"interval": [95.0, 96.3], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "frontside", "body_rotation_number": 1, "board_rotation_type": "frontside", "board_rotation_number": 2, "flip_type": "none", "flip_number": 0, "landed": false, "stance": "regular", "trick_name": "fs bigspin"}}, "nollie bigheel not landed 1": {"interval": [96.8, 98.0], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "frontside", "body_rotation_number": 1, "board_rotation_type": "frontside", "board_rotation_number": 2, "flip_type": "heelflip", "flip_number": 1, "landed": false, "stance": "nollie", "trick_name": "bigheel"}}, "switch treflip landed 1": {"interval": [98.9, 100.2], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "backside", "board_rotation_number": 2, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "switch", "trick_name": "treflip"}}, "switch treflip not landed 2": {"interval": [101.3, 102.5], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "backside", "board_rotation_number": 2, "flip_type": "kickflip", "flip_number": 1, "landed": false, "stance": "switch", "trick_name": "treflip"}}, "fakie fs 180 kickflip not landed 1": {"interval": [103.4, 104.9], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "frontside", "body_rotation_number": 1, "board_rotation_type": "frontside", "board_rotation_number": 1, "flip_type": "kickflip", "flip_number": 1, "landed": false, "stance": "fakie", "trick_name": "fs 180 kickflip"}}, "fakie varial heel landed 1": {"interval": [105.4, 106.9], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "frontside", "board_rotation_number": 1, "flip_type": "heelflip", "flip_number": 1, "landed": true, "stance": "fakie", "trick_name": "varial heel"}}, "fakie varial heel not landed 1": {"interval": [107.2, 108.6], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "frontside", "board_rotation_number": 1, "flip_type": "heelflip", "flip_number": 1, "landed": false, "stance": "fakie", "trick_name": "varial heel"}}, "nollie varial heel landed 1": {"interval": [109.5, 110.8], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "frontside", "board_rotation_number": 1, "flip_type": "heelflip", "flip_number": 1, "landed": true, "stance": "nollie", "trick_name": "varial heel"}}, "nollie varial heel not landed 1": {"interval": [111.0, 112.1], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "frontside", "board_rotation_number": 1, "flip_type": "heelflip", "flip_number": 1, "landed": false, "stance": "nollie", "trick_name": "varial heel"}}, "nollie kickflip landed 1": {"interval": [112.8, 114.0], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "none", "board_rotation_number": 0, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "nollie", "trick_name": "kickflip"}}, "nollie kickflip landed 2": {"interval": [114.6, 115.7], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "none", "board_rotation_number": 0, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "nollie", "trick_name": "kickflip"}}, "nollie bigheel landed 1": {"interval": [116.4, 117.5], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "frontside", "body_rotation_number": 1, "board_rotation_type": "frontside", "board_rotation_number": 2, "flip_type": "heelflip", "flip_number": 1, "landed": true, "stance": "nollie", "trick_name": "bigheel"}}, "nollie bigheel landed 2": {"interval": [118.1, 119.4], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "frontside", "body_rotation_number": 1, "board_rotation_type": "frontside", "board_rotation_number": 2, "flip_type": "heelflip", "flip_number": 1, "landed": true, "stance": "nollie", "trick_name": "bigheel"}}, "regular bigheel landed 1": {"interval": [121.7, 122.9], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "frontside", "body_rotation_number": 1, "board_rotation_type": "frontside", "board_rotation_number": 2, "flip_type": "heelflip", "flip_number": 1, "landed": true, "stance": "regular", "trick_name": "bigheel"}}, "regular bigflip landed 1": {"interval": [127.2, 128.5], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "backside", "body_rotation_number": 1, "board_rotation_type": "backside", "board_rotation_number": 2, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "regular", "trick_name": "bigflip"}}, "regular bigflip landed 2": {"interval": [128.9, 130.4], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "backside", "body_rotation_number": 1, "board_rotation_type": "backside", "board_rotation_number": 2, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "regular", "trick_name": "bigflip"}}, "fakie varial flip landed 1": {"interval": [133.5, 134.6], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "backside", "board_rotation_number": 1, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "fakie", "trick_name": "varial flip"}}, "fakie varial flip landed 2": {"interval": [135.1, 136.3], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "backside", "board_rotation_number": 1, "flip_type": "kickflip", "flip_number": 1, "landed": true, "stance": "fakie", "trick_name": "varial flip"}}, "regular laserflip landed 1": {"interval": [137.5, 139.2], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "frontside", "board_rotation_number": 2, "flip_type": "heelflip", "flip_number": 1, "landed": true, "stance": "regular", "trick_name": "laserflip"}}, "regular laserflip not landed 1": {"interval": [139.7, 141.2], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "frontside", "board_rotation_number": 2, "flip_type": "heelflip", "flip_number": 1, "landed": false, "stance": "regular", "trick_name": "laserflip"}}, "regular laserflip not landed 2": {"interval": [142.4, 144.2], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "none", "body_rotation_number": 0, "board_rotation_type": "frontside", "board_rotation_number": 2, "flip_type": "heelflip", "flip_number": 1, "landed": false, "stance": "regular", "trick_name": "laserflip"}}, "regular bigheel not landed 1": {"interval": [124.5, 126.1], "video_source": "BATB 1", "trick_info": {"body_rotation_type": "frontside", "body_rotation_number": 1, "board_rotation_type": "frontside", "board_rotation_number": 2, "flip_type": "heelflip", "flip_number": 1, "landed": false, "stance": "regular", "trick_name": "bigheel"}}}}
+{
+    "https://www.youtube.com/watch?v=sDLIf7JVNnM": {
+        "regular treflip landed 1": {
+            "interval": [
+                149.6,
+                151.9
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 2,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "regular",
+                "trick_name": "treflip"
+            }
+        },
+        "regular treflip landed 2": {
+            "interval": [
+                154.2,
+                155.1
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 2,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "regular",
+                "trick_name": "treflip"
+            }
+        },
+        "nollie kickflip landed 1": {
+            "interval": [
+                159.4,
+                161.2
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "none",
+                "board_rotation_number": 0,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "nollie",
+                "trick_name": "kickflip"
+            }
+        },
+        "nollie kickflip landed 2": {
+            "interval": [
+                163.8,
+                166.0
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "none",
+                "board_rotation_number": 0,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "nollie",
+                "trick_name": "kickflip"
+            }
+        },
+        "regular kickflip landed 1": {
+            "interval": [
+                169.5,
+                171.1
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "none",
+                "board_rotation_number": 0,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "regular",
+                "trick_name": "kickflip"
+            }
+        },
+        "regular kickflip landed 2": {
+            "interval": [
+                174.2,
+                175.4
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "none",
+                "board_rotation_number": 0,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "regular",
+                "trick_name": "kickflip"
+            }
+        },
+        "fakie kickflip landed 1": {
+            "interval": [
+                179.1,
+                180.7
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "none",
+                "board_rotation_number": 0,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "fakie",
+                "trick_name": "kickflip"
+            }
+        },
+        "fakie kickflip landed 2": {
+            "interval": [
+                184.2,
+                185.7
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "none",
+                "board_rotation_number": 0,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "fakie",
+                "trick_name": "kickflip"
+            }
+        },
+        "switch heelflip landed 1": {
+            "interval": [
+                190.6,
+                192.1
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "none",
+                "board_rotation_number": 0,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "switch",
+                "trick_name": "heelflip"
+            }
+        },
+        "switch heelflip landed 2": {
+            "interval": [
+                196.2,
+                197.7
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "none",
+                "board_rotation_number": 0,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "switch",
+                "trick_name": "heelflip"
+            }
+        },
+        "fakie heelflip landed 1": {
+            "interval": [
+                201.9,
+                203.2
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "none",
+                "board_rotation_number": 0,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "fakie",
+                "trick_name": "heelflip"
+            }
+        },
+        "fakie heelflip landed 2": {
+            "interval": [
+                208.5,
+                210.2
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "none",
+                "board_rotation_number": 0,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "fakie",
+                "trick_name": "heelflip"
+            }
+        },
+        "regular heelflip landed 1": {
+            "interval": [
+                215.6,
+                216.7
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "none",
+                "board_rotation_number": 0,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "regular",
+                "trick_name": "heelflip"
+            }
+        },
+        "regular heelflip landed 2": {
+            "interval": [
+                220.6,
+                221.9
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "none",
+                "board_rotation_number": 0,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "regular",
+                "trick_name": "heelflip"
+            }
+        },
+        "nollie heelflip landed 1": {
+            "interval": [
+                227.1,
+                228.3
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "none",
+                "board_rotation_number": 0,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "nollie",
+                "trick_name": "heelflip"
+            }
+        },
+        "nollie heelflip landed 2": {
+            "interval": [
+                231.7,
+                233.2
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "none",
+                "board_rotation_number": 0,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "nollie",
+                "trick_name": "heelflip"
+            }
+        },
+        "regular bs bigspin landed 1": {
+            "interval": [
+                237.5,
+                238.7
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "backside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 2,
+                "flip_type": "none",
+                "flip_number": 0,
+                "landed": true,
+                "stance": "regular",
+                "trick_name": "bs bigspin"
+            }
+        },
+        "regular bs bigspin landed 2": {
+            "interval": [
+                242.4,
+                244.0
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "backside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 2,
+                "flip_type": "none",
+                "flip_number": 0,
+                "landed": true,
+                "stance": "regular",
+                "trick_name": "bs bigspin"
+            }
+        },
+        "regular varial heel landed 1": {
+            "interval": [
+                251.2,
+                252.6
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 1,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "regular",
+                "trick_name": "varial heel"
+            }
+        },
+        "regular varial heel not landed 1": {
+            "interval": [
+                257.0,
+                258.6
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 1,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": false,
+                "stance": "regular",
+                "trick_name": "varial heel"
+            }
+        },
+        "fakie treflip landed 1": {
+            "interval": [
+                266.2,
+                267.7
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 2,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "fakie",
+                "trick_name": "treflip"
+            }
+        },
+        "fakie treflip landed 2": {
+            "interval": [
+                271.8,
+                273.3
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 2,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "fakie",
+                "trick_name": "treflip"
+            }
+        },
+        "regular bigflip landed 1": {
+            "interval": [
+                278.0,
+                279.7
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "backside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 2,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "regular",
+                "trick_name": "bigflip"
+            }
+        },
+        "regular bigflip landed 2": {
+            "interval": [
+                283.6,
+                285.1
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "backside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 2,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "regular",
+                "trick_name": "bigflip"
+            }
+        },
+        "regular bs 180 heelflip landed 1": {
+            "interval": [
+                291.0,
+                292.6
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "backside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 1,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "regular",
+                "trick_name": "bs 180 heelflip"
+            }
+        },
+        "regular bs 180 heelflip landed 2": {
+            "interval": [
+                296.7,
+                297.8
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "backside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 1,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "regular",
+                "trick_name": "bs 180 heelflip"
+            }
+        },
+        "nollie bs 180 heelflip landed 1": {
+            "interval": [
+                303.8,
+                305.4
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "backside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 1,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "nollie",
+                "trick_name": "bs 180 heelflip"
+            }
+        },
+        "nollie bs 180 heelflip landed 2": {
+            "interval": [
+                309.5,
+                310.9
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "backside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 1,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "nollie",
+                "trick_name": "bs 180 heelflip"
+            }
+        },
+        "fakie bs 180 kickflip landed 1": {
+            "interval": [
+                329.1,
+                330.5
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "backside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 1,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "fakie",
+                "trick_name": "bs 180 kickflip"
+            }
+        },
+        "fakie bs 180 kickflip landed 2": {
+            "interval": [
+                334.9,
+                336.3
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "backside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 1,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "fakie",
+                "trick_name": "bs 180 kickflip"
+            }
+        },
+        "regular fs 180 heelflip landed 1": {
+            "interval": [
+                342.7,
+                344.3
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "frontside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 1,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "regular",
+                "trick_name": "fs 180 heelflip"
+            }
+        },
+        "regular fs 180 heelflip landed 2": {
+            "interval": [
+                348.9,
+                350.6
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "frontside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 1,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "regular",
+                "trick_name": "fs 180 heelflip"
+            }
+        },
+        "regular fs bigspin landed 1": {
+            "interval": [
+                355.3,
+                356.8
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "frontside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 2,
+                "flip_type": "none",
+                "flip_number": 0,
+                "landed": true,
+                "stance": "regular",
+                "trick_name": "fs bigspin"
+            }
+        },
+        "regular fs bigspin landed 2": {
+            "interval": [
+                360.9,
+                362.4
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "frontside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 2,
+                "flip_type": "none",
+                "flip_number": 0,
+                "landed": true,
+                "stance": "regular",
+                "trick_name": "fs bigspin"
+            }
+        },
+        "fakie fs 180 heelflip landed 1": {
+            "interval": [
+                367.4,
+                368.6
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "frontside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 1,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "fakie",
+                "trick_name": "fs 180 heelflip"
+            }
+        },
+        "fakie fs 180 heelflip landed 2": {
+            "interval": [
+                373.5,
+                375.2
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "frontside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 1,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "fakie",
+                "trick_name": "fs 180 heelflip"
+            }
+        },
+        "switch treflip landed 1": {
+            "interval": [
+                382.8,
+                384.6
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 2,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "switch",
+                "trick_name": "treflip"
+            }
+        },
+        "switch treflip landed 2": {
+            "interval": [
+                389.3,
+                390.9
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 2,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "switch",
+                "trick_name": "treflip"
+            }
+        },
+        "switch bs bigspin not landed 1": {
+            "interval": [
+                396.5,
+                398.0
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "backside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 2,
+                "flip_type": "none",
+                "flip_number": 0,
+                "landed": false,
+                "stance": "switch",
+                "trick_name": "bs bigspin"
+            }
+        },
+        "fakie hardflip not landed 1": {
+            "interval": [
+                405.1,
+                406.7
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 1,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": false,
+                "stance": "fakie",
+                "trick_name": "hardflip"
+            }
+        },
+        "switch bs bigspin landed 1": {
+            "interval": [
+                424.9,
+                426.6
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "backside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 2,
+                "flip_type": "none",
+                "flip_number": 0,
+                "landed": true,
+                "stance": "switch",
+                "trick_name": "bs bigspin"
+            }
+        },
+        "switch bs bigspin landed 2": {
+            "interval": [
+                430.7,
+                432.0
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "backside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 2,
+                "flip_type": "none",
+                "flip_number": 0,
+                "landed": true,
+                "stance": "switch",
+                "trick_name": "bs bigspin"
+            }
+        },
+        "fakie bigflip landed 1": {
+            "interval": [
+                440.2,
+                441.9
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "backside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 2,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "fakie",
+                "trick_name": "bigflip"
+            }
+        },
+        "fakie bigflip landed 2": {
+            "interval": [
+                446.3,
+                448.2
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "backside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 2,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "fakie",
+                "trick_name": "bigflip"
+            }
+        },
+        "nollie bs 180 kickflip landed 1": {
+            "interval": [
+                453.4,
+                455.2
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "backside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 1,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "nollie",
+                "trick_name": "bs 180 kickflip"
+            }
+        },
+        "nollie bs 180 kickflip landed 2": {
+            "interval": [
+                459.5,
+                461.2
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "backside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 1,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "nollie",
+                "trick_name": "bs 180 kickflip"
+            }
+        },
+        "nollie inward heel landed 1": {
+            "interval": [
+                469.5,
+                471.4
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 1,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "nollie",
+                "trick_name": "inward heel"
+            }
+        },
+        "nollie inward heel landed 2": {
+            "interval": [
+                476.0,
+                478.0
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 1,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "nollie",
+                "trick_name": "inward heel"
+            }
+        },
+        "regular inward heel not landed 1": {
+            "interval": [
+                483.9,
+                485.6
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 1,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": false,
+                "stance": "regular",
+                "trick_name": "inward heel"
+            }
+        },
+        "fakie hardflip landed 1": {
+            "interval": [
+                495.3,
+                496.7
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 1,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "fakie",
+                "trick_name": "hardflip"
+            }
+        },
+        "fakie hardflip landed 2": {
+            "interval": [
+                503.9,
+                505.5
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 1,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "fakie",
+                "trick_name": "hardflip"
+            }
+        },
+        "switch fs 360 landed 1": {
+            "interval": [
+                509.2,
+                510.7
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "frontside",
+                "body_rotation_number": 2,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 2,
+                "flip_type": "none",
+                "flip_number": 0,
+                "landed": true,
+                "stance": "switch",
+                "trick_name": "fs 360"
+            }
+        },
+        "switch fs 360 landed 2": {
+            "interval": [
+                515.5,
+                516.8
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "frontside",
+                "body_rotation_number": 2,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 2,
+                "flip_type": "none",
+                "flip_number": 0,
+                "landed": true,
+                "stance": "switch",
+                "trick_name": "fs 360"
+            }
+        },
+        "switch fs 180 kickflip landed 1": {
+            "interval": [
+                521.8,
+                523.1
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "frontside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 1,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "switch",
+                "trick_name": "fs 180 kickflip"
+            }
+        },
+        "switch fs 180 kickflip landed 2": {
+            "interval": [
+                529.9,
+                531.4
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "frontside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 1,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "switch",
+                "trick_name": "fs 180 kickflip"
+            }
+        },
+        "fakie fs 180 kickflip landed 1": {
+            "interval": [
+                535.7,
+                537.2
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "frontside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 1,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "fakie",
+                "trick_name": "fs 180 kickflip"
+            }
+        },
+        "fakie fs 180 kickflip not landed 1": {
+            "interval": [
+                541.9,
+                543.8
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "frontside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 1,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": false,
+                "stance": "fakie",
+                "trick_name": "fs 180 kickflip"
+            }
+        },
+        "switch 360 shovit landed 1": {
+            "interval": [
+                568.2,
+                569.7
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 2,
+                "flip_type": "none",
+                "flip_number": 0,
+                "landed": true,
+                "stance": "switch",
+                "trick_name": "360 shovit"
+            }
+        },
+        "switch 360 shovit not landed 1": {
+            "interval": [
+                575.1,
+                576.8
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 2,
+                "flip_type": "none",
+                "flip_number": 0,
+                "landed": false,
+                "stance": "switch",
+                "trick_name": "360 shovit"
+            }
+        },
+        "fakie double kickflip not landed 1": {
+            "interval": [
+                600.8,
+                602.3
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "none",
+                "board_rotation_number": 0,
+                "flip_type": "kickflip",
+                "flip_number": 2,
+                "landed": false,
+                "stance": "fakie",
+                "trick_name": "double kickflip"
+            }
+        },
+        "regular biggerflip landed 1": {
+            "interval": [
+                623.2,
+                624.9
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "backside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 3,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "regular",
+                "trick_name": "biggerflip"
+            }
+        },
+        "regular biggerflip landed 2": {
+            "interval": [
+                629.7,
+                631.0
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "backside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 3,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "regular",
+                "trick_name": "biggerflip"
+            }
+        },
+        "regular laserflip landed 1": {
+            "interval": [
+                655.8,
+                657.4
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 2,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "regular",
+                "trick_name": "laserflip"
+            }
+        },
+        "regular laserflip not landed 1": {
+            "interval": [
+                663.2,
+                664.9
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 2,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": false,
+                "stance": "regular",
+                "trick_name": "laserflip"
+            }
+        },
+        "regular fs 360 not landed 1": {
+            "interval": [
+                693.8,
+                695.3
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "frontside",
+                "body_rotation_number": 2,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 2,
+                "flip_type": "none",
+                "flip_number": 0,
+                "landed": false,
+                "stance": "regular",
+                "trick_name": "fs 360"
+            }
+        },
+        "switch fs 360 heelflip landed 1": {
+            "interval": [
+                718.2,
+                719.8
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "frontside",
+                "body_rotation_number": 2,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 2,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "switch",
+                "trick_name": "fs 360 heelflip"
+            }
+        },
+        "switch fs 360 heelflip landed 2": {
+            "interval": [
+                725.2,
+                727.1
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "frontside",
+                "body_rotation_number": 2,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 2,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "switch",
+                "trick_name": "fs 360 heelflip"
+            }
+        },
+        "fakie double kickflip not landed 2": {
+            "interval": [
+                738.9,
+                740.9
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "none",
+                "board_rotation_number": 0,
+                "flip_type": "kickflip",
+                "flip_number": 2,
+                "landed": false,
+                "stance": "fakie",
+                "trick_name": "double kickflip"
+            }
+        },
+        "fakie double kickflip landed 1": {
+            "interval": [
+                762.3,
+                763.7
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "none",
+                "board_rotation_number": 0,
+                "flip_type": "kickflip",
+                "flip_number": 2,
+                "landed": true,
+                "stance": "fakie",
+                "trick_name": "double kickflip"
+            }
+        },
+        "fakie double kickflip not landed 3": {
+            "interval": [
+                768.4,
+                770.0
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "none",
+                "board_rotation_number": 0,
+                "flip_type": "kickflip",
+                "flip_number": 2,
+                "landed": false,
+                "stance": "fakie",
+                "trick_name": "double kickflip"
+            }
+        }
+    },
+    "https://www.youtube.com/watch?v=A8z4OJByT-w": {
+        "regular 360 shovit landed 1": {
+            "interval": [
+                89.9,
+                91.5
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 2,
+                "flip_type": "none",
+                "flip_number": 0,
+                "landed": true,
+                "stance": "regular",
+                "trick_name": "360 shovit"
+            }
+        },
+        "regular 360 shovit landed 2": {
+            "interval": [
+                94.7,
+                96.4
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 2,
+                "flip_type": "none",
+                "flip_number": 0,
+                "landed": true,
+                "stance": "regular",
+                "trick_name": "360 shovit"
+            }
+        },
+        "regular fs shovit landed 1": {
+            "interval": [
+                99.2,
+                101.2
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 1,
+                "flip_type": "none",
+                "flip_number": 0,
+                "landed": true,
+                "stance": "regular",
+                "trick_name": "fs shovit"
+            }
+        },
+        "regular fs shovit landed 2": {
+            "interval": [
+                103.5,
+                104.6
+            ],
+            "video_source": "BATB 11",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 1,
+                "flip_type": "none",
+                "flip_number": 0,
+                "landed": true,
+                "stance": "regular",
+                "trick_name": "fs shovit"
+            }
+        }
+    },
+    "https://www.youtube.com/watch?v=eGTsIL-xJB8": {
+        "regular kickflip landed 1": {
+            "interval": [
+                63.2,
+                64.7
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "none",
+                "board_rotation_number": 0,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "regular",
+                "trick_name": "kickflip"
+            }
+        },
+        "regular kickflip landed 2": {
+            "interval": [
+                64.9,
+                65.8
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "none",
+                "board_rotation_number": 0,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "regular",
+                "trick_name": "kickflip"
+            }
+        },
+        "nollie kickflip landed 1": {
+            "interval": [
+                66.3,
+                67.6
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "none",
+                "board_rotation_number": 0,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "nollie",
+                "trick_name": "kickflip"
+            }
+        },
+        "nollie kickflip landed 2": {
+            "interval": [
+                67.8,
+                69.0
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "none",
+                "board_rotation_number": 0,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "nollie",
+                "trick_name": "kickflip"
+            }
+        },
+        "nollie heelflip landed 1": {
+            "interval": [
+                69.3,
+                70.5
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "none",
+                "board_rotation_number": 0,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "nollie",
+                "trick_name": "heelflip"
+            }
+        },
+        "nollie heelflip landed 2": {
+            "interval": [
+                71.0,
+                72.1
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "none",
+                "board_rotation_number": 0,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "nollie",
+                "trick_name": "heelflip"
+            }
+        },
+        "regular treflip landed 1": {
+            "interval": [
+                72.4,
+                73.5
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 2,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "regular",
+                "trick_name": "treflip"
+            }
+        },
+        "regular treflip landed 2": {
+            "interval": [
+                73.8,
+                74.8
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 2,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "regular",
+                "trick_name": "treflip"
+            }
+        },
+        "regular fs 180 kickflip landed 1": {
+            "interval": [
+                75.3,
+                76.4
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "frontside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 1,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "regular",
+                "trick_name": "fs 180 kickflip"
+            }
+        },
+        "regular fs 180 kickflip not landed 1": {
+            "interval": [
+                76.9,
+                78.3
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "frontside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 1,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": false,
+                "stance": "regular",
+                "trick_name": "fs 180 kickflip"
+            }
+        },
+        "switch kickflip landed 1": {
+            "interval": [
+                79.3,
+                80.4
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "none",
+                "board_rotation_number": 0,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "switch",
+                "trick_name": "kickflip"
+            }
+        },
+        "switch kickflip landed 2": {
+            "interval": [
+                80.8,
+                81.9
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "none",
+                "board_rotation_number": 0,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "switch",
+                "trick_name": "kickflip"
+            }
+        },
+        "switch heelflip not landed 1": {
+            "interval": [
+                82.3,
+                84.0
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "none",
+                "board_rotation_number": 0,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": false,
+                "stance": "switch",
+                "trick_name": "heelflip"
+            }
+        },
+        "fakie kickflip landed 1": {
+            "interval": [
+                84.6,
+                85.9
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "none",
+                "board_rotation_number": 0,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "fakie",
+                "trick_name": "kickflip"
+            }
+        },
+        "fakie kickflip landed 2": {
+            "interval": [
+                86.2,
+                87.3
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "none",
+                "board_rotation_number": 0,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "fakie",
+                "trick_name": "kickflip"
+            }
+        },
+        "regular bs 180 heelflip not landed 1": {
+            "interval": [
+                87.7,
+                88.7
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "backside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 1,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": false,
+                "stance": "regular",
+                "trick_name": "bs 180 heelflip"
+            }
+        },
+        "regular bs bigspin landed 1": {
+            "interval": [
+                89.4,
+                90.7
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "backside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 2,
+                "flip_type": "none",
+                "flip_number": 0,
+                "landed": true,
+                "stance": "regular",
+                "trick_name": "bs bigspin"
+            }
+        },
+        "regular bs bigspin not landed 1": {
+            "interval": [
+                92.0,
+                93.1
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "backside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 2,
+                "flip_type": "none",
+                "flip_number": 0,
+                "landed": false,
+                "stance": "regular",
+                "trick_name": "bs bigspin"
+            }
+        },
+        "regular bigflip landed 1": {
+            "interval": [
+                94.3,
+                95.5
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "backside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 2,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "regular",
+                "trick_name": "bigflip"
+            }
+        },
+        "regular bigflip not landed 1": {
+            "interval": [
+                95.9,
+                97.0
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "backside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 2,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": false,
+                "stance": "regular",
+                "trick_name": "bigflip"
+            }
+        },
+        "switch treflip landed 1": {
+            "interval": [
+                98.4,
+                99.6
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 2,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "switch",
+                "trick_name": "treflip"
+            }
+        },
+        "switch treflip not landed 1": {
+            "interval": [
+                100.0,
+                101.0
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 2,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": false,
+                "stance": "switch",
+                "trick_name": "treflip"
+            }
+        },
+        "fakie treflip landed 1": {
+            "interval": [
+                102.3,
+                103.6
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 2,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "fakie",
+                "trick_name": "treflip"
+            }
+        },
+        "fakie treflip landed 2": {
+            "interval": [
+                104.0,
+                105.1
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 2,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "fakie",
+                "trick_name": "treflip"
+            }
+        },
+        "nollie fs 180 heelflip landed 1": {
+            "interval": [
+                106.5,
+                107.6
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "frontside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 1,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "nollie",
+                "trick_name": "fs 180 heelflip"
+            }
+        },
+        "nollie fs 180 heelflip not landed 1": {
+            "interval": [
+                108.1,
+                109.2
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "frontside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 1,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": false,
+                "stance": "nollie",
+                "trick_name": "fs 180 heelflip"
+            }
+        },
+        "nollie fs 180 heelflip landed 2": {
+            "interval": [
+                109.9,
+                111.3
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "frontside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 1,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "nollie",
+                "trick_name": "fs 180 heelflip"
+            }
+        },
+        "nollie bs 180 heelflip landed 1": {
+            "interval": [
+                113.0,
+                114.2
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "backside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 1,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "nollie",
+                "trick_name": "bs 180 heelflip"
+            }
+        },
+        "nollie bs 180 heelflip landed 2": {
+            "interval": [
+                114.5,
+                115.9
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "backside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 1,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "nollie",
+                "trick_name": "bs 180 heelflip"
+            }
+        },
+        "fakie bigheel not landed 1": {
+            "interval": [
+                116.4,
+                117.4
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "frontside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 2,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": false,
+                "stance": "fakie",
+                "trick_name": "bigheel"
+            }
+        },
+        "fakie fs 180 kickflip landed 1": {
+            "interval": [
+                118.0,
+                119.3
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "frontside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 1,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "fakie",
+                "trick_name": "fs 180 kickflip"
+            }
+        },
+        "fakie fs 180 kickflip landed 2": {
+            "interval": [
+                119.9,
+                121.0
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "frontside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 1,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "fakie",
+                "trick_name": "fs 180 kickflip"
+            }
+        },
+        "regular bs 180 heelflip landed 1": {
+            "interval": [
+                121.8,
+                122.9
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "backside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 1,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "regular",
+                "trick_name": "bs 180 heelflip"
+            }
+        },
+        "regular bs 180 heelflip landed 2": {
+            "interval": [
+                123.5,
+                124.7
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "backside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 1,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "regular",
+                "trick_name": "bs 180 heelflip"
+            }
+        },
+        "switch fs bigspin landed 1": {
+            "interval": [
+                125.3,
+                126.5
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "frontside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 2,
+                "flip_type": "none",
+                "flip_number": 0,
+                "landed": true,
+                "stance": "switch",
+                "trick_name": "fs bigspin"
+            }
+        },
+        "switch fs bigspin not landed 1": {
+            "interval": [
+                126.8,
+                128.0
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "frontside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 2,
+                "flip_type": "none",
+                "flip_number": 0,
+                "landed": false,
+                "stance": "switch",
+                "trick_name": "fs bigspin"
+            }
+        },
+        "nollie fs 180 kickflip landed 1": {
+            "interval": [
+                129.0,
+                130.1
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "frontside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 1,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "nollie",
+                "trick_name": "fs 180 kickflip"
+            }
+        },
+        "nollie fs 180 kickflip landed 2": {
+            "interval": [
+                130.6,
+                131.9
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "frontside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 1,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "nollie",
+                "trick_name": "fs 180 kickflip"
+            }
+        },
+        "fakie bs 180 kickflip landed 1": {
+            "interval": [
+                132.6,
+                133.7
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "backside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 1,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "fakie",
+                "trick_name": "bs 180 kickflip"
+            }
+        },
+        "fakie bs 180 kickflip landed 2": {
+            "interval": [
+                134.1,
+                135.4
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "backside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 1,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "fakie",
+                "trick_name": "bs 180 kickflip"
+            }
+        },
+        "nollie bs 180 kickflip landed 1": {
+            "interval": [
+                136.2,
+                137.3
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "backside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 1,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "nollie",
+                "trick_name": "bs 180 kickflip"
+            }
+        },
+        "nollie bs 180 kickflip landed 2": {
+            "interval": [
+                137.9,
+                139.5
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "backside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 1,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "nollie",
+                "trick_name": "bs 180 kickflip"
+            }
+        },
+        "switch fs 180 kickflip landed 1": {
+            "interval": [
+                140.6,
+                141.9
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "frontside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 1,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "switch",
+                "trick_name": "fs 180 kickflip"
+            }
+        },
+        "switch fs 180 kickflip landed 2": {
+            "interval": [
+                142.2,
+                143.3
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "frontside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 1,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "switch",
+                "trick_name": "fs 180 kickflip"
+            }
+        },
+        "switch bs 180 kickflip landed 1": {
+            "interval": [
+                143.9,
+                145.0
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "backside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 1,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "switch",
+                "trick_name": "bs 180 kickflip"
+            }
+        },
+        "switch bs 180 kickflip landed 2": {
+            "interval": [
+                146.0,
+                147.3
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "backside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 1,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "switch",
+                "trick_name": "bs 180 kickflip"
+            }
+        },
+        "switch fs 180 heelflip landed 1": {
+            "interval": [
+                147.8,
+                149.0
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "frontside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 1,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "switch",
+                "trick_name": "fs 180 heelflip"
+            }
+        },
+        "switch fs 180 heelflip landed 2": {
+            "interval": [
+                149.3,
+                150.5
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "frontside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 1,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "switch",
+                "trick_name": "fs 180 heelflip"
+            }
+        },
+        "switch bs 180 heelflip landed 1": {
+            "interval": [
+                152.2,
+                153.3
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "backside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 1,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "switch",
+                "trick_name": "bs 180 heelflip"
+            }
+        },
+        "switch bs 180 heelflip landed 2": {
+            "interval": [
+                153.9,
+                155.1
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "backside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 1,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "switch",
+                "trick_name": "bs 180 heelflip"
+            }
+        },
+        "fakie fs 180 heelflip not landed 1": {
+            "interval": [
+                155.6,
+                156.9
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "frontside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 1,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": false,
+                "stance": "fakie",
+                "trick_name": "fs 180 heelflip"
+            }
+        },
+        "fakie bigheel landed 1": {
+            "interval": [
+                157.6,
+                158.9
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "frontside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 2,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "fakie",
+                "trick_name": "bigheel"
+            }
+        },
+        "fakie bigheel not landed 2": {
+            "interval": [
+                159.8,
+                161.1
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "frontside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 2,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": false,
+                "stance": "fakie",
+                "trick_name": "bigheel"
+            }
+        },
+        "fakie bigheel not landed 3": {
+            "interval": [
+                161.9,
+                163.1
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "frontside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 2,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": false,
+                "stance": "fakie",
+                "trick_name": "bigheel"
+            }
+        }
+    },
+    "https://www.youtube.com/watch?v=duSN0KHFK44": {
+        "regular treflip landed 1": {
+            "interval": [
+                51.9,
+                53.2
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 2,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "regular",
+                "trick_name": "treflip"
+            }
+        },
+        "regular treflip landed 2": {
+            "interval": [
+                53.5,
+                54.7
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 2,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "regular",
+                "trick_name": "treflip"
+            }
+        },
+        "regular fs 180 kickflip landed 1": {
+            "interval": [
+                55.1,
+                56.3
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "frontside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 1,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "regular",
+                "trick_name": "fs 180 kickflip"
+            }
+        },
+        "regular fs 180 kickflip not landed 1": {
+            "interval": [
+                57.0,
+                58.1
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "frontside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 1,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": false,
+                "stance": "regular",
+                "trick_name": "fs 180 kickflip"
+            }
+        },
+        "switch heelflip landed 1": {
+            "interval": [
+                59.0,
+                60.3
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "none",
+                "board_rotation_number": 0,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "switch",
+                "trick_name": "heelflip"
+            }
+        },
+        "switch heelflip landed 2": {
+            "interval": [
+                60.7,
+                62.0
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "none",
+                "board_rotation_number": 0,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "switch",
+                "trick_name": "heelflip"
+            }
+        },
+        "regular bs 180 kickflip landed 1": {
+            "interval": [
+                62.6,
+                63.9
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "backside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 1,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "regular",
+                "trick_name": "bs 180 kickflip"
+            }
+        },
+        "regular bs 180 kickflip not landed 1": {
+            "interval": [
+                64.3,
+                65.1
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "backside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 1,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": false,
+                "stance": "regular",
+                "trick_name": "bs 180 kickflip"
+            }
+        },
+        "switch treflip not landed 1": {
+            "interval": [
+                65.8,
+                67.3
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 2,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": false,
+                "stance": "switch",
+                "trick_name": "treflip"
+            }
+        },
+        "nollie heelflip landed 1": {
+            "interval": [
+                68.2,
+                69.2
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "none",
+                "board_rotation_number": 0,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "nollie",
+                "trick_name": "heelflip"
+            }
+        },
+        "nollie heelflip landed 2": {
+            "interval": [
+                69.7,
+                71.2
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "none",
+                "board_rotation_number": 0,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "nollie",
+                "trick_name": "heelflip"
+            }
+        },
+        "fakie kickflip landed 1": {
+            "interval": [
+                73.0,
+                74.3
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "none",
+                "board_rotation_number": 0,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "fakie",
+                "trick_name": "kickflip"
+            }
+        },
+        "fakie kickflip landed 2": {
+            "interval": [
+                74.6,
+                76.4
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "none",
+                "board_rotation_number": 0,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "fakie",
+                "trick_name": "kickflip"
+            }
+        },
+        "nollie bs 180 heelflip landed 1": {
+            "interval": [
+                76.7,
+                78.1
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "backside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 1,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "nollie",
+                "trick_name": "bs 180 heelflip"
+            }
+        },
+        "nollie bs 180 heelflip landed 2": {
+            "interval": [
+                78.6,
+                80.2
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "backside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 1,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "nollie",
+                "trick_name": "bs 180 heelflip"
+            }
+        },
+        "fakie heelflip not landed 1": {
+            "interval": [
+                80.8,
+                82.0
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "none",
+                "board_rotation_number": 0,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": false,
+                "stance": "fakie",
+                "trick_name": "heelflip"
+            }
+        },
+        "regular heelflip landed 1": {
+            "interval": [
+                82.6,
+                83.7
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "none",
+                "board_rotation_number": 0,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "regular",
+                "trick_name": "heelflip"
+            }
+        },
+        "regular heelflip landed 2": {
+            "interval": [
+                84.4,
+                85.7
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "none",
+                "board_rotation_number": 0,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "regular",
+                "trick_name": "heelflip"
+            }
+        },
+        "fakie bs 180 kickflip landed 1": {
+            "interval": [
+                87.0,
+                88.8
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "backside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 1,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "fakie",
+                "trick_name": "bs 180 kickflip"
+            }
+        },
+        "fakie bs 180 kickflip landed 2": {
+            "interval": [
+                89.2,
+                90.7
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "backside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 1,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "fakie",
+                "trick_name": "bs 180 kickflip"
+            }
+        },
+        "fakie treflip not landed 1": {
+            "interval": [
+                91.2,
+                92.5
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 2,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": false,
+                "stance": "fakie",
+                "trick_name": "treflip"
+            }
+        },
+        "regular fs bigspin landed 1": {
+            "interval": [
+                93.2,
+                94.4
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "frontside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 2,
+                "flip_type": "none",
+                "flip_number": 0,
+                "landed": true,
+                "stance": "regular",
+                "trick_name": "fs bigspin"
+            }
+        },
+        "regular fs bigspin not landed 1": {
+            "interval": [
+                95.0,
+                96.3
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "frontside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 2,
+                "flip_type": "none",
+                "flip_number": 0,
+                "landed": false,
+                "stance": "regular",
+                "trick_name": "fs bigspin"
+            }
+        },
+        "nollie bigheel not landed 1": {
+            "interval": [
+                96.8,
+                98.0
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "frontside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 2,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": false,
+                "stance": "nollie",
+                "trick_name": "bigheel"
+            }
+        },
+        "switch treflip landed 1": {
+            "interval": [
+                98.9,
+                100.2
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 2,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "switch",
+                "trick_name": "treflip"
+            }
+        },
+        "switch treflip not landed 2": {
+            "interval": [
+                101.3,
+                102.5
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 2,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": false,
+                "stance": "switch",
+                "trick_name": "treflip"
+            }
+        },
+        "fakie fs 180 kickflip not landed 1": {
+            "interval": [
+                103.4,
+                104.9
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "frontside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 1,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": false,
+                "stance": "fakie",
+                "trick_name": "fs 180 kickflip"
+            }
+        },
+        "fakie varial heel landed 1": {
+            "interval": [
+                105.4,
+                106.9
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 1,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "fakie",
+                "trick_name": "varial heel"
+            }
+        },
+        "fakie varial heel not landed 1": {
+            "interval": [
+                107.2,
+                108.6
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 1,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": false,
+                "stance": "fakie",
+                "trick_name": "varial heel"
+            }
+        },
+        "nollie varial heel landed 1": {
+            "interval": [
+                109.5,
+                110.8
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 1,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "nollie",
+                "trick_name": "varial heel"
+            }
+        },
+        "nollie varial heel not landed 1": {
+            "interval": [
+                111.0,
+                112.1
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 1,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": false,
+                "stance": "nollie",
+                "trick_name": "varial heel"
+            }
+        },
+        "nollie kickflip landed 1": {
+            "interval": [
+                112.8,
+                114.0
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "none",
+                "board_rotation_number": 0,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "nollie",
+                "trick_name": "kickflip"
+            }
+        },
+        "nollie kickflip landed 2": {
+            "interval": [
+                114.6,
+                115.7
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "none",
+                "board_rotation_number": 0,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "nollie",
+                "trick_name": "kickflip"
+            }
+        },
+        "nollie bigheel landed 1": {
+            "interval": [
+                116.4,
+                117.5
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "frontside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 2,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "nollie",
+                "trick_name": "bigheel"
+            }
+        },
+        "nollie bigheel landed 2": {
+            "interval": [
+                118.1,
+                119.4
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "frontside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 2,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "nollie",
+                "trick_name": "bigheel"
+            }
+        },
+        "regular bigheel landed 1": {
+            "interval": [
+                121.7,
+                122.9
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "frontside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 2,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "regular",
+                "trick_name": "bigheel"
+            }
+        },
+        "regular bigflip landed 1": {
+            "interval": [
+                127.2,
+                128.5
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "backside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 2,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "regular",
+                "trick_name": "bigflip"
+            }
+        },
+        "regular bigflip landed 2": {
+            "interval": [
+                128.9,
+                130.4
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "backside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 2,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "regular",
+                "trick_name": "bigflip"
+            }
+        },
+        "fakie varial flip landed 1": {
+            "interval": [
+                133.5,
+                134.6
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 1,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "fakie",
+                "trick_name": "varial flip"
+            }
+        },
+        "fakie varial flip landed 2": {
+            "interval": [
+                135.1,
+                136.3
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "backside",
+                "board_rotation_number": 1,
+                "flip_type": "kickflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "fakie",
+                "trick_name": "varial flip"
+            }
+        },
+        "regular laserflip landed 1": {
+            "interval": [
+                137.5,
+                139.2
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 2,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": true,
+                "stance": "regular",
+                "trick_name": "laserflip"
+            }
+        },
+        "regular laserflip not landed 1": {
+            "interval": [
+                139.7,
+                141.2
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 2,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": false,
+                "stance": "regular",
+                "trick_name": "laserflip"
+            }
+        },
+        "regular laserflip not landed 2": {
+            "interval": [
+                142.4,
+                144.2
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "none",
+                "body_rotation_number": 0,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 2,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": false,
+                "stance": "regular",
+                "trick_name": "laserflip"
+            }
+        },
+        "regular bigheel not landed 1": {
+            "interval": [
+                124.5,
+                126.1
+            ],
+            "video_source": "BATB 1",
+            "trick_info": {
+                "body_rotation_type": "frontside",
+                "body_rotation_number": 1,
+                "board_rotation_type": "frontside",
+                "board_rotation_number": 2,
+                "flip_type": "heelflip",
+                "flip_number": 1,
+                "landed": false,
+                "stance": "regular",
+                "trick_name": "bigheel"
+            }
+        }
+    }
+}
