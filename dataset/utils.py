@@ -7,7 +7,7 @@ import pandas as pd
 import torchvision.transforms.functional as TF
 
 
-def get_video(video_file: str) -> list:
+def get_video(video_file: str) -> list[Image.Image]:
     video_reader = cv2.VideoCapture(video_file)
     frames = []
     while True:
@@ -21,5 +21,5 @@ def get_video(video_file: str) -> list:
     return frames
 
 class VideoToTensor:
-    def __call__(self, imgs: list) -> torch.FloatTensor:
+    def __call__(self, imgs: list) -> torch.Tensor:
         return torch.stack([TF.pil_to_tensor(img) for img in imgs])
