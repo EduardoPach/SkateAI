@@ -24,7 +24,7 @@ class TricksDataset(Dataset):
     def __getitem__(self, index: int) -> tuple[torch.Tensor, np.array]:
         video_file = self.metadata.iloc[index, 0]
         video_path = os.path.join(self.video_dir, video_file)
-        labels = self.metadata.loc[index, const.LABELS].to_numpy().astype(int)
+        labels = {col: self.metadata.loc[index, col] for col in const.LABELS}
         video = utils.get_video(video_path)
         video = utils.VideoToTensor()(video)
 
@@ -34,7 +34,7 @@ class TricksDataset(Dataset):
                 frames_diff = int(self.max_frames - F)
                 padding = torch.zeros(frames_diff, C, H, W)
                 video = torch.cat([padding, video])
-            elif F > self.max_frames:
+            else:
                 video = video[:self.max_frames, ...]
 
         if self.transform:
