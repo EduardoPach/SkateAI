@@ -12,7 +12,7 @@ from dataset import const
 from dataset import utils
 
 class TricksDataset(Dataset):
-    def __init__(self, csv_file: Union[Path, str], root_dir: Union[Path, str], max_frames: Union[None, int], transform: Union[None, Compose]) -> None:
+    def __init__(self, csv_file: Union[Path, str], root_dir: Union[Path, str], max_frames: Union[None, int]=None, transform: Union[None, Compose]=None) -> None:
         self.video_dir = root_dir
         self.transform = transform
         self.metadata = pd.read_csv(csv_file)
@@ -28,16 +28,18 @@ class TricksDataset(Dataset):
         video = utils.get_video(video_path)
         video = utils.VideoToTensor()(video)
 
-        if self.max_frames:
-            F, C, H, W = video.shape
-            if F < self.max_frames:
-                frames_diff = int(self.max_frames - F)
-                padding = torch.zeros(frames_diff, C, H, W)
-                video = torch.cat([padding, video])
-            else:
-                video = video[:self.max_frames, ...]
-
         if self.transform:
             video = self.transform(video)
+
+        if not self.max_frames:
+            return video, labels
+
+        F, C, H, W = video.shape
+        if F < self.max_frames:
+            frames_diff = int(self.max_frames - F)
+            padding = torch.zeros(frames_diff, C, H, W)
+            video = torch.cat([padding, video])
+        else:
+            video = video[:self.max_frames, ...]
 
         return video, labels
