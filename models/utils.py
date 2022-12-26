@@ -78,17 +78,18 @@ class Heads(nn.Module):
         
         return net
 
-    def forward(self, x: torch.Tensor) -> list[torch.Tensor]:
-        byrt_out = self.byrt_net(x)
-        byrn_out = self.byrn_net(x)
-        bdrt_out = self.bdrt_net(x)
-        bdrn_out = self.bdrn_net(x)
-        ft_out = self.ft_net(x)
-        fn_out = self.fn_net(x)
-        landed_out = self.landed_net(x)
-        stance_out = self.stance_net(x)
+    def forward(self, x: torch.Tensor) -> dict[str, torch.Tensor]:
+        out = {}
+        out["body_rotation_type"] = self.byrt_net(x)
+        out["body_rotation_number"] = self.byrn_net(x)
+        out["board_rotation_type"] = self.bdrt_net(x)
+        out["board_rotation_number"] = self.bdrn_net(x)
+        out["flip_type"] = self.ft_net(x)
+        out["flip_number"] = self.fn_net(x)
+        out["landed"] = self.landed_net(x)
+        out["stance"] = self.stance_net(x)
 
-        return [byrt_out, byrn_out, bdrt_out, bdrn_out, ft_out, fn_out, landed_out, stance_out]
+        return out
 
 class Identity(nn.Module):
     def __init__(self):
