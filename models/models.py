@@ -28,6 +28,6 @@ class ResNet18_RNN(nn.Module):
         x = self.basemodel(x) # Extracting Features
         x = x.view(B, F, -1) # Reshaping to B x F x Features (ResNet18 outputs B*F x 512)
         x, _ = self.rnn(x) # output, hidden and cell states
-        x = x.view(B, -1) # Reshaping to B x F * Hidden Size
+        x = x.reshape(B, -1) # Reshaping to B x F * Hidden Size
         
         return self.heads(x)
