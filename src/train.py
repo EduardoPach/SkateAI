@@ -8,6 +8,8 @@ from utils import train_fn, get_loaders, load_checkpoint, save_checkpoint, check
 from dataset import TricksDataset
 from models import ResNet18_RNN
 
+
+
 EPOCHS = None
 LEARNING_RATE = 1e-4
 
@@ -36,49 +38,54 @@ HEADS_PARAMS = {
     "stance":[2, 2]
 }
 
-model = ResNet18_RNN(
-    RNN_TYPE, 
-    RNN_LAYERS, 
-    RNN_HIDDEN, 
-    HEADS_PARAMS, 
-    TRAINABLE_BACKBONE
-)
-optimizer = optim.Adam(model.parameters(), lr=LEARNING_RATE)
-loss_fns = {
-    'body_rotation_type': nn.CrossEntropyLoss(),
-    'body_rotation_number': nn.MSELoss(),
-    'board_rotation_type': nn.CrossEntropyLoss(),
-    'board_rotation_number': nn.MSELoss(),
-    'flip_type': nn.CrossEntropyLoss(),
-    'flip_number': nn.MSELoss(),
-    'landed': nn.CrossEntropyLoss(),
-    'stance': nn.CrossEntropyLoss()
-}
-train_transforms = transforms.Compose([
+def main():
 
-])
-val_transforms = transforms.Compose([
-
-])
-
-train_loader, val_loader = get_loaders(
-    TRAIN_CSV,
-    VAL_CSV,
-    ROOT_DIR,
-    MAX_FRAMES,
-    BATCH_SIZE,
-    train_transforms,
-    val_transforms,
-    NUM_WORKERS,
-    PIN_MEMORY
-)
-
-model.train()
-model.to(DEVICE)
-for epoch in range(EPOCHS):
-    train_fn(train_loader, model, optimizer, loss_fns, DEVICE)
-    # save model
-    checkpoint = {
-        "state_dict": model.state_dict(),
-        "optimizer":optimizer.state_dict(),
+    model = ResNet18_RNN(
+        RNN_TYPE, 
+        RNN_LAYERS, 
+        RNN_HIDDEN, 
+        HEADS_PARAMS, 
+        TRAINABLE_BACKBONE
+    )
+    optimizer = optim.Adam(model.parameters(), lr=LEARNING_RATE)
+    loss_fns = {
+        'body_rotation_type': nn.CrossEntropyLoss(),
+        'body_rotation_number': nn.MSELoss(),
+        'board_rotation_type': nn.CrossEntropyLoss(),
+        'board_rotation_number': nn.MSELoss(),
+        'flip_type': nn.CrossEntropyLoss(),
+        'flip_number': nn.MSELoss(),
+        'landed': nn.CrossEntropyLoss(),
+        'stance': nn.CrossEntropyLoss()
     }
+    train_transforms = transforms.Compose([
+
+    ])
+    val_transforms = transforms.Compose([
+
+    ])
+
+    train_loader, val_loader = get_loaders(
+        TRAIN_CSV,
+        VAL_CSV,
+        ROOT_DIR,
+        MAX_FRAMES,
+        BATCH_SIZE,
+        train_transforms,
+        val_transforms,
+        NUM_WORKERS,
+        PIN_MEMORY
+    )
+
+    model.train()
+    model.to(DEVICE)
+    for epoch in range(EPOCHS):
+        train_fn(train_loader, model, optimizer, loss_fns, DEVICE)
+        # save model
+        checkpoint = {
+            "state_dict": model.state_dict(),
+            "optimizer":optimizer.state_dict(),
+        }
+
+if __name__=="__main__":
+    main()
