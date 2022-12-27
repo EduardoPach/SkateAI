@@ -35,7 +35,7 @@ def train_fn(loader: DataLoader, model: nn.Module, optimizer: Optimizer, loss_fn
 
 def get_loaders(
     train_csv: Union[str, Path],
-    val_csv: Union[str, Path],
+    val_csv: Union[str, Path, None],
     root_dir: Union[str, Path],
     max_frames: int,
     batch_size: int,
@@ -60,11 +60,14 @@ def get_loaders(
         shuffle=True,
     )
 
+    if not val_csv:
+        return train_loader
+        
     val_ds = TricksDataset(
-        csv_file=train_csv,
+        csv_file=val_csv,
         root_dir=root_dir,
         max_frames=max_frames,
-        transform=train_transform
+        transform=val_transform
     )
 
     val_loader = DataLoader(
