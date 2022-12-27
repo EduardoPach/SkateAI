@@ -62,7 +62,7 @@ def get_loaders(
 
     if not val_csv:
         return train_loader
-        
+
     val_ds = TricksDataset(
         csv_file=val_csv,
         root_dir=root_dir,
@@ -81,7 +81,7 @@ def get_loaders(
     return train_loader, val_loader
     
 
-def save_checkpoint(state: dict, filename: str="my_checkpoint.pth.tar") -> None:
+def save_checkpoint(state: dict, filename: str="my_checkpoint.pt") -> None:
     print("=> Saving checkpoint")
     torch.save(state, filename)
 
