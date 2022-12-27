@@ -4,6 +4,7 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 import torchvision.transforms as transforms
+from torchvision.models import resnet
 
 from utils import train_fn, get_loaders, load_checkpoint, save_checkpoint, check_performance
 from models import ResNet18_RNN
@@ -39,6 +40,8 @@ def main():
         HEADS_PARAMS, 
         TRAINABLE_BACKBONE
     )
+
+    resnet_transforms = resnet.ResNet18_Weights.DEFAULT.transforms()
     optimizer = optim.Adam(model.parameters(), lr=LEARNING_RATE)
     loss_fns = {
         'body_rotation_type': nn.CrossEntropyLoss(),
@@ -51,10 +54,14 @@ def main():
         'stance': nn.CrossEntropyLoss()
     }
     train_transforms = transforms.Compose([
-
+        transforms.ColorJitter(),
+        transforms.RandomHorizontalFlip(),
+        resnet_transforms,
     ])
     val_transforms = transforms.Compose([
-
+        transforms.ColorJitter(),
+        transforms.RandomHorizontalFlip(),
+        resnet_transforms,
     ])
 
     train_loader, val_loader = get_loaders(
