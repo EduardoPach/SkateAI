@@ -1,3 +1,4 @@
+import yaml
 import wandb
 import torch
 import torch.nn as nn
@@ -7,35 +8,27 @@ import torchvision.transforms as transforms
 from utils import train_fn, get_loaders, load_checkpoint, save_checkpoint, check_performance
 from models import ResNet18_RNN
 
+with open("config.yaml", "r") as f:
+    config = yaml.safe_load(f)
 
+EPOCHS = config["training_parameters"]["epochs"]
+LEARNING_RATE = config["training_parameters"]["learning_rate"]
 
-EPOCHS = None
-LEARNING_RATE = 1e-4
-
-TRAIN_CSV = "./data/metadata/metadata.csv"
-VAL_CSV = None
-ROOT_DIR = "./data/videos"
+TRAIN_CSV = config["dataloader_parameters"]["train_csv"]
+VAL_CSV = config["dataloader_parameters"]["val_csv"]
+ROOT_DIR = config["dataloader_parameters"]["root_dir"]
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
-BATCH_SIZE = 4
-MAX_FRAMES = 69
-NUM_WORKERS = 4
-PIN_MEMORY = True
+BATCH_SIZE = config["dataloader_parameters"]["batch_size"]
+MAX_FRAMES = config["dataloader_parameters"]["max_frames"]
+NUM_WORKERS = config["dataloader_parameters"]["num_workers"]
+PIN_MEMORY = config["dataloader_parameters"]["pin_memory"]
 
-RNN_TYPE = "lstm"
-RNN_LAYERS = 2
-RNN_HIDDEN = 100
-TRAINABLE_BACKBONE = False
-HEADS_PARAMS = {
-    "in_features": RNN_HIDDEN*MAX_FRAMES,
-    "byrt": [2, 2],
-    "byrn": [2, 2],
-    "bdrt": [2, 2],
-    "bdrn": [2, 2],
-    "ft": [2, 2],
-    "fn": [2, 2],
-    "landed": [2, 2],
-    "stance":[2, 2]
-}
+RNN_TYPE = config["model_parameters"]["rnn_type"]
+RNN_LAYERS = config["model_parameters"]["rnn_layers"]
+RNN_HIDDEN = config["model_parameters"]["rnn_hidden"]
+TRAINABLE_BACKBONE = config["model_parameters"]["trainable_backbone"]
+HEADS_PARAMS = config["model_parameters"]["heads_params"]
+HEADS_PARAMS["in_features"] = RNN_HIDDEN * MAX_FRAMES
 
 def main():
 
