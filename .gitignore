@@ -3,3 +3,4 @@ skate
 *.pyc
 data/videos
 .*mp4
+.env
