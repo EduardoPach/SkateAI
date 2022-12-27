@@ -10,6 +10,7 @@ torch = "*"
 opencv-python = "*"
 torchvision = "*"
 matplotlib = "*"
+pyyaml = "*"
 
 [dev-packages]
 jupyter = "*"
