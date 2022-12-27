@@ -78,13 +78,18 @@ def get_loaders(
     return train_loader, val_loader
     
 
-def save_checkpoint(state, filename="my_checkpoint.pth.tar") -> None:
+def save_checkpoint(state: dict, filename: str="my_checkpoint.pth.tar") -> None:
     print("=> Saving checkpoint")
     torch.save(state, filename)
 
-def load_checkpoint(checkpoint, model) -> None:
+def load_checkpoint(checkpoint: dict, model: nn.Module) -> None:
     print("=> Loading checkpoint")
     model.load_state_dict(checkpoint["state_dict"])
 
-def check_performance() -> None:
-    pass
+def check_performance(loader: DataLoader, model: nn.Module, device: str) -> None:
+    model.eval()
+    with torch.no_grad():
+        for data, target in loader:
+            data.to(device)
+            target = {key: target[key].to(device) for key in target.keys()}
+            predictions = model(data)
