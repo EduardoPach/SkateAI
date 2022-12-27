@@ -5,7 +5,6 @@ import torch.optim as optim
 import torchvision.transforms as transforms
 
 from utils import train_fn, get_loaders, load_checkpoint, save_checkpoint, check_performance
-from dataset import TricksDataset
 from models import ResNet18_RNN
 
 
@@ -13,11 +12,11 @@ from models import ResNet18_RNN
 EPOCHS = None
 LEARNING_RATE = 1e-4
 
-TRAIN_CSV = None
+TRAIN_CSV = "./data/metadata/metadata.csv"
 VAL_CSV = None
-ROOT_DIR = None
-DEVICE = None
-BATCH_SIZE = None
+ROOT_DIR = "./data/videos"
+DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
+BATCH_SIZE = 4
 MAX_FRAMES = 69
 NUM_WORKERS = 4
 PIN_MEMORY = True
@@ -86,6 +85,7 @@ def main():
             "state_dict": model.state_dict(),
             "optimizer":optimizer.state_dict(),
         }
+        save_checkpoint(checkpoint)
 
 if __name__=="__main__":
     main()
