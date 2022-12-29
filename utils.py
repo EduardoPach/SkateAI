@@ -15,11 +15,11 @@ def train_fn(loader: DataLoader, model: nn.Module, optimizer: Optimizer, loss_fn
 
     for batch_idx, (data, targets) in enumerate(loop):
         data = data.to(device=device)
-        targets = {targets[key].to(device=device) for key in targets.keys()}
+        targets = {key: targets[key].to(device=device) for key in targets.keys()}
 
         # forward
         predictions = model(data)
-        loss_dict = {}
+        loss_dict = dict()
         loss_total = 0
         for key in predictions.keys():
             loss_dict[key] = loss_fns[key](predictions[key], targets[key])
