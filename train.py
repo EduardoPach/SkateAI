@@ -1,3 +1,7 @@
+import warnings
+
+warnings.simplefilter("ignore", UserWarning)
+
 import yaml
 import wandb
 import torch
