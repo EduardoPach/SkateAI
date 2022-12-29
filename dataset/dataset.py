@@ -21,7 +21,7 @@ class TricksDataset(Dataset):
     def __len__(self) -> int:
         return len(self.metadata)
     
-    def __getitem__(self, index: int) -> tuple[torch.Tensor, np.array]:
+    def __getitem__(self, index: int) -> tuple[torch.Tensor, dict[str, int]]:
         video_file = self.metadata.iloc[index, 0]
         video_path = os.path.join(self.video_dir, video_file)
         labels = {col: self.metadata.loc[index, col] for col in const.LABELS}
