@@ -15,7 +15,12 @@ def train_fn(loader: DataLoader, model: nn.Module, optimizer: Optimizer, loss_fn
 
     for batch_idx, (data, targets) in enumerate(loop):
         data = data.to(device=device)
-        targets = {key: targets[key].to(device=device) for key in targets.keys()}
+        targets = {
+            key: targets[key].float().to(device=device) \
+                if 'number' in key \
+                else targets[key].to(device=device) \
+                for key in targets.keys()
+        }
 
         # forward
         predictions = model(data)
