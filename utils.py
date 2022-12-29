@@ -1,9 +1,9 @@
 from pathlib import Path
 from typing import Union
 
-import tqdm
 import torch
 import torch.nn as nn
+from tqdm import tqdm
 from torch.optim import Optimizer
 from torch.utils.data import DataLoader
 from torchvision.transforms import Compose
@@ -39,8 +39,8 @@ def get_loaders(
     root_dir: Union[str, Path],
     max_frames: int,
     batch_size: int,
-    train_transform: Compose,
-    val_transform: Compose,
+    train_transform: Union[Compose, None],
+    val_transform: Union[Compose, None],
     num_workers: int=4,
     pin_memory: bool=True,
 ) -> tuple[DataLoader, DataLoader]:
