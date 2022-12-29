@@ -5,7 +5,7 @@ dataloader_parameters:
   train_csv: ./data/metadata/metadata.csv
   val_csv: ./data/metadata/metadata.csv
   root_dir: ./data/videos
-  batch_size: 1
+  batch_size: 2
   max_frames: 69
   num_workers: 1
   pin_memory: True
