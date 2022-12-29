@@ -5,8 +5,18 @@
 
 Welcome to SkateAI, an in-progress project that aims to predict skateboard flatground tricks based on videos taken from the famous Battle at the Berrics (BATB).
 
-
 > This README file was generate with the help of [ChatGPT](https://chat.openai.com/chat)
+## Next steps
+- [x] Create a Labelling tool
+- [x] Have a working training loop
+- [ ] Add video avg brightness and other things to metadata
+- [ ] Add Dropout to the Heads module
+- [ ] Label 1k clips
+- [ ] Create a check performance for validation
+- [ ] Create split script for train-validation
+- [ ] Integrate training loop with Weights & Biases (not sure what to log)
+- [ ] Do a sweep with W&B
+
 
 ## Overview
 
