@@ -1,11 +1,11 @@
 training_parameters:
-  epochs: 2
-  learning_rate: 0.0001
+  epochs: 10
+  learning_rate: 0.001
 dataloader_parameters:
   train_csv: ./data/metadata/metadata.csv
   val_csv: ./data/metadata/metadata.csv
   root_dir: ./data/videos
-  batch_size: 2
+  batch_size: 4
   max_frames: 69
   num_workers: 1
   pin_memory: True
@@ -15,11 +15,11 @@ model_parameters:
   rnn_hidden: 100
   trainable_backbone: false
   heads_params:
-    byrt: [2, 2]
-    byrn: [2, 2]
-    bdrt: [2, 2]
-    bdrn: [2, 2]
-    ft: [2, 2]
-    fn: [2, 2]
-    landed: [2, 2]
-    stance: [2, 2]
+    byrt: [[256, 0.5], [128, 0.2], [16, 0.3]]
+    byrn: [[256, 0.5], [128, 0.2], [16, 0.3]]
+    bdrt: [[256, 0.5], [128, 0.2], [16, 0.3]]
+    bdrn: [[256, 0.5], [128, 0.2], [16, 0.3]]
+    ft: [[256, 0.5], [128, 0.2], [16, 0.3]]
+    fn: [[256, 0.5], [128, 0.2], [16, 0.3]]
+    landed: [[256, 0.5], [128, 0.2], [16, 0.3]]
+    stance: [[256, 0.5], [128, 0.2], [16, 0.3]]
