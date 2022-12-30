@@ -13,7 +13,7 @@ Welcome to SkateAI, an in-progress project that aims to predict skateboard flatg
 - [x] Add Dropout to the Heads module
 - [ ] Label 1k clips
 - [ ] Create a check performance for validation
-- [ ] Create split script for train-validation
+- [x] Create split script for train-validation
 - [ ] Integrate training loop with Weights & Biases (not sure what to log)
 - [ ] Do a sweep with W&B
 
