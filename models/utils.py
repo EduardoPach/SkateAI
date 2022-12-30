@@ -45,14 +45,14 @@ class Heads(nn.Module):
     def __init__(
         self,
         in_features: int,
-        byrt: list[tuple[int, int]],
-        byrn: list[tuple[int, int]],
-        bdrt: list[tuple[int, int]],
-        bdrn: list[tuple[int, int]],
-        ft: list[tuple[int, int]],
-        fn: list[tuple[int, int]],
-        landed: list[tuple[int, int]],
-        stance: list[tuple[int, int]]
+        byrt: list[tuple[int, float]],
+        byrn: list[tuple[int, float]],
+        bdrt: list[tuple[int, float]],
+        bdrn: list[tuple[int, float]],
+        ft: list[tuple[int, float]],
+        fn: list[tuple[int, float]],
+        landed: list[tuple[int, float]],
+        stance: list[tuple[int, float]]
     ) -> None:
         super(Heads, self).__init__()
         self.in_features = in_features
