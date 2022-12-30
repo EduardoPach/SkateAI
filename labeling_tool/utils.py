@@ -5,6 +5,7 @@ from typing import Any
 
 import pytube as yt
 import pandas as pd
+from sklearn.model_selection import train_test_split
 
 import const
 
@@ -186,6 +187,25 @@ def update_metadata(video_file: str, video_title: str, video_url: str, cut_info:
         entry[key] = value if not isinstance(value, bool) else int(value)
     df = df.append(entry, ignore_index=True).reset_index(drop=True)
     df.to_csv(const.METADATA_FILE, index=False)
+
+def split_videos(stratify_on: list=["landed", "stance"], train_size: float=0.8) -> None:
+    """_summary_
+
+    Parameters
+    ----------
+    stratify_on : list, optional
+        _description_, by default ["landed", "stance"]
+    train_size : float, optional
+        _description_, by default 0.8
+    """
+    df = pd.read_csv(const.METADATA_FILE)
+    train_df, val_df = train_test_split(
+        df,
+        train_size=train_size,
+        stratify=df[stratify_on]
+    )
+    train_df.to_csv(const.METADATA_DIR / "train_split.csv", index=False)
+    val_df.to_csv(const.METADATA_DIR / "validation_split.csv", index=False)
 
 def categorical_encoder(label: str, value: str) -> int:
     """Encodes the categorical target values.
