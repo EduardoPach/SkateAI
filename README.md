@@ -10,7 +10,7 @@ Welcome to SkateAI, an in-progress project that aims to predict skateboard flatg
 - [x] Create a Labelling tool
 - [x] Have a working training loop
 - [ ] Add video avg brightness and other things to metadata
-- [ ] Add Dropout to the Heads module
+- [x] Add Dropout to the Heads module
 - [ ] Label 1k clips
 - [ ] Create a check performance for validation
 - [ ] Create split script for train-validation
