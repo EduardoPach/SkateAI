@@ -12,7 +12,7 @@ Welcome to SkateAI, an in-progress project that aims to predict skateboard flatg
 - [ ] Add video avg brightness and other things to metadata
 - [x] Add Dropout to the Heads module
 - [ ] Label 1k clips
-- [ ] Create a check performance for validation
+- [x] Create a check performance for Dataloaders
 - [x] Create split script for train-validation
 - [ ] Integrate training loop with Weights & Biases (not sure what to log)
 - [ ] Do a sweep with W&B
