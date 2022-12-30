@@ -93,13 +93,42 @@ def load_checkpoint(checkpoint: dict, model: nn.Module) -> None:
     print("=> Loading checkpoint")
     model.load_state_dict(checkpoint["state_dict"])
 
-def check_performance(loader: DataLoader, model: nn.Module, device: str) -> None:
+def check_performance(loader: DataLoader, model: nn.Module, loss_fns: dict[str, nn.Module], device: str) -> dict[str, torch.Tensor]:
+    """Calculates the average loss for an epoch of a loader
+
+    Parameters
+    ----------
+    loader : DataLoader
+        The loader that will be evaluated
+    model : nn.Module
+        Model that the performance will be checked
+    loss_fns : dict[str, nn.Module]
+        The losses to be used for each target variable
+    device : str
+        Device to use during evaluation (cuda, cpu)
+    """
     model.eval()
+    loss_dict = dict()
+    samples = len(loader)
+    avg_loss_total = 0.0
     with torch.no_grad():
-        for data, target in loader:
+        for idx, (data, target) in enumerate(loader):
             data.to(device)
             target = {key: target[key].to(device) for key in target.keys()}
             predictions = model(data)
+            if idx==0:                
+                for key in predictions.keys():
+                    loss_dict[f"avg_loss_{key}"] = loss_fns[key](predictions[key], target[key]) / samples
+                    avg_loss_total += loss_dict[f"avg_loss_{key}"] / samples
+            else:
+                for key in predictions.keys():
+                    loss_dict[f"avg_loss_{key}"] += loss_fns[key](predictions[key], target[key]) / samples
+                    avg_loss_total += loss_dict[f"avg_loss_{key}"] / samples
+    
+    loss_dict["avg_loss_total"] = avg_loss_total
+
+    return loss_dict
+
 
 def plot_frames(video: torch.Tensor, n_cols: int, **kwargs) -> None:
     F = video.shape[0]
