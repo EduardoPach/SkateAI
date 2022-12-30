@@ -2,8 +2,10 @@ from pathlib import Path
 from typing import Union
 
 import torch
+import numpy as np
 import torch.nn as nn
 from tqdm import tqdm
+import matplotlib.pyplot as plt
 from torch.optim import Optimizer
 from torch.utils.data import DataLoader
 from torchvision.transforms import Compose
@@ -98,3 +100,14 @@ def check_performance(loader: DataLoader, model: nn.Module, device: str) -> None
             data.to(device)
             target = {key: target[key].to(device) for key in target.keys()}
             predictions = model(data)
+
+def plot_frames(video: torch.Tensor, n_cols: int, **kwargs) -> None:
+    F = video.shape[0]
+    n_rows = int(np.ceil(66 / 5))
+    fig, axes = plt.subplots(nrows=n_rows, ncols=n_cols, **kwargs)
+    
+    for idx, ax in enumerate(axes.flatten()):
+        if idx+1>F: continue
+        ax.imshow(video[idx].permute(1, 2, 0))
+    plt.tight_layout()
+    plt.show()
