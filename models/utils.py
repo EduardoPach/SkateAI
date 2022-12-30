@@ -45,14 +45,14 @@ class Heads(nn.Module):
     def __init__(
         self,
         in_features: int,
-        byrt: list,
-        byrn: list,
-        bdrt: list,
-        bdrn: list,
-        ft: list,
-        fn: list,
-        landed: list,
-        stance: list
+        byrt: list[tuple[int, int]],
+        byrn: list[tuple[int, int]],
+        bdrt: list[tuple[int, int]],
+        bdrn: list[tuple[int, int]],
+        ft: list[tuple[int, int]],
+        fn: list[tuple[int, int]],
+        landed: list[tuple[int, int]],
+        stance: list[tuple[int, int]]
     ) -> None:
         super(Heads, self).__init__()
         self.in_features = in_features
@@ -69,10 +69,12 @@ class Heads(nn.Module):
         net = nn.Sequential()
         net.append(nn.Linear(self.in_features, neurons_list[0]))
         net.append(nn.ReLU())
-        for idx, neurons in enumerate(neurons_list):
+        for idx, (neurons, dropout) in enumerate(neurons_list):
             if idx==len(neurons_list)-1:
+                net.append(nn.Dropout(dropout))
                 net.append(nn.Linear(neurons, features))
                 continue
+            net.append(nn.Dropout(dropout))
             net.append(nn.Linear(neurons, neurons_list[idx+1]))
             net.append(nn.ReLU())
         
