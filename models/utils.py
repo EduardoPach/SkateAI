@@ -67,7 +67,7 @@ class Heads(nn.Module):
 
     def build_head(self, neurons_list: list, features: int) -> nn.Sequential:
         net = nn.Sequential()
-        net.append(nn.Linear(self.in_features, neurons_list[0]))
+        net.append(nn.Linear(self.in_features, neurons_list[0][0]))
         net.append(nn.ReLU())
         for idx, (neurons, dropout) in enumerate(neurons_list):
             if idx==len(neurons_list)-1:
@@ -75,7 +75,7 @@ class Heads(nn.Module):
                 net.append(nn.Linear(neurons, features))
                 continue
             net.append(nn.Dropout(dropout))
-            net.append(nn.Linear(neurons, neurons_list[idx+1]))
+            net.append(nn.Linear(neurons, neurons_list[idx+1][0]))
             net.append(nn.ReLU())
         
         return net
