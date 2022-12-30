@@ -80,9 +80,9 @@ def main():
         PIN_MEMORY
     )
 
-    model.train()
     model.to(DEVICE)
     for epoch in range(EPOCHS):
+        model.train()
         train_fn(train_loader, model, optimizer, loss_fns, DEVICE)
         # save model
         checkpoint = {
