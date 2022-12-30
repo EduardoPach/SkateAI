@@ -11,14 +11,14 @@ opencv-python = "*"
 torchvision = "*"
 matplotlib = "*"
 pyyaml = "*"
+pytube = "*"
+moviepy = "*"
 
 [dev-packages]
 jupyter = "*"
 dash-bootstrap-components = "*"
 dash = "*"
 dash-player = "*"
-pytube = "*"
-moviepy = "*"
 wandb = "*"
 colorama = "*"
 
