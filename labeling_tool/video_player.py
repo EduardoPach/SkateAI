@@ -78,6 +78,14 @@ cut_panel_btn = dbc.Button(
     style={"width": "100%", "display": "inline-block"}
 )
 
+edit_cut_btn = dbc.Button(
+    "Edit Cut",
+    color="warning",
+    id="edit-btn",
+    size="lg",
+    style={"width": "100%", "display": "inline-block"}
+)
+
 delete_cut_btn = dbc.Button(
     "Delete Cut", 
     color="danger",
@@ -137,8 +145,9 @@ controls = dbc.Col(
         dbc.Row(
             [
                 dbc.Col(cut_panel_btn, md=2),
+                dbc.Col(edit_cut_btn, md=2),
                 dbc.Col(delete_cut_btn, md=2),
-                dbc.Col(cut_dropdown, md=8)
+                dbc.Col(cut_dropdown, md=6)
             ],
             style={"margin-top": "25px"}
         ),
