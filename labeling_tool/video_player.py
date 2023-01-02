@@ -70,6 +70,77 @@ make_cut_btn = dbc.Button(
     style={"width": "100%", "display": "inline-block"}
 )
 
+cut_collapse = dbc.Collapse(
+    dbc.Card(
+        [
+            dbc.CardBody(
+                [
+                    dbc.Row(
+                        [
+                            dbc.Col([dbc.Label("Status"), landed_status_radio]),
+                            dbc.Col([dbc.Label("Stance"), stance_dropdown]),
+                            dbc.Col([dbc.Label("Trick"), trick_dropdown])
+                        ],
+                        style={"padding": "15px"}
+                    ),
+                    dbc.Row(
+                        [
+                            dbc.Col(start_btn),
+                            dbc.Col(end_btn),
+                            dbc.Col(make_cut_btn),
+                        ]
+                    )
+                ]
+            )
+        ],
+        color="dark",
+        outline=True
+    ),
+    is_open=True,
+    id="collapse",
+    style={"margin-top": "25px", "margin-bottom": "25px"}
+)
+
+update_cut_btn = dbc.Button(
+    "Update cut",
+    color="success",
+    id="update-btn",
+    size="lg",
+    style={"width": "100%"}
+)
+
+range_slider = dcc.RangeSlider(
+    min=0,
+    max=1000,
+    step=0.1,
+    value=[0, 100],
+    marks=None,
+    tooltip={"placement": "bottom", "always_visible": True},
+    id="cut-range-time"
+)
+
+edit_collapse = dbc.Collapse(
+    dbc.Card(
+        [
+            dbc.CardBody(
+                [
+                    dbc.Row(
+                        [ 
+                            dbc.Col([dbc.Label("Time Interval"), range_slider]),
+                            dbc.Col(update_cut_btn)
+                        ]
+                    )
+                ]
+            )
+        ],
+        color="dark",
+        outline=True
+    ),
+    is_open=True,
+    id="collapse-edit",
+    style={"margin-top": "25px", "margin-bottom": "25px"}
+)
+
 cut_panel_btn = dbc.Button(
     "Cut Panel",
     color="info",
@@ -112,36 +183,8 @@ controls = dbc.Col(
                 style={"padding": "15px"}
             )
         ),
-        dbc.Collapse(
-            dbc.Card(
-                [
-                    dbc.CardBody(
-                        [
-                            dbc.Row(
-                                [
-                                    dbc.Col([dbc.Label("Status"), landed_status_radio]),
-                                    dbc.Col([dbc.Label("Stance"), stance_dropdown]),
-                                    dbc.Col([dbc.Label("Trick"), trick_dropdown])
-                                ],
-                                style={"padding": "15px"}
-                            ),
-                            dbc.Row(
-                                [
-                                    dbc.Col(start_btn),
-                                    dbc.Col(end_btn),
-                                    dbc.Col(make_cut_btn),
-                                ]
-                            )
-                        ]
-                    )
-                ],
-                color="dark",
-                outline=True
-            ),
-            is_open=True,
-            id="collapse",
-            style={"margin-top": "25px", "margin-bottom": "25px"}
-        ),
+        cut_collapse,
+        edit_collapse,
         dbc.Row(
             [
                 dbc.Col(cut_panel_btn, md=2),
@@ -184,6 +227,14 @@ def select_source_videos(playlist_url: str) -> dict:
     [Input("btn-collapse", "n_clicks"), State("collapse", "is_open")]
 )
 def toggle_collapse(n_clicks: int, is_open: bool) -> bool:
+    if n_clicks is not None:
+        return not is_open
+
+@app.callback(
+    Output("collapse-edit", "is_open"),
+    [Input("edit-btn", "n_clicks"), State("collapse-edit", "is_open")]
+)
+def toggle_collapse_update(n_clicks: int, is_open: bool) -> bool:
     if n_clicks is not None:
         return not is_open
 
@@ -262,17 +313,34 @@ def make_cut(
 
     return [{"label": key, "value":key } for key in data[video_url].keys()] if video_url in data else []
 
+@app.callback(
+    [
+        Output("cut-range-time", "min"), 
+        Output("cut-range-time", "max"), 
+        Output("cut-range-time", "value")
+    ],
+    [Input("dd-cut", "value")],
+    [State("video-player", "url")]
+)
+def set_cut_interval(cut_name: int, video_url: str) -> list:
+    if cut_name is None or cut_name=="No results":
+        return [0, 1000, [0, 100]]
+    data = utils.get_cuts_data()
+    interval = data[video_url][cut_name]["interval"]
+    min_ = interval[0]
+    max_ = interval[1]
+
+    return [min_ - 2, max_ + 2, [min_, max_]]
 
 @app.callback(
     Output("video-player", "seekTo"),
-    [Input("dd-cut", "value"), Input("video-player", "currentTime")],
-    [State("video-player", "url")]
+    [Input("cut-range-time", "value"), Input("video-player", "currentTime")],
+    [Input("dd-cut", "value")]
 )
-def play_cut(cut_name: str, current_time: float, video_url: str) -> float:
+def play_cut(interval: list, current_time: float, cut_name: str) -> float:
     if cut_name is None or cut_name=="No results":
         return
-    data = utils.get_cuts_data()
-    if current_time < data[video_url][cut_name]["interval"][0]:
-        return data[video_url][cut_name]["interval"][0]
-    if current_time > data[video_url][cut_name]["interval"][-1]:
-        return data[video_url][cut_name]["interval"][0]
+    if current_time < interval[0]:
+        return interval[0]
+    if current_time > interval[-1]:
+        return interval[0]
