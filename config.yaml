@@ -1,5 +1,5 @@
 training_parameters:
-  epochs: 10
+  epochs: 5
   learning_rate: 0.001
 dataloader_parameters:
   train_csv: ./data/metadata/train_split.csv
@@ -11,8 +11,8 @@ dataloader_parameters:
   pin_memory: True
 model_parameters:
   rnn_type: lstm
-  rnn_layers: 2
-  rnn_hidden: 100
+  rnn_layers: 3
+  rnn_hidden: 64
   trainable_backbone: false
   heads_params:
     byrt: [[256, 0.5], [128, 0.2], [16, 0.3]]
