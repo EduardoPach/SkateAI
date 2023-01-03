@@ -14,7 +14,7 @@ Welcome to SkateAI, an in-progress project that aims to predict skateboard flatg
 - [ ] Label 1k clips
 - [x] Create a check performance for Dataloaders
 - [x] Create split script for train-validation
-- [ ] Integrate training loop with Weights & Biases (not sure what to log)
+- [x] Integrate training loop with Weights & Biases (not sure what to log)
 - [ ] Do a sweep with W&B
 
 
