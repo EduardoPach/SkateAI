@@ -12,7 +12,7 @@ from torchvision.transforms import Compose
 
 from dataset import TricksDataset
 
-def train_fn(loader: DataLoader, model: nn.Module, optimizer: Optimizer, loss_fns: dict[str, nn.Module], device: "str"):
+def train_fn(loader: DataLoader, model: nn.Module, optimizer: Optimizer, loss_fns: dict[str, nn.Module], device: "str") -> dict[str, torch.Tensor]:
     loop = tqdm(loader)
 
     for batch_idx, (data, targets) in enumerate(loop):
@@ -26,7 +26,7 @@ def train_fn(loader: DataLoader, model: nn.Module, optimizer: Optimizer, loss_fn
 
         # forward
         predictions = model(data)
-        loss_dict = dict()
+        loss_dict = dict()   
         loss_total = 0
         for key in predictions.keys():
             loss_dict[key] = loss_fns[key](predictions[key], targets[key])
@@ -39,6 +39,10 @@ def train_fn(loader: DataLoader, model: nn.Module, optimizer: Optimizer, loss_fn
 
         # update tqdm loop
         loop.set_postfix(loss_total=loss_total.item())
+    
+    loss_dict["loss_total"] = loss_total
+
+    return {key: val.item() for key, val in loss_dict.items()}
 
 def get_loaders(
     train_csv: Union[str, Path],
