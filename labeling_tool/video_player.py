@@ -10,6 +10,7 @@ from app import app
 import const
 import utils
 
+dummy_div = html.Div(id="dummy-div", children="")
 
 videos_play_list = dcc.Dropdown(
     id="playlist_url",
@@ -178,7 +179,7 @@ controls = dbc.Col(
             dbc.Row(
                 [
                     dbc.Col(videos_play_list), 
-                    dbc.Col(video_drop_down)
+                    dbc.Col(video_drop_down),
                 ],
                 style={"padding": "15px"}
             )
@@ -206,7 +207,8 @@ controls = dbc.Col(
                 )
             ],
             style={"margin-top": "25px"}
-        )
+        ),
+        dummy_div
     ]
 )
 
@@ -312,6 +314,24 @@ def make_cut(
         json.dump(data, f)
 
     return [{"label": key, "value":key } for key in data[video_url].keys()] if video_url in data else []
+
+@app.callback(
+    Output("dummy-div", "children"),
+    Input("update-btn", "n_clicks"),
+    State('cut-range-time', 'value'),
+    State('dd-cut', 'value'),
+    State('video-player', 'url')
+)
+def update_cut_interval(update_cut: int, interval: list, cut_name: str, video_url: str) -> str:
+    if cut_name is None or cut_name=="No results":
+        return ""
+    data = utils.get_cuts_data()
+    data[video_url][cut_name]["interval"] = interval
+
+    with open(const.TRICKS_JSON_PATH, 'w') as f:
+        json.dump(data, f)
+    
+    return ""
 
 @app.callback(
     [
