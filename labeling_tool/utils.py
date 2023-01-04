@@ -1,8 +1,11 @@
-import string
 import os
 import json
+import string
+import shutil
 from typing import Any
+from pathlib import Path
 
+import wandb
 import pytube as yt
 import pandas as pd
 import moviepy.editor as mo
@@ -327,10 +330,56 @@ def download_data_pipeline(download_all: bool, split: bool, stratify_on: list, t
             counter = counter + 1
 
         os.remove(fullvideo_path)
-        
+
     if not split: 
         return
     print("#"*100)
     print(f"SPLITTING DATASET IN TRAIN AND TEST ({train_size*100:.2f} / {(1-train_size)*100:.2f}) \
         W/ STRATIFICATION ON {', '.join(stratify_on)}")
     split_videos(stratify_on, train_size)
+
+def create_table_with_videos(df: pd.DataFrame) -> wandb.Table:
+    columns = df.columns.tolist()
+    columns = ["video"] + columns
+    table = wandb.Table(columns=columns)
+    data = df.to_numpy().tolist()
+    for row in data:
+        video_file = row[0]
+        video = wandb.Video(f"{const.VIDEOS_DIR}/{video_file}", format="mp4")
+        table.add_data(video, *row)
+    return table
+
+def wandb_log_dataset() -> None:
+    with wandb.init(project=os.environ["WANDB_PROJECT"], job_type="upload") as run:
+        raw_data = wandb.Artifact(os.environ["WANDB_DATASET_ARTIFACT"], type="dataset")
+        raw_data.add_dir(const.VIDEOS_DIR, name="videos")
+        metadata = pd.read_csv(const.METADATA_FILE)
+        table = create_table_with_videos(metadata)
+        raw_data.add(table, "eda_table")
+        run.log_artifact(raw_data)
+
+def wandb_log_split() -> None:
+    with wandb.init(project=os.environ["WANDB_PROJECT"], job_type="data_split") as run:
+        split = wandb.Artifact(os.environ["WANDB_SPLIT_ARTIFACT"], type="split_data")
+
+        train_df = pd.read_csv(const.METADATA_DIR / "train_split.csv")
+        train_df["split"] = "train"
+        train_df = train_df[["video_file", "split"]]
+        val_df = pd.read_csv(const.METADATA_DIR / "validation_split.csv")
+        val_df["split"] = "validation"
+        val_df[["video_file", "split"]]
+
+        df = pd.concat([train_df, val_df])
+        split_table = wandb.Table(dataframe=df)
+
+        raw_data = run.use_artifact(os.environ["WANDB_DATASET_ARTIFACT"])
+        eda_table = raw_data.get("eda_table")
+        path = Path(raw_data.download())
+
+        join_table = wandb.JoinedTable(eda_table, split_table, "video_file")
+        split.add(join_table, "eda_table_data_split")
+        split.add_dir(path)
+        split.add_dir(const.METADATA_DIR)
+
+        shutil.rmtree(path.parent)
+        run.log_artifact(split)
