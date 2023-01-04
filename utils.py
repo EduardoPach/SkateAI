@@ -117,7 +117,7 @@ def check_performance(loader: DataLoader, model: nn.Module, loss_fns: dict[str, 
     avg_loss_total = 0.0
     with torch.no_grad():
         for idx, (data, target) in enumerate(loader):
-            data.to(device)
+            data = data.to(device)
             target = {key: target[key].to(device) for key in target.keys()}
             predictions = model(data)
             if idx==0:                
