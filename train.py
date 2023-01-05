@@ -90,7 +90,7 @@ def main():
         )
 
         model.to(DEVICE)
-    
+        wandb.watch(model, log_freq=10, log="all")
         for epoch in range(EPOCHS):
             model.train()
             train_loss = train_fn(train_loader, model, optimizer, loss_fns, DEVICE)
@@ -102,7 +102,7 @@ def main():
                 "optimizer":optimizer.state_dict(),
             }
             save_checkpoint(checkpoint)
-            wandb.log({**train_loss, **val_loss})
+            wandb.log({**train_loss, **val_loss, "epoch": epoch})
         
         dummy_data = torch.rand(1, MAX_FRAMES, 3, 512, 512)
         dummy_data = train_transforms(dummy_data)
