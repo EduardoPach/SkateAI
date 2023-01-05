@@ -105,8 +105,8 @@ def main():
             save_checkpoint(checkpoint, MODEL_SAVE_PATH)
             wandb.log({**train_loss, **val_loss, "epoch": epoch})
         
-        dummy_data = torch.rand(1, MAX_FRAMES, 3, 512, 512)
-        dummy_data = train_transforms(dummy_data)
+        dummy_data = torch.rand(MAX_FRAMES, 3, 512, 512)
+        dummy_data = train_transforms(dummy_data).unsqueeze(0)
         torch.onnx.export(model, dummy_data, "model.onnx")
         wandb.save("model.onnx")
 
