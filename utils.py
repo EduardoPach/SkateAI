@@ -1,6 +1,10 @@
+from __future__ import annotations
+
+import os
 from pathlib import Path
 from typing import Union
 
+import wandb
 import torch
 import numpy as np
 import torch.nn as nn
@@ -144,3 +148,8 @@ def plot_frames(video: torch.Tensor, n_cols: int, **kwargs) -> None:
         ax.imshow(video[idx].permute(1, 2, 0))
     plt.tight_layout()
     plt.show()
+
+def wandb_log_model(run, model_path: Union[str, Path], name: str, type: str, **kwargs) -> None:
+    model_artifact = wandb.Artifact(name=name, type=type, **kwargs)
+    model_artifact.add_file(model_path)
+    run.log_artifact(model_artifact)
