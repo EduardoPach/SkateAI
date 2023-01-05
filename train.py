@@ -12,7 +12,7 @@ import torch.optim as optim
 import torchvision.transforms as transforms
 from torchvision.models import resnet
 
-from utils import train_fn, get_loaders, load_checkpoint, save_checkpoint, check_performance
+from utils import train_fn, get_loaders, load_checkpoint, save_checkpoint, check_performance, wandb_log_model
 from models import ResNet18_RNN
 
 
@@ -20,11 +20,12 @@ def main():
     with open("config.yaml", "r") as f:
         config = yaml.safe_load(f)
 
-    with wandb.init(project=os.environ["WANDB_PROJECT"], config=config):
+    with wandb.init(project=os.environ["WANDB_PROJECT"], config=config, job_type="train") as run:
         config = wandb.config
 
         EPOCHS = config["training_parameters"]["epochs"]
         LEARNING_RATE = config["training_parameters"]["learning_rate"]
+        MODEL_SAVE_PATH = config["training_parameters"]["model_save_path"]
 
         TRAIN_CSV = config["dataloader_parameters"]["train_csv"]
         VAL_CSV = config["dataloader_parameters"]["val_csv"]
@@ -101,13 +102,15 @@ def main():
                 "state_dict": model.state_dict(),
                 "optimizer":optimizer.state_dict(),
             }
-            save_checkpoint(checkpoint)
+            save_checkpoint(checkpoint, MODEL_SAVE_PATH)
             wandb.log({**train_loss, **val_loss, "epoch": epoch})
         
         dummy_data = torch.rand(1, MAX_FRAMES, 3, 512, 512)
         dummy_data = train_transforms(dummy_data)
         torch.onnx.export(model, dummy_data, "model.onnx")
         wandb.save("model.onnx")
+
+        wandb_log_model(run=run, model_path=MODEL_SAVE_PATH, name="conv_lstm", type="model", description="ResNet18 as backbone")
 
 if __name__=="__main__":
     main()
