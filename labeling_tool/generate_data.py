@@ -58,5 +58,6 @@ if __name__ == "__main__":
         download_all=args.download_all,
         split=args.split,
         stratify_on=args.stratify_on,
-        train_size=args.train_size
+        train_size=args.train_size,
+        wandb_log=args.wandb_log
     )
