@@ -97,6 +97,7 @@ def main():
             train_loss = train_fn(train_loader, model, optimizer, loss_fns, DEVICE)
             val_loss = check_performance(val_loader, model, loss_fns, DEVICE)
             val_loss = {f"{key}_val": val for key, val in val_loss.items()}
+            train_loss = {f"loss_{key}_train": val for key, val in train_loss.items()}
             # save model
             checkpoint = {
                 "state_dict": model.state_dict(),
