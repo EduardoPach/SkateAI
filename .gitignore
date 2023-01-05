@@ -4,3 +4,4 @@ skate
 data/videos
 .*mp4
 .env
+wandb
