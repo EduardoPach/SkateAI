@@ -1,6 +1,7 @@
 training_parameters:
   epochs: 5
   learning_rate: 0.001
+  model_save_path: ./model.pt
 dataloader_parameters:
   train_csv: ./data/metadata/train_split.csv
   val_csv: ./data/metadata/validation_split.csv
