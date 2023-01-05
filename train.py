@@ -111,7 +111,7 @@ def main():
             wandb.log({**train_loss, **val_loss, "epoch": epoch+1})
         
         dummy_data = torch.rand(MAX_FRAMES, 3, 512, 512)
-        dummy_data = train_transforms(dummy_data).unsqueeze(0)
+        dummy_data = train_transforms(dummy_data).unsqueeze(0).to(DEVICE)
         torch.onnx.export(model, dummy_data, "model.onnx")
         wandb.save("model.onnx")
 
