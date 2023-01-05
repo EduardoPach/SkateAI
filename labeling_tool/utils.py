@@ -369,17 +369,16 @@ def wandb_log_split() -> None:
         val_df["split"] = "validation"
         val_df[["video_file", "split"]]
 
-        df = pd.concat([train_df, val_df])
+        df = pd.concat([train_df, val_df]).reset_index(drop=True)
         split_table = wandb.Table(dataframe=df)
 
-        raw_data = run.use_artifact(os.environ["WANDB_DATASET_ARTIFACT"])
+        raw_data = run.use_artifact(f"{os.environ['WANDB_DATASET_ARTIFACT']}:latest")
         eda_table = raw_data.get("eda_table")
         path = Path(raw_data.download())
 
         join_table = wandb.JoinedTable(eda_table, split_table, "video_file")
         split.add(join_table, "eda_table_data_split")
-        split.add_dir(path)
-        split.add_dir(const.METADATA_DIR)
+        split.add_dir(const.METADATA_DIR, name="metadata")
 
         shutil.rmtree(path.parent)
         run.log_artifact(split)
