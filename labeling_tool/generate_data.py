@@ -21,7 +21,7 @@ parser.add_argument(
     "--split",
     action="store_true",
     help="Wheter or not to split dataset after download",
-    default=True
+    default=False
 )
 
 parser.add_argument(
@@ -43,7 +43,7 @@ parser.add_argument(
     "--wandb-log",
     action="store_true",
     help="Wheter or not to versioning data with Weights & Biases",
-    default=True
+    default=False
 )
 
 def main(download_all: bool, split: bool, stratify_on: list, train_size: float, wandb_log: bool) -> None:

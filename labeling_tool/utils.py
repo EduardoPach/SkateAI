@@ -288,11 +288,21 @@ def download_data_pipeline(download_all: bool, split: bool, stratify_on: list, t
     N_CUTS = sum(len(video_cuts) for video_cuts in TRICK_CUTS.values())
     N_DOWNLOADED_VIDEOS = len(os.listdir(const.VIDEOS_DIR))
     print(f"THERE ARE {N_CUTS - N_DOWNLOADED_VIDEOS} NEW CUTS TO BE DOWNLOADED\n")
+    total = 1
     
     for url, cuts in TRICK_CUTS.items():
         counter = 1
-        video = yt.YouTube(url)
-        video_title = video.title
+        tries = 0
+        while tries < 10: # Workaround pytube issue
+            try:
+                video = yt.YouTube(url)
+                video_title = video.title
+                video_title = parse_video_title(video_title)
+                break
+            except Exception as e:
+                tries +=1
+                if tries==10:
+                    raise e
         print("#"*100)
         print(f"DOING {video_title.upper()}\n")
         for cut_name, cut_info in cuts.items():
@@ -311,12 +321,13 @@ def download_data_pipeline(download_all: bool, split: bool, stratify_on: list, t
                 )[0].download(output_path=const.VIDEOS_DIR, filename=fullvideo)
                 print("Success!\n")
             print("-"*100)
-            print(f"DOWNLOADING {cut_name} AS {video_file} - VIDEO {counter} OUT OF {N_CUTS} ({100*counter/N_CUTS:.1f}%)\n")
+            print(f"DOWNLOADING {cut_name} AS {video_file} - VIDEO {total} OUT OF {N_CUTS} ({100*total/N_CUTS:.1f}%)\n")
             os.makedirs(clips_dir, exist_ok=True)
             if os.path.exists(video_path) and not download_all:
                 print("\nALREADY EXISTS!\n")
                 print("-"*100)
                 counter += 1
+                total += 1
                 continue
 
             print("CUTTING VIDEO: ", end='')
@@ -328,6 +339,7 @@ def download_data_pipeline(download_all: bool, split: bool, stratify_on: list, t
             print("Success!")
         
             counter += 1
+            total += 1
 
         os.remove(fullvideo_path)
 
