@@ -153,7 +153,7 @@ def plot_frames(video: torch.Tensor, n_cols: int, **kwargs) -> None:
     plt.tight_layout()
     plt.show()
 
-def wandb_log_model(run, model_path: Union[str, Path], name: str, type: str, **kwargs) -> None:
+def wandb_log_model(model_path: Union[str, Path], name: str, type: str, **kwargs) -> None:
     model_artifact = wandb.Artifact(name=name, type=type, **kwargs)
     model_artifact.add_file(model_path)
-    run.log_artifact(model_artifact)
+    wandb.log_artifact(model_artifact)
