@@ -129,7 +129,7 @@ class HardHeads(nn.Module):
     ) -> None:
         super(HardHeads, self).__init__()
         self.in_features = in_features
-        self.trick_name = self.build_head(trick_name, n_tricks)
+        self.trick_name_net = self.build_head(trick_name, n_tricks)
         self.landed_net = self.build_head(landed, 2)
         self.stance_net = self.build_head(stance, 4)
 
@@ -150,12 +150,7 @@ class HardHeads(nn.Module):
 
     def forward(self, x: torch.Tensor) -> dict[str, torch.Tensor]:
         out = {}
-        out["body_rotation_type"] = self.byrt_net(x)
-        out["body_rotation_number"] = self.byrn_net(x)
-        out["board_rotation_type"] = self.bdrt_net(x)
-        out["board_rotation_number"] = self.bdrn_net(x)
-        out["flip_type"] = self.ft_net(x)
-        out["flip_number"] = self.fn_net(x)
+        out["trick_name"] = self.trick_name_net(x)
         out["landed"] = self.landed_net(x)
         out["stance"] = self.stance_net(x)
 
