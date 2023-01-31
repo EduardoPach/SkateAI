@@ -7,10 +7,12 @@ warnings.simplefilter("ignore", UserWarning)
 import yaml
 import wandb
 import torch
+import pandas as pd
 import torch.nn as nn
 import torch.optim as optim
-import torchvision.transforms as transforms
 from torchvision.models import resnet
+import torchvision.transforms as transforms
+from sklearn.preprocessing import OrdinalEncoder
 
 from utils import train_fn, get_loaders, load_checkpoint, save_checkpoint, check_performance, wandb_log_model
 from models import ResNet18_RNN
@@ -30,6 +32,7 @@ def main():
         EPOCHS = config["training_parameters"]["epochs"]
         LEARNING_RATE = config["training_parameters"]["learning_rate"]
         MODEL_SAVE_PATH = config["training_parameters"]["model_save_path"]
+        LABEL_COLUMNS = config["training_parameters"]["label_columns"]
 
         TRAIN_CSV = config["dataloader_parameters"]["train_csv"]
         VAL_CSV = config["dataloader_parameters"]["val_csv"]
@@ -60,12 +63,7 @@ def main():
         optimizer = optim.Adam(model.parameters(), lr=LEARNING_RATE)
 
         loss_fns = {
-            'body_rotation_type': nn.CrossEntropyLoss(),
-            'body_rotation_number': nn.MSELoss(),
-            'board_rotation_type': nn.CrossEntropyLoss(),
-            'board_rotation_number': nn.MSELoss(),
-            'flip_type': nn.CrossEntropyLoss(),
-            'flip_number': nn.MSELoss(),
+            'trick_name': nn.CrossEntropyLoss(),
             'landed': nn.CrossEntropyLoss(),
             'stance': nn.CrossEntropyLoss()
         }
@@ -82,6 +80,10 @@ def main():
             resnet_transforms,
         ])
 
+        train_labels = pd.read_csv(TRAIN_CSV)[LABEL_COLUMNS]
+        encoder = OrdinalEncoder().set_output(transform="pandas")
+        encoder.fit(train_labels)
+
         train_loader, val_loader = get_loaders(
             TRAIN_CSV,
             VAL_CSV,
@@ -91,11 +93,11 @@ def main():
             train_transforms,
             val_transforms,
             NUM_WORKERS,
-            PIN_MEMORY
+            PIN_MEMORY,
+            encoder
         )
 
         model.to(DEVICE)
-        wandb.watch(model, log_freq=10, log="all")
         for epoch in range(EPOCHS):
             model.train()
             train_loss = train_fn(train_loader, model, optimizer, loss_fns, DEVICE)
@@ -109,13 +111,8 @@ def main():
             }
             save_checkpoint(checkpoint, MODEL_SAVE_PATH)
             wandb.log({**train_loss, **val_loss, "epoch": epoch+1})
-        
-        dummy_data = torch.rand(MAX_FRAMES, 3, 512, 512)
-        dummy_data = train_transforms(dummy_data).unsqueeze(0).to(DEVICE)
-        torch.onnx.export(model, dummy_data, "model.onnx")
-        wandb.save("model.onnx")
 
-        wandb_log_model(run=run, model_path=MODEL_SAVE_PATH, name="conv_lstm", type="model", description="ResNet18 as backbone")
+        wandb_log_model(model_path=MODEL_SAVE_PATH, name="conv_lstm", type="model", description="ResNet18 as backbone")
 
 if __name__=="__main__":
     main()
