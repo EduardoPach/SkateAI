@@ -13,6 +13,7 @@ import matplotlib.pyplot as plt
 from torch.optim import Optimizer
 from torch.utils.data import DataLoader
 from torchvision.transforms import Compose
+from sklearn.preprocessing import OrdinalEncoder
 
 from dataset import TricksDataset
 
@@ -58,13 +59,15 @@ def get_loaders(
     val_transform: Union[Compose, None],
     num_workers: int=4,
     pin_memory: bool=True,
+    label_encoder: OrdinalEncoder=None
 ) -> tuple[DataLoader, DataLoader]:
 
     train_ds = TricksDataset(
         csv_file=train_csv,
         root_dir=root_dir,
         max_frames=max_frames,
-        transform=train_transform
+        transform=train_transform,
+        label_enconder=label_encoder
     )
 
     train_loader = DataLoader(
@@ -79,7 +82,8 @@ def get_loaders(
         csv_file=val_csv,
         root_dir=root_dir,
         max_frames=max_frames,
-        transform=val_transform
+        transform=val_transform,
+        label_enconder=label_encoder
     )
 
     val_loader = DataLoader(
