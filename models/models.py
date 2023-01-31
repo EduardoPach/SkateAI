@@ -4,7 +4,7 @@ import torch
 import torch.nn as nn
 from torchvision import models
 
-from models.utils import Identity, Heads
+from models.utils import Identity, HardHeads, SoftHeads
 
 
 class ResNet18_RNN(nn.Module):
@@ -22,7 +22,7 @@ class ResNet18_RNN(nn.Module):
             self.rnn = nn.LSTM(num_features, rnn_hidden_size, rnn_layers, batch_first=True)
         elif rnn_type=="gru":
             self.rnn = nn.GRU(num_features, rnn_hidden_size, rnn_layers, batch_first=True)
-        self.heads = Heads(**heads_params)
+        self.heads = HardHeads(**heads_params)
 
     def forward(self, x) -> list[torch.Tensor]:
         B, F, C, H, W = x.shape # Batch x Frames x Channels x Height x Width 

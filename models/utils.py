@@ -4,8 +4,9 @@ import torch
 import torch.nn as nn
 
 
-class Heads(nn.Module):
-    """Heads for tricks classification and regression
+class SoftHeads(nn.Module):
+    """Heads for soft trick classification (breaking it down to predict 
+    tricks basic components)
 
     Parameters
     ----------
@@ -56,7 +57,7 @@ class Heads(nn.Module):
         landed: list[tuple[int, float]],
         stance: list[tuple[int, float]]
     ) -> None:
-        super(Heads, self).__init__()
+        super(SoftHeads, self).__init__()
         self.in_features = in_features
         self.byrt_net = self.build_head(byrt, 3)
         self.byrn_net = self.build_head(byrn, 1)
@@ -94,6 +95,74 @@ class Heads(nn.Module):
         out["stance"] = self.stance_net(x)
 
         return out
+
+class HardHeads(nn.Module):
+    """Heads for hard trick classification (stance, trick name and landed)
+
+    Parameters
+    ----------
+    in_features : int
+        Number of features generated from prior layers
+
+    n_tricks : int
+        Number of distinct trick names to be predicted
+
+    trick_name : list
+        A list of size hidden layers with number of neurons per layer
+        to predict whether or not trick was landed
+
+    landed : list
+        A list of size hidden layers with number of neurons per layer
+        to predict whether or not trick was landed
+
+    stance : list
+        A list of size hidden layers with number of neurons per layer
+        to predict stance
+    """
+    def __init__(
+        self,
+        in_features: int,
+        n_tricks: int,
+        trick_name: list[tuple[int, float]],
+        landed: list[tuple[int, float]],
+        stance: list[tuple[int, float]]
+    ) -> None:
+        super(HardHeads, self).__init__()
+        self.in_features = in_features
+        self.trick_name = self.build_head(trick_name, n_tricks)
+        self.landed_net = self.build_head(landed, 2)
+        self.stance_net = self.build_head(stance, 4)
+
+    def build_head(self, neurons_list: list, features: int) -> nn.Sequential:
+        net = nn.Sequential()
+        net.append(nn.Linear(self.in_features, neurons_list[0][0]))
+        net.append(nn.ReLU())
+        for idx, (neurons, dropout) in enumerate(neurons_list):
+            if idx==len(neurons_list)-1:
+                net.append(nn.Dropout(dropout))
+                net.append(nn.Linear(neurons, features))
+                continue
+            net.append(nn.Dropout(dropout))
+            net.append(nn.Linear(neurons, neurons_list[idx+1][0]))
+            net.append(nn.ReLU())
+        
+        return net
+
+    def forward(self, x: torch.Tensor) -> dict[str, torch.Tensor]:
+        out = {}
+        out["body_rotation_type"] = self.byrt_net(x)
+        out["body_rotation_number"] = self.byrn_net(x)
+        out["board_rotation_type"] = self.bdrt_net(x)
+        out["board_rotation_number"] = self.bdrn_net(x)
+        out["flip_type"] = self.ft_net(x)
+        out["flip_number"] = self.fn_net(x)
+        out["landed"] = self.landed_net(x)
+        out["stance"] = self.stance_net(x)
+
+        return out
+
+
+
 
 class Identity(nn.Module):
     def __init__(self):
