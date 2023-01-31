@@ -185,10 +185,7 @@ def update_metadata(video_file: str, video_title: str, video_url: str, cut_info:
         "trick_interval": cut_info["interval"],
     }
     for key, value in cut_info["trick_info"].items():
-        if key in const.CATEGORICAL_ENCODER:
-            entry[key] = categorical_encoder(key, value)
-            continue
-        entry[key] = value if not isinstance(value, bool) else int(value)
+        entry[key] = value
     df = df.append(entry, ignore_index=True).reset_index(drop=True)
     df.to_csv(const.METADATA_FILE, index=False)
 
@@ -301,7 +298,7 @@ def download_data_pipeline(download_all: bool, split: bool, stratify_on: list, t
             video_file = f"{counter:05}.mp4"
             video_path = const.VIDEOS_DIR / video_file
             fullvideo = "fullvideo.mp4"
-            fullvideo_path = const.VIDEOS_DIR/fullvideo
+            fullvideo_path = const.VIDEOS_DIR / fullvideo
             if not os.path.exists(fullvideo_path):
                 print("DOWNLOADING FULL VIDEO:", end=" ")
                 video.streams.filter(
