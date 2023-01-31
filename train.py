@@ -81,7 +81,7 @@ def main():
         ])
 
         train_labels = pd.read_csv(TRAIN_CSV)[LABEL_COLUMNS]
-        encoder = OrdinalEncoder().set_output(transform="pandas")
+        encoder = OrdinalEncoder(handle_unknown="encoded_value", unknown_value=-1).set_output(transform="pandas")
         encoder.fit(train_labels)
 
         train_loader, val_loader = get_loaders(
