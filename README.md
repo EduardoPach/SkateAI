@@ -1,6 +1,6 @@
 # SkateAI
 
-![treflip](./others/00001.gif)
+![treflip](./assets/00001.gif)
 
 
 Welcome to SkateAI, an in-progress project that aims to predict skateboard flatground tricks based on videos taken from the famous Battle at the Berrics (BATB).
@@ -45,7 +45,7 @@ python ./labeling_tool/index.py
 
 >>> Dash is running on http://127.0.0.1:8050/
 ```
-![labelling_tool](./others/labelling_tool.png)
+![labelling_tool](./assets/labeling_tool_gif.gif)
 
 
 It's configured in the `./labelling_tool/const.py` (yeah, I'm lazy for using a .py) and uses as sources some playlists from [the Berrics youtube channel](https://www.youtube.com/@berrics/featured). In the tool cuts are created and stored in the `./data/tricks_cut.json` like: 
