@@ -286,20 +286,21 @@ def download_data_pipeline(download_all: bool, split: bool, stratify_on: list, t
     TRICK_CUTS = get_cuts_data() # {"url": "cut_name": {"interval": [start, end], "trick_info": {...}}}
     N_CUTS = sum(len(video_cuts) for video_cuts in TRICK_CUTS.values())
     N_DOWNLOADED_VIDEOS = len(os.listdir(const.VIDEOS_DIR))
-    counter = 1
     print(f"THERE ARE {N_CUTS - N_DOWNLOADED_VIDEOS} NEW CUTS TO BE DOWNLOADED\n")
     
     for url, cuts in TRICK_CUTS.items():
+        counter = 1
         video = yt.YouTube(url)
         video_title = video.title
         print("#"*100)
         print(f"DOING {video_title.upper()}\n")
         for cut_name, cut_info in cuts.items():
             video_file = f"{counter:05}.mp4"
-            video_path = const.VIDEOS_DIR / video_file
+            clips_dir = const.VIDEOS_DIR / video_title
+            video_path = clips_dir / video_file
             fullvideo = "fullvideo.mp4"
             fullvideo_path = const.VIDEOS_DIR / fullvideo
-            if not os.path.exists(fullvideo_path):
+            if not fullvideo_path.exists():
                 print("DOWNLOADING FULL VIDEO:", end=" ")
                 video.streams.filter(
                     res="480p",
@@ -310,10 +311,11 @@ def download_data_pipeline(download_all: bool, split: bool, stratify_on: list, t
                 print("Success!\n")
             print("-"*100)
             print(f"DOWNLOADING {cut_name} AS {video_file} - VIDEO {counter} OUT OF {N_CUTS} ({100*counter/N_CUTS:.1f}%)\n")
+            os.makedirs(clips_dir, exist_ok=True)
             if os.path.exists(video_path) and not download_all:
                 print("\nALREADY EXISTS!\n")
                 print("-"*100)
-                counter = counter + 1
+                counter += 1
                 continue
 
             print("CUTTING VIDEO: ", end='')
@@ -324,7 +326,7 @@ def download_data_pipeline(download_all: bool, split: bool, stratify_on: list, t
             update_metadata(video_file, video_title, url, cut_info)
             print("Success!")
         
-            counter = counter + 1
+            counter += 1
 
         os.remove(fullvideo_path)
 
