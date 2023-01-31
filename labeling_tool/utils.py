@@ -182,7 +182,8 @@ def update_metadata(video_file: str, video_title: str, video_url: str, cut_info:
         "video_title": video_title,
         "video_url": video_url,
         "video_source": cut_info["video_source"],
-        "trick_interval": cut_info["interval"],
+        "clip_start": cut_info["interval"][0],
+        "clip_end": cut_info["interval"][-1],
     }
     for key, value in cut_info["trick_info"].items():
         entry[key] = value
