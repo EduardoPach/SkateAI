@@ -363,7 +363,7 @@ def create_table_with_videos(df: pd.DataFrame) -> wandb.Table:
     return table
 
 def wandb_log_dataset() -> None:
-    with wandb.init(project=os.environ["WANDB_PROJECT"], job_type="upload") as run:
+    with wandb.init(project=os.environ["WANDB_PROJECT"], entity=os.environ["WANDB_ENTITY"], job_type="upload") as run:
         raw_data = wandb.Artifact(os.environ["WANDB_DATASET_ARTIFACT"], type="dataset")
         raw_data.add_dir(const.VIDEOS_DIR, name="videos")
         metadata = pd.read_csv(const.METADATA_FILE)

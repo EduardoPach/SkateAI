@@ -22,7 +22,7 @@ def main():
     with open("config.yaml", "r") as f:
         config = yaml.safe_load(f)
 
-    with wandb.init(project=os.environ["WANDB_PROJECT"], config=config, job_type="train") as run:
+    with wandb.init(project=os.environ["WANDB_PROJECT"], entity=os.environ["WANDB_ENTITY"],config=config, job_type="train") as run:
         raw_data_artifact = run.use_artifact(os.environ["WANDB_DATASET_ARTIFACT"]+":latest")
         split_artifact = run.use_artifact(os.environ["WANDB_SPLIT_ARTIFACT"]+":latest")
         raw_data_artifact.download("./data")
