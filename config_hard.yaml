@@ -1,0 +1,25 @@
+training_parameters:
+  epochs: 5
+  learning_rate: 0.001
+  model_save_path: ./model.pt
+  label_columns:
+    - trick_name
+    - landed
+    - stance
+dataloader_parameters:
+  train_csv: ./data/metadata/train_split.csv
+  val_csv: ./data/metadata/validation_split.csv
+  root_dir: ./data/videos
+  batch_size: 16
+  max_frames: 69
+  num_workers: 1
+  pin_memory: True
+model_parameters:
+  rnn_type: lstm
+  rnn_layers: 3
+  rnn_hidden: 64
+  trainable_backbone: false
+  heads_params:
+    trick_name: [[256, 0.5], [128, 0.2], [16, 0.3]]
+    landed: [[256, 0.5], [128, 0.2], [16, 0.3]]
+    stance: [[256, 0.5], [128, 0.2], [16, 0.3]]

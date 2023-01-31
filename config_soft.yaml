@@ -2,6 +2,15 @@ training_parameters:
   epochs: 5
   learning_rate: 0.001
   model_save_path: ./model.pt
+  label_columns:
+    - body_rotation_type
+    - body_rotation_number
+    - board_rotation_type
+    - board_rotation_number
+    - flip_type
+    - flip_number
+    - landed
+    - stance
 dataloader_parameters:
   train_csv: ./data/metadata/train_split.csv
   val_csv: ./data/metadata/validation_split.csv
