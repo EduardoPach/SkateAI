@@ -22,7 +22,6 @@ class TricksDataset(Dataset):
         max_frames: Union[None, int]=None, 
         transform: Union[None, Compose]=None,
         label_enconder: OrdinalEncoder=None
-
     ) -> None:
         self.root_dir = root_dir
         self.transform = transform
@@ -37,7 +36,7 @@ class TricksDataset(Dataset):
         video_file = self.metadata.iloc[index, 0]
         video_dir = self.metadata.iloc[index, 1]
         video_path = os.path.join(self.root_dir, video_dir, video_file)
-        encoded = self.label_encoder.transform(self.metadata[const.LABELS])
+        encoded = self.label_encoder.transform(self.metadata[const.LABELS]) if self.label_encoder else self.metadata.copy()
         labels = {col: encoded.loc[index, col] for col in const.LABELS}
         video = utils.get_video(video_path)
         video = utils.VideoToTensor()(video)
