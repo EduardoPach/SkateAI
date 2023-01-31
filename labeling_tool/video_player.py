@@ -220,7 +220,8 @@ controls = dbc.Col(
 def select_source_videos(playlist_url: str) -> dict:
     if not playlist_url:
         return {}
-    video_options = utils.get_videos_url(playlist_url)
+    source_name = {val: key for key, val in const.VIDEO_SOURCES.items()}[playlist_url]
+    video_options = const.VIDEOS_PER_SOURCE[source_name]
     return [{"label": title, "value": url} for title, url in video_options.items()]
     
 
