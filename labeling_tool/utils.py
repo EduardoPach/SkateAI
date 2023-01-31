@@ -357,7 +357,8 @@ def create_table_with_videos(df: pd.DataFrame) -> wandb.Table:
     data = df.to_numpy().tolist()
     for row in data:
         video_file = row[0]
-        video = wandb.Video(f"{const.VIDEOS_DIR}/{video_file}", format="mp4")
+        video_dir = row[1]
+        video = wandb.Video(f"{const.VIDEOS_DIR}/{video_dir}/{video_file}", format="mp4")
         table.add_data(video, *row)
     return table
 
