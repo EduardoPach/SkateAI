@@ -19,7 +19,7 @@ from models import ResNet18_RNN
 
 
 def main():
-    with open("config.yaml", "r") as f:
+    with open("config_hard.yaml", "r") as f:
         config = yaml.safe_load(f)
 
     with wandb.init(project=os.environ["WANDB_PROJECT"], entity=os.environ["WANDB_ENTITY"],config=config, job_type="train") as run:
@@ -49,6 +49,10 @@ def main():
         TRAINABLE_BACKBONE = config["model_parameters"]["trainable_backbone"]
         HEADS_PARAMS = config["model_parameters"]["heads_params"]
         HEADS_PARAMS["in_features"] = RNN_HIDDEN * MAX_FRAMES
+
+        train_labels = pd.read_csv(TRAIN_CSV)[LABEL_COLUMNS]
+        if "trick_name" in LABEL_COLUMNS:
+            HEADS_PARAMS["n_tricks"] = train_labels["trick_name"].nunique()
 
         model = ResNet18_RNN(
             RNN_TYPE, 
@@ -80,8 +84,7 @@ def main():
             resnet_transforms,
         ])
 
-        train_labels = pd.read_csv(TRAIN_CSV)[LABEL_COLUMNS]
-        encoder = OrdinalEncoder(handle_unknown="encoded_value", unknown_value=-1).set_output(transform="pandas")
+        encoder = OrdinalEncoder(handle_unknown="use_encoded_value", unknown_value=-1).set_output(transform="pandas")
         encoder.fit(train_labels)
 
         train_loader, val_loader = get_loaders(
