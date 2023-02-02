@@ -10,7 +10,7 @@ dataloader_parameters:
   train_csv: ./data/metadata/train_split.csv
   val_csv: ./data/metadata/validation_split.csv
   root_dir: ./data/videos
-  batch_size: 16
+  batch_size: 4
   max_frames: 69
   num_workers: 1
   pin_memory: True

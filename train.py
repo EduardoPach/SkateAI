@@ -2,6 +2,8 @@ from __future__ import annotations
 
 import os
 import warnings
+from dotenv import load_dotenv
+load_dotenv()
 warnings.simplefilter("ignore", UserWarning)
 
 import yaml
@@ -84,7 +86,7 @@ def main():
             resnet_transforms,
         ])
 
-        encoder = OrdinalEncoder(handle_unknown="use_encoded_value", unknown_value=-1).set_output(transform="pandas")
+        encoder = OrdinalEncoder(handle_unknown="use_encoded_value", unknown_value=-1, dtype=int).set_output(transform="pandas")
         encoder.fit(train_labels)
 
         train_loader, val_loader = get_loaders(
@@ -102,6 +104,7 @@ def main():
 
         model.to(DEVICE)
         for epoch in range(EPOCHS):
+            print("STARTING TRAININGL:\n")
             model.train()
             train_loss = train_fn(train_loader, model, optimizer, loss_fns, DEVICE)
             val_loss = check_performance(val_loader, model, loss_fns, DEVICE)
