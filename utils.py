@@ -6,6 +6,7 @@ from typing import Union
 
 import wandb
 import torch
+import pandas as pd
 import numpy as np
 import torch.nn as nn
 from tqdm import tqdm
@@ -50,8 +51,8 @@ def train_fn(loader: DataLoader, model: nn.Module, optimizer: Optimizer, loss_fn
     return {key: val.item() for key, val in loss_dict.items()}
 
 def get_loaders(
-    train_csv: Union[str, Path],
-    val_csv: Union[str, Path],
+    train_csv: Union[str, Path, pd.DataFrame],
+    val_csv: Union[str, Path, pd.DataFrame],
     root_dir: Union[str, Path],
     max_frames: int,
     batch_size: int,

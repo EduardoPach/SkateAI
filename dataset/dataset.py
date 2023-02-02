@@ -17,7 +17,7 @@ from dataset import utils
 class TricksDataset(Dataset):
     def __init__(
         self, 
-        csv_file: Union[Path, str], 
+        csv_file: Union[Path, str, pd.DataFrame], 
         root_dir: Union[Path, str], 
         max_frames: Union[None, int]=None, 
         transform: Union[None, Compose]=None,
@@ -25,7 +25,7 @@ class TricksDataset(Dataset):
     ) -> None:
         self.root_dir = root_dir
         self.transform = transform
-        self.metadata = pd.read_csv(csv_file)
+        self.metadata = pd.read_csv(csv_file) if not isinstance(csv_file, pd.DataFrame) else csv_file
         self.max_frames = max_frames
         self.label_encoder = label_enconder
 
