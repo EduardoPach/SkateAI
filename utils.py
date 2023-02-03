@@ -158,3 +158,11 @@ def wandb_log_model(model_path: Union[str, Path], name: str, type: str, **kwargs
     model_artifact = wandb.Artifact(name=name, type=type, **kwargs)
     model_artifact.add_file(model_path)
     wandb.log_artifact(model_artifact)
+
+
+def wandb_log_train_data(train_df: pd.DataFrame, val_df: pd.DataFrame) -> None:
+    train_table = wandb.Table(dataframe=train_df)
+    val_table = wandb.Table(dataframe=val_df)
+    wandb.log({"train_table": train_table, "val_table": val_table})
+
+    
