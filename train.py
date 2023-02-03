@@ -52,7 +52,7 @@ def main():
         HEADS_PARAMS = config["model_parameters"]["heads_params"]
         HEADS_PARAMS["in_features"] = RNN_HIDDEN * MAX_FRAMES
 
-        train_labels = pd.read_csv(TRAIN_CSV)[LABEL_COLUMNS]
+        train_labels = pd.read_csv(TRAIN_CSV)
         if "trick_name" in LABEL_COLUMNS:
             HEADS_PARAMS["n_tricks"] = train_labels["trick_name"].nunique()
 
@@ -87,7 +87,7 @@ def main():
         ])
 
         encoder = OrdinalEncoder(handle_unknown="use_encoded_value", unknown_value=-1, dtype=int).set_output(transform="pandas")
-        encoder.fit(train_labels)
+        encoder.fit(train_labels[LABEL_COLUMNS])
 
         train_loader, val_loader = get_loaders(
             TRAIN_CSV,
