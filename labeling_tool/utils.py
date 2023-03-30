@@ -190,7 +190,7 @@ def update_metadata(video_file: str, video_title: str, video_url: str, cut_info:
     df = df.append(entry, ignore_index=True).reset_index(drop=True)
     df.to_csv(const.METADATA_FILE, index=False)
 
-def split_videos(stratify_on: list=["landed", "stance"], train_size: float=0.8) -> None:
+def split_videos(stratify_on: list=["landed", "stance"], train_size: float=0.8, remove_single: bool=True) -> None:
     """_summary_
 
     Parameters
@@ -199,8 +199,11 @@ def split_videos(stratify_on: list=["landed", "stance"], train_size: float=0.8) 
         _description_, by default ["landed", "stance"]
     train_size : float, optional
         _description_, by default 0.8
+    remove_single : bool, optional
+        _description_, by default True
     """
     df = pd.read_csv(const.METADATA_FILE)
+    df = df.groupby(stratify_on).filter(lambda x: x.size() > 1)
     train_df, val_df = train_test_split(
         df,
         train_size=train_size,
