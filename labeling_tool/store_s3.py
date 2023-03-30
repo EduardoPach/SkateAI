@@ -29,37 +29,45 @@ def upload_mp4_to_s3(filepath: str, **kwargs) -> None:
         print(f"Error uploading {filename} to S3 bucket {BUCKET_NAME}: {e}\n")
     
     os.remove(filepath)
+
+
+def download_video(video_title: str, video_url: str, source: str) -> None:
+    video = yt.YouTube(video_url)
+    video_length = video.length
+    video_title_parsed = utils.parse_video_title(video_title)
+    video.streams.filter(
+        res="480p",
+        file_extension='mp4',
+        type="video",
+        only_video=True
+    )[0].download(output_path=".", filename=f"{video_title_parsed}.mp4")
+
+    upload_mp4_to_s3(
+        f"./{video_title_parsed}.mp4",
+        video_title=video_title,
+        video_url=video_url,
+        video_source=source,
+        video_length=str(video_length)
+    )
+
         
 
-def main() -> None:
+def main(ignore_source: list[str]) -> None:
     for source in VIDEOS_PER_SOURCE.keys():
+        if source in ignore_source:
+            continue
         for video_title, video_url in VIDEOS_PER_SOURCE[source].items():
             tries = 0
             while tries < 10: # Workaround pytube issue
                 try:
-                    video = yt.YouTube(video_url)
-                    video_length = video.length
-                    video_title_parsed = utils.parse_video_title(video_title)
+                    download_video(video_title, video_url, source)
                     break
                 except Exception as e:
                     tries +=1
                     if tries==10:
-                        raise e
+                        print(f"Skipping {video_title} due to error: ", e)
                     
-            video.streams.filter(
-                res="480p",
-                file_extension='mp4',
-                type="video",
-                only_video=True
-            )[0].download(output_path=".", filename=f"{video_title_parsed}.mp4")
-
-            upload_mp4_to_s3(
-                f"./{video_title_parsed}.mp4",
-                video_title=video_title,
-                video_url=video_url,
-                video_source=source,
-                video_length=str(video_length)
-            )
 
 if __name__ == "__main__":
-    main()
+    ignore_source = ["BATB 1", "BATB 2", "BATB 3", "BATB 4", "BATB 5", "BATB 6", "BATB 7"]
+    main(ignore_source)
