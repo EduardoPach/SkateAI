@@ -15,6 +15,13 @@ from const import VIDEOS_PER_SOURCE
 load_dotenv()
 
 def upload_mp4_to_s3(filepath: str, **kwargs) -> None:
+    """Upload mp4 file to S3
+
+    Parameters
+    ----------
+    filepath : str
+        filepath on local machine to upload to S3
+    """
     BUCKET_NAME = os.environ["S3_BUCKET"]
     s3 = boto3.client("s3")
 
@@ -32,6 +39,17 @@ def upload_mp4_to_s3(filepath: str, **kwargs) -> None:
 
 
 def download_video(video_title: str, video_url: str, source: str) -> None:
+    """Download video from YouTube and upload to S3
+
+    Parameters
+    ----------
+    video_title : str
+        video title
+    video_url : str
+        video url
+    source : str
+        video source
+    """
     video = yt.YouTube(video_url)
     video_length = video.length
     video_title_parsed = utils.parse_video_title(video_title)
@@ -52,9 +70,9 @@ def download_video(video_title: str, video_url: str, source: str) -> None:
 
         
 
-def main(ignore_source: list[str]) -> None:
+def main(ignore_source: list[str]=None) -> None:
     for source in VIDEOS_PER_SOURCE.keys():
-        if source in ignore_source:
+        if source and source in ignore_source:
             continue
         for video_title, video_url in VIDEOS_PER_SOURCE[source].items():
             tries = 0
@@ -69,5 +87,4 @@ def main(ignore_source: list[str]) -> None:
                     
 
 if __name__ == "__main__":
-    ignore_source = ["BATB 1", "BATB 2", "BATB 3", "BATB 4", "BATB 5", "BATB 6", "BATB 7"]
-    main(ignore_source)
+    main()
