@@ -19,6 +19,30 @@ from src.labeling_tool import const
 
 load_dotenv()
 
+
+def check_file_exists_in_s3(filename: str) -> bool:
+    """Check if a file exists in S3.
+
+    Parameters
+    ----------
+    filename : str
+        The name of the file to check.
+
+    Returns
+    -------
+    bool
+        Whether or not the file exists in S3.
+    """
+    # Create an S3 client.
+    s3 = boto3.client('s3')
+
+    # Attempt to get the object's metadata.
+    try:
+        s3.head_object(Bucket=os.environ["S3_BUCKET"], Key=filename)
+        return True
+    except:
+        return False
+
 def upload_df_to_s3(df: pd.DataFrame, filepath: str) -> None:
     """Upload a DataFrame to S3 as a CSV file.
 
