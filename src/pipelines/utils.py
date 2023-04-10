@@ -19,15 +19,36 @@ from src.labeling_tool import const
 
 load_dotenv()
 
-def upload_mp4_to_s3(filepath: str, remove_local: bool, **kwargs) -> None:
+def upload_df_to_s3(df: pd.DataFrame, filepath: str) -> None:
+    """Upload a DataFrame to S3 as a CSV file.
+
+    Parameters
+    ----------
+    df : pd.DataFrame
+        DataFrame to upload to S3
+    filepath : str
+        Path of the file on S3
+    """
+    # Convert the DataFrame to a CSV string.
+    csv_string = df.to_csv(index=False)
+
+    # Create an S3 client.
+    s3 = boto3.client('s3')
+
+    # Upload the CSV string to S3.
+    s3.put_object(Body=csv_string, Bucket=os.environ["S3_BUCKET"], Key=filepath)
+
+def upload_mp4_to_s3(filepath: str, directory: str=".", remove_local: bool=True, **kwargs) -> None:
     """Upload mp4 file to S3 and remove it from local machine.
 
     Parameters
     ----------
     filepath : str
         filepath on local machine to upload to S3
+    directory : str
+        directory to store the file on S3, by default "."
     remove_local : bool
-        whether or not to remove the file from local machine
+        whether or not to remove the file from local machine, by default True
     """
     BUCKET_NAME = os.environ["S3_BUCKET"]
     s3 = boto3.client("s3")
@@ -37,14 +58,14 @@ def upload_mp4_to_s3(filepath: str, remove_local: bool, **kwargs) -> None:
 
     # Upload the file to S3
     try:
-        s3.upload_file(filepath, BUCKET_NAME, filename, ExtraArgs={"Metadata": kwargs})
+        s3.upload_file(filepath, BUCKET_NAME, f"{directory}/{filename}", ExtraArgs={"Metadata": kwargs})
         print(f"Successfully uploaded {filename} to S3 bucket {BUCKET_NAME}\n")
     except Exception as e:
         print(f"Error uploading {filename} to S3 bucket {BUCKET_NAME}: {e}\n")
     if remove_local:
         os.remove(filepath)
 
-def download_video(video_title: str, video_url: str, source: str, directory: str="./src/data/raw_videos") -> dict[str, str]:
+def download_video(video_title: str, video_url: str, source: str, directory: str) -> dict[str, str]:
     """Download raw video from Youtube and store it locally.
 
     Parameters
@@ -56,7 +77,7 @@ def download_video(video_title: str, video_url: str, source: str, directory: str
     source : str
         Video source i.e. it's playlist name
     directory : str, optional
-        Directory to store the video, by default "./src/data/raw_videos"
+        Directory to store the video locally
 
     Returns
     -------
@@ -81,9 +102,10 @@ def download_video(video_title: str, video_url: str, source: str, directory: str
 
     return {
         "filepath": f"{directory}/{filepath}",
-        "video_title": video_title_parsed,
         "video_url": video_url,
         "video_source": source,
+        "video_title": video_title,
+        "video_title_parsed": video_title_parsed,
         "video_length": str(video_length)
     }
 
