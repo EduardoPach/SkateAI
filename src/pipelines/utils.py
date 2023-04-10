@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import os
 import json
 import string
@@ -5,13 +7,85 @@ import shutil
 from typing import Any
 from pathlib import Path
 
+import boto3
 import wandb
 import pytube as yt
 import pandas as pd
 import moviepy.editor as mo
+from dotenv import load_dotenv
 from sklearn.model_selection import train_test_split
 
 from src.labeling_tool import const
+
+load_dotenv()
+
+def upload_mp4_to_s3(filepath: str, remove_local: bool, **kwargs) -> None:
+    """Upload mp4 file to S3 and remove it from local machine.
+
+    Parameters
+    ----------
+    filepath : str
+        filepath on local machine to upload to S3
+    remove_local : bool
+        whether or not to remove the file from local machine
+    """
+    BUCKET_NAME = os.environ["S3_BUCKET"]
+    s3 = boto3.client("s3")
+
+    # Get the filename from the filepath
+    filename = os.path.basename(filepath)
+
+    # Upload the file to S3
+    try:
+        s3.upload_file(filepath, BUCKET_NAME, filename, ExtraArgs={"Metadata": kwargs})
+        print(f"Successfully uploaded {filename} to S3 bucket {BUCKET_NAME}\n")
+    except Exception as e:
+        print(f"Error uploading {filename} to S3 bucket {BUCKET_NAME}: {e}\n")
+    if remove_local:
+        os.remove(filepath)
+
+def download_video(video_title: str, video_url: str, source: str, directory: str="./src/data/raw_videos") -> dict[str, str]:
+    """Download raw video from Youtube and store it locally.
+
+    Parameters
+    ----------
+    video_title : str
+        Video titel
+    video_url : str
+        Video url
+    source : str
+        Video source i.e. it's playlist name
+    directory : str, optional
+        Directory to store the video, by default "./src/data/raw_videos"
+
+    Returns
+    -------
+    dict[str, str]
+        Video information
+    """
+    video = yt.YouTube(video_url)
+    video_length = video.length
+    video_title_parsed = utils.parse_video_title(video_title)
+
+    if not os.path.exists(directory):
+        os.mkdir(directory)
+    filepath = f"./{video_title_parsed}.mp4"
+
+
+    video.streams.filter(
+        res="480p",
+        file_extension='mp4',
+        type="video",
+        only_video=True
+    )[0].download(output_path=directory, filename=filepath)
+
+    return {
+        "filepath": f"{directory}/{filepath}",
+        "video_title": video_title_parsed,
+        "video_url": video_url,
+        "video_source": source,
+        "video_length": str(video_length)
+    }
 
 
 def get_videos_url(url: str) -> dict:
@@ -202,6 +276,7 @@ def download_data_pipeline(download_all: bool, split: bool, stratify_on: list, t
         _description_
     """
     #TODO use S3 or local source to create cuts
+    #TODO Maybe rename this function because it deals only with labeled data
     initialize_data_dir(download_all)
     # TRICK_CUTS format {"url": "cut_name": {"interval": [start, end], "trick_info": {...}}}
     n_cuts = sum(len(video_cuts) for video_cuts in const.TRICK_CUTS.values())
