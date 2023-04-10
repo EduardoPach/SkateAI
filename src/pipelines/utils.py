@@ -11,7 +11,7 @@ import pandas as pd
 import moviepy.editor as mo
 from sklearn.model_selection import train_test_split
 
-import const
+from src.labeling_tool import const
 
 
 def get_videos_url(url: str) -> dict:
@@ -33,89 +33,6 @@ def get_videos_url(url: str) -> dict:
     playlist = yt.Playlist(url)
     for title, video_url in zip([video.title for video in playlist.videos],playlist.video_urls):
         data[title] = video_url
-    return data
-
-def update_cuts(data: dict, video_url: str, start_time: int, end_time: int, trick_info: dict, source: str) -> dict:
-    """Update general JSON file that contains the trick cuts for each video.
-
-    Parameters
-    ----------
-    data : dict
-        The actual state of the general JSON file
-    video_url : str
-        The URL of the current video being labeled
-    start_time : int
-        The start time of the cut in the video in seconds
-    end_time : int
-        The end time of the cut in the video in seconds
-    trick_info : dict
-        A dictionary with all the relavant information about the trick in the cut
-    source : str
-        The source of the video
-
-    Returns
-    -------
-    dict
-        An updated version of the general JSON file
-    """
-    cut_name = get_cut_name(
-        data=data, 
-        video_url=video_url, 
-        trick_name=trick_info["trick_name"],
-        landed=trick_info["landed"],
-        stance=trick_info["stance"]
-    )
-    if video_url not in data:
-        data[video_url] = {
-            cut_name: {
-                "interval": [start_time, end_time],
-                "video_source": source,
-                "trick_info": trick_info,
-            }
-        }
-    else:
-        data[video_url][cut_name] = {
-            "interval": [start_time, end_time], 
-            "video_source": source, 
-            "trick_info": trick_info
-        }
-    return data
-
-def delete_cuts(data: dict, video_url: str, current_cut: str) -> dict:
-    """Removes an existing cut from the general JSON file
-
-    Parameters
-    ----------
-    data : dict
-        The current state of the JSON file
-    video_url : str
-        The URL of the video being labeled
-    current_cut : str
-        The name of the cut that will be removed
-
-    Returns
-    -------
-    dict
-        An updated version of the JSON file without the cut removed
-    """
-    del data[video_url][current_cut]
-    return data
-
-def get_cuts_data() -> dict:
-    """Loads the current state of the general JSON file
-
-    Returns
-    -------
-    dict
-        Current state of JSON file
-    """ 
-    if not os.path.exists(const.DATA_DIR_PATH):
-        os.mkdir(const.DATA_DIR_PATH)
-
-    if not os.path.exists(const.TRICKS_JSON_PATH):
-        data = {}
-    else:
-        data = load_json(const.TRICKS_JSON_PATH)
     return data
 
 def parse_video_title(title: str) -> str:
@@ -234,26 +151,6 @@ def load_json(path: str) -> dict:
         val = json.load(f)
     return val
 
-def key_from_value(d: dict, value: Any) -> str:
-    """Returns the key of a dictionary given a value. 
-    Assumes that the key-value pair exists.
-
-    Parameters
-    ----------
-    d : dict
-        A dictionary
-
-    value : Any
-        The value associated with a key
-
-    Returns
-    -------
-    str
-        Key that maps to the passed value
-    """
-    return list(d.keys())[list(d.values()).index(value)]
-
-
 def get_cut_name(data: dict, video_url: str, trick_name: str, landed: str, stance: str) -> str:
     """Generates a standard name for the cut based on its atributes
 
@@ -286,14 +183,33 @@ def get_cut_name(data: dict, video_url: str, trick_name: str, landed: str, stanc
 
 
 def download_data_pipeline(download_all: bool, split: bool, stratify_on: list, train_size: float):
+    """_summary_
+
+    Parameters
+    ----------
+    download_all : bool
+        _description_
+    split : bool
+        _description_
+    stratify_on : list
+        _description_
+    train_size : float
+        _description_
+
+    Raises
+    ------
+    e
+        _description_
+    """
+    #TODO use S3 or local source to create cuts
     initialize_data_dir(download_all)
-    TRICK_CUTS = get_cuts_data() # {"url": "cut_name": {"interval": [start, end], "trick_info": {...}}}
-    N_CUTS = sum(len(video_cuts) for video_cuts in TRICK_CUTS.values())
-    N_DOWNLOADED_VIDEOS = len(os.listdir(const.VIDEOS_DIR))
-    print(f"THERE ARE {N_CUTS - N_DOWNLOADED_VIDEOS} NEW CUTS TO BE DOWNLOADED\n")
+    # TRICK_CUTS format {"url": "cut_name": {"interval": [start, end], "trick_info": {...}}}
+    n_cuts = sum(len(video_cuts) for video_cuts in const.TRICK_CUTS.values())
+    n_downloaded_videos = len(os.listdir(const.VIDEOS_DIR))
+    print(f"THERE ARE {n_cuts - n_downloaded_videos} NEW CUTS TO BE DOWNLOADED\n")
     total = 1
     
-    for url, cuts in TRICK_CUTS.items():
+    for url, cuts in const.TRICK_CUTS.items():
         counter = 1
         tries = 0
         while tries < 10: # Workaround pytube issue
@@ -324,7 +240,7 @@ def download_data_pipeline(download_all: bool, split: bool, stratify_on: list, t
                 )[0].download(output_path=const.VIDEOS_DIR, filename=fullvideo)
                 print("Success!\n")
             print("-"*100)
-            print(f"DOWNLOADING {cut_name} AS {video_file} - VIDEO {total} OUT OF {N_CUTS} ({100*total/N_CUTS:.1f}%)\n")
+            print(f"DOWNLOADING {cut_name} AS {video_file} - VIDEO {total} OUT OF {n_cuts} ({100*total/n_cuts:.1f}%)\n")
             os.makedirs(clips_dir, exist_ok=True)
             if os.path.exists(video_path) and not download_all:
                 print("\nALREADY EXISTS!\n")

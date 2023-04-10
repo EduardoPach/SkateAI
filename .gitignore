@@ -1,7 +1,7 @@
 .venv
 skate
 *.pyc
-data/videos
+src/data/videos
 .*mp4
 .env
 wandb

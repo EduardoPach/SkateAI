@@ -55,14 +55,14 @@ METADATA_COLS = [
     "stance"
 ]
 
-DATA_DIR_PATH = Path("data")
-METADATA_DIR = Path("data/metadata")
-VIDEOS_DIR = Path("data/videos")
-TRICKS_JSON_PATH = Path("data/tricks_cut.json")
-TRICK_NAMES_PATH = Path("data/TRICK_NAMES.json")
-METADATA_FILE = Path("data/metadata/metadata.csv")
-VIDEO_SOURCES_PATH = Path("labeling_tool/videos_sources.json")
-VIDEOS_PER_SOURCE_PATH = Path("labeling_tool/videos_per_source.json")
+DATA_DIR_PATH = Path("src/data")
+METADATA_DIR = Path("src/data/metadata")
+VIDEOS_DIR = Path("src/data/videos")
+TRICKS_JSON_PATH = Path("src/data/tricks_cut.json")
+TRICK_NAMES_PATH = Path("src/data/TRICK_NAMES.json")
+METADATA_FILE = Path("src/data/metadata/metadata.csv")
+VIDEO_SOURCES_PATH = Path("src/labeling_tool/videos_sources.json")
+VIDEOS_PER_SOURCE_PATH = Path("src/labeling_tool/videos_per_source.json")
 
 TRICK_DATA = get_cuts_data()
 TRICK_NAMES = load_json(TRICK_NAMES_PATH)

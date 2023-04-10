@@ -9,8 +9,7 @@ import pytube as yt
 from dotenv import load_dotenv
 
 import utils
-from const import VIDEOS_PER_SOURCE
-
+from src.labeling_tool.const import VIDEOS_PER_SOURCE
 
 load_dotenv()
 
