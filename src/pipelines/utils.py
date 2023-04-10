@@ -90,7 +90,7 @@ def upload_mp4_to_s3(filepath: str, directory: str=".", remove_local: bool=True,
         os.remove(filepath)
 
 def download_video(video_title: str, video_url: str, source: str, directory: str) -> dict[str, str]:
-    """Download raw video from Youtube and store it locally.
+    """Download raw video from Youtube and store it locally on directory.
 
     Parameters
     ----------
