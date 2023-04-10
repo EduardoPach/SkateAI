@@ -32,10 +32,21 @@ def main(ignore_source: list[str], store: str) -> None:
         's3', 'local', 'both', by default 'both'
     """
     metadata = []
+    total_videos = sum(
+        [
+            len(source) 
+            for key, source in VIDEOS_PER_SOURCE.items() 
+            if key not in ignore_source
+        ]
+    )
+
+    progress_bar = tqdm(total=total_videos)
+
     for source in VIDEOS_PER_SOURCE.keys():
         if source and source in ignore_source:
             continue
         for video_title, video_url in VIDEOS_PER_SOURCE[source].items():
+            progress_bar.set_description(f'Processing {video_title}')
             video_dict, success = retry(
                 n=10, 
                 func=utils.download_video, 
@@ -46,17 +57,24 @@ def main(ignore_source: list[str], store: str) -> None:
             )
             if not success:
                 print(f"Failed to download {video_title} from {source}")
+                progress_bar.update(1)
                 continue
             
             if store=="local":
+                progress_bar.update(1)
                 continue
+
             remove_local = True if store=="s3" else False 
+
             utils.upload_mp4_to_s3(
                 directory=AWS_S3_RAW_VIDEOS_DIR, 
                 remove_local=remove_local, 
                 **video_dict
             )
+
+            progress_bar.update(1)
     
+    progress_bar.close()
     metadata_df = pd.DataFrame(metadata)
     if store=="local":
         metadata_df.to_csv(f"{LOCAL_RAW_VIDEOS_DIR}/metadata.csv", index=False)
