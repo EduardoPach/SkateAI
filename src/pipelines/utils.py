@@ -65,7 +65,7 @@ def download_video(video_title: str, video_url: str, source: str, directory: str
     """
     video = yt.YouTube(video_url)
     video_length = video.length
-    video_title_parsed = utils.parse_video_title(video_title)
+    video_title_parsed = parse_video_title(video_title)
 
     if not os.path.exists(directory):
         os.mkdir(directory)
