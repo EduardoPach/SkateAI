@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import argparse
 
-import utils
+from src.pipelines import utils
 
 
 parser = argparse.ArgumentParser(description="Command line downloading the data")

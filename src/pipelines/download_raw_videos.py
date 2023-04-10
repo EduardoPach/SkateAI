@@ -4,8 +4,9 @@ import argparse
 from typing import Callable, Union
 
 import pandas as pd
+from tqdm import tqdm
 
-import utils
+from src.pipelines import utils
 from src.labeling_tool.const import VIDEOS_PER_SOURCE
 from src.pipelines.const import AWS_S3_RAW_VIDEOS_DIR, LOCAL_RAW_VIDEOS_DIR
 
