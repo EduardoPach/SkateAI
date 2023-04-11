@@ -2,6 +2,8 @@
 skate
 *.pyc
 src/data/videos
+src/data/raw_videos
+src/data/clips
 .*mp4
 .env
 wandb
