@@ -37,7 +37,7 @@ def find_scenes(filepath: str, threshold: int=35) -> list[tuple[FrameTimecode, F
 
     return scene_manager.get_scene_list()
 
-def scenes_to_dataframe(scenes: list[tuple[FrameTimecode, FrameTimecode]]) -> pd.DataFrame:
+def scenes_to_dataframe(scenes: list[tuple[FrameTimecode, FrameTimecode]], **kwargs) -> pd.DataFrame:
     """Convert a list of scenes to a dataframe
 
     Parameters
@@ -57,6 +57,9 @@ def scenes_to_dataframe(scenes: list[tuple[FrameTimecode, FrameTimecode]]) -> pd
     df["start"] = df["start"].apply(lambda x: x.get_seconds())
     df["end"] = df["end"].apply(lambda x: x.get_seconds())
     df["duration"] = df["end"] - df["start"]
+    if kwargs:
+        for key, val in kwargs.items():
+            df[key] = val
     return df
 
 def main(args: argparse.Namespace) -> None:
@@ -66,7 +69,7 @@ def main(args: argparse.Namespace) -> None:
     override = args.override
     store_s3 = args.store_s3
     # Step 1 - Get List of Raw Videos
-    videos = glob(f'{LOCAL_RAW_VIDEOS_DIR}/*.mp4')
+    videos = sorted(glob(f'{LOCAL_RAW_VIDEOS_DIR}/*.mp4'))
     # Step 2 - Prepare LOCAL_CLIPS_DIR if it doesn't exist
     if not os.path.exists(LOCAL_CLIPS_DIR):
         os.mkdir(LOCAL_CLIPS_DIR)
@@ -87,7 +90,7 @@ def main(args: argparse.Namespace) -> None:
 
             # Step 4 - Split the video into scenes and save them
             split_video_ffmpeg(
-                input_path=video, 
+                input_video_path=video, 
                 output_file_template=f"{path}/$SCENE_NUMBER.mp4", 
                 scene_list=scenes
             )
@@ -117,8 +120,8 @@ def main(args: argparse.Namespace) -> None:
 
 if __name__=="__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('--override', action='store_true')
-    parser.add_argument('--store_s3', action='store_true')
+    parser.add_argument('--override', action='store_true', default=True)
+    parser.add_argument('--store-s3', action='store_true')
     args = parser.parse_args()
     main(args)
     
